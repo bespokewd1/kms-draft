@@ -232,54 +232,6 @@
     }
 }
 
-/* Homepage Events */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode #events-1928 {
-        background-color: rgba(0, 0, 0, 0.2);
-    }
-    body.dark-mode #events-1928 .cs-h3,
-    body.dark-mode #events-1928 .cs-time,
-    body.dark-mode #events-1928 .cs-title,
-    body.dark-mode #events-1928 .cs-date,
-    body.dark-mode #events-1928 strong {
-        color: var(--bodyTextColorWhite);
-    }
-    body.dark-mode #events-1928 .cs-date:before {
-        background-color: var(--accent);
-    }
-    body.dark-mode #events-1928 .cs-time {
-        opacity: 0.8;
-    }
-    body.dark-mode #events-1928 .cs-picture {
-        border-color: var(--accent);
-    }
-    body.dark-mode #events-1928 .cs-item {
-        background-color: var(--medium);
-    }
-    body.dark-mode #events-1928 .cs-item:hover .cs-h3 {
-        color: var(--secondary);
-    }
-    body.dark-mode #events-1928 .cs-graphic3,
-    body.dark-mode #events-1928 .cs-graphic4 {
-        opacity: 0.02;
-    }
-    body.dark-mode #events-1928 .cs-button-solid {
-        color: #fff;
-        border-color: #fff;
-    }
-}
-
-/* Tabbed Gallery */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode #gallery-974 .cs-title,
-    body.dark-mode #gallery-974 .cs-button {
-        color: var(--bodyTextColorWhite);
-    }
-    body.dark-mode #gallery-974 .cs-button.cs-active {
-        color: var(--primary);
-    }
-}
-
 /* Regular Gallery */
 @media only screen and (min-width: 0rem) {
     body.dark-mode #gallery-973 .cs-title,
@@ -297,59 +249,6 @@
     }
     body.dark-mode #blog-1701 .cs-desc {
     opacity: 0.8;
-    }
-}
-
-/* Services */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #services-1259 {
-            .cs-topper {
-                color: var(--primaryLight);
-            }
-
-            .cs-text,
-            .cs-item-text {
-                opacity: 0.8;
-            }
-
-            .cs-picture {
-                background-color: var(--medium);
-            }
-
-            .cs-image {
-                &:before {
-                    /* if you choose a different dark mode scheme or a different background color for this section on dark mode, change the rgba colors to match */
-                    background: -moz-linear-gradient(
-                        top,
-                        rgba(255, 255, 255, 0) 0%,
-                        rgba(8, 32, 50, 1) 100%
-                    ); /* FF3.6-15 */
-                    background: -webkit-linear-gradient(
-                        top,
-                        rgba(255, 255, 255, 0) 0%,
-                        rgba(8, 32, 50, 1) 100%
-                    ); /* Chrome10-25,Safari5.1-6 */
-                    background: linear-gradient(
-                        to bottom,
-                        rgba(255, 255, 255, 0) 0%,
-                        rgba(8, 32, 50, 1) 100%
-                    );
-                }
-            }
-
-            .cs-icon {
-                /* turns it white */
-                filter: grayscale(1) brightness(1000%);
-            }
-
-            .cs-title,
-            .cs-text,
-            .cs-h3,
-            .cs-item-text {
-                color: var(--bodyTextColorWhite);
-            }
-        }
     }
 }
                  
