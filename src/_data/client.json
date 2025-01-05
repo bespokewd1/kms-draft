@@ -1,5 +1,5 @@
 {
-    "name": "Bespoke Template",
+    "name": "Bespoke Pumbling Template",
     "email": "help@codestitch.app",
     "phoneForTel": "555-123-4567",
     "phoneFormatted": "(555) 123-4567",
@@ -18,7 +18,7 @@
         "instagram": "https://www.instagram.com/",
         "youtube": "https://www.youtube.com/"
     },
-    "domain": "https://bespoke-template.netlify.app",
+    "domain": "https://bespoke-pumbling-template.netlify.app",
     "logo_url": "/assets/images/main_logo.png",
     "google_review": "https://www.google.com/search?q=bespoke+web+design+edmonton&sca_esv=9a5e7dbe56d12357&rlz=1C1KNTJ_enPH1072PH1072&sxsrf=ADLYWIKOzMbIJyDJ6ANo7bsG_0ZgbInw0Q%3A1733759051084&ei=SxBXZ_bwBLXi2roP57CGsAQ&ved=0ahUKEwi2wvbig5uKAxU1sVYBHWeYAUYQ4dUDCA8&uact=5&oq=bespoke+web+design+edmonton&gs_lp=Egxnd3Mtd2l6LXNlcnAiG2Jlc3Bva2Ugd2ViIGRlc2lnbiBlZG1vbnRvbjIGEAAYFhgeMgsQABiABBiGAxiKBTILEAAYgAQYhgMYigUyCxAAGIAEGIYDGIoFMggQABiABBiiBDIIEAAYgAQYogQyCBAAGIAEGKIESO4PULcDWOYNcAF4AZABAJgBoAGgAaIKqgEDMC45uAEDyAEA-AEBmAIKoAK9CsICChAAGLADGNYEGEfCAgQQIxgnwgIIEAAYFhgKGB7CAgUQABjvBZgDAIgGAZAGCJIHAzEuOaAH6DM&sclient=gws-wiz-serp#lrd=0x53a01d8d2e47f6d9:0x63f14fbe2f9eb50,1,,,,"
 }
