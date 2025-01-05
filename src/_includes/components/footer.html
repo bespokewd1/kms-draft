@@ -1,0 +1,82 @@
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="cs-footer-840">
+    <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="/">
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="{{ client.logo_url }}" alt="logo" width="100" height="32">
+            </a>
+            <p class="cs-text">
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin Richard Latin professor at Hampden. Lorem Ipsum is not simply random text. 
+            </p>
+            <div class="cs-social">
+                <a class="cs-social-link" aria-label="visit facebook profile" href="{{ client.social.facebook }}">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fface-grey1.svg" alt="facebook" width="11" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="visit twitter profile" href="{{ client.social.twitter }}">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Finstragm-grey3.svg" alt="twitter" width="6" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="visit instagram profile" href="{{ client.social.instagram }}">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ftwitter-grey1.svg" alt="instagram" width="11" height="11">
+                </a>
+            </div>
+        </div>
+        <!-- Links -->
+        <div class="cs-ul-wrapper">
+            <span class="cs-header">Quick Links</span>
+            <ul class="cs-ul cs-ul-1">
+                {% set navPages = collections.all | eleventyNavigation %}
+                {% for entry in navPages %}
+                    <li class="cs-li">
+                        <a href="{{ entry.link }}" class="cs-link">{{ entry.key }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="cs-ul-wrapper">
+            <!-- Contact Info -->
+            <span class="cs-header">Contact Information</span>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <!--Make this link go to the google page-->
+                    <a class="cs-link" href="" target="_blank">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fclock-grey.svg" alt="clock icon" width="20" height="20">
+                        M-F 8am – 5:30pm
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="tel:{{ client.phoneForTel }}">
+                        <img class="cs-contact-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fphone-grey.svg" alt="phone icon" width="20" height="20">
+                        {{ client.phoneFormatted }}
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="mailto:{{ client.email }}">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fmessage-grey.svg" alt="email icon" width="20" height="20">
+                        {{ client.email }}
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <!--Make this link go to the google page-->
+                    <a class="cs-link" href="{{ client.address.mapLink }}" target="_blank">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fpin-grey.svg" alt="pin icon" width="20" height="20">
+                        {{ client.address.lineOne }} {{ client.address.lineTwo }}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="cs-bottom">
+        <span class="cs-credit">
+            © Copyright 2024 <a href="https://bespokewebdesign.ca/" class="cs-credit-link" target="_blank">Bespoke Web Design</a>
+        </span>
+        <div class="cs-bottom-links">
+            <a href="/privacy-policy/" class="cs-bottom-link">Privacy Policy</a>
+            <a href="/terms-of-service/" class="cs-bottom-link">Terms Of Service</a>
+        </div>
+    </div>
+</footer>
+                                

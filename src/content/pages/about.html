@@ -1,0 +1,309 @@
+---
+title: "About | Bespoke Template"
+description: "The main branch of the advanced starter kit. Contains a basic 11ty setup for clients not needing much
+additional functionality. Similar to our Intermediate Kits."
+permalink: 'about/'
+eleventyNavigation:
+    key: 'About'
+    order: '200'
+---
+
+{% block head %}
+    <link rel="stylesheet" href="{{ client.domain }}/assets/css/about.css">
+
+    <!--          Blaze Assets        -->
+    <link rel="stylesheet" href="{{ client.domain }}/assets/css/blaze.css">
+    <script src="{{ client.domain }}/assets/js/blaze-slider.dev.js"></script>
+
+{% endblock %}
+
+{% extends 'layouts/base.html' %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-1106-1112">
+        <div class="cs-container">
+            <span class="cs-int-title">About Us</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/about/" class="cs-link cs-active">About Us</a>
+            </div>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic-20.jpg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic-20.jpg">
+            <img decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic-20.jpg" alt="mechanic" width="1280" height="568" aria-hidden="true">
+        </picture>
+    </div> 
+
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="sbs-1014">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-image-group">
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/breakfast1.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/breakfast1.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/breakfast1.jpg" alt="breakfast" width="522" height="581" aria-hidden="true">
+                </picture>
+                <picture class="cs-picture cs-picture2">
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/breakfast2.jpg">
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/breakfast2.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Food-Menu/breakfast2.jpg" alt="breakfast" width="414" height="400" aria-hidden="true">
+                </picture>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-content">
+                <span class="cs-topper">About Us</span>
+                <h2 class="cs-title">Who We Are</h2>
+                <p class="cs-text">
+                    [Your Business Name] is a proudly Edmonton-based company dedicated to delivering high-quality [products/services]. With years of experience in the industry, we aim to help local businesses grow through [specific expertise]. Our mission is to provide businesses with the tools they need to thrive in the digital world.
+                </p>
+                <div class="cs-quote">
+                    <span class="cs-quote-text">
+                        Our mission is to empower local businesses by offering [service/products] that enhance their visibility, boost sales, and create long-lasting customer relationships.
+                    </span>
+                    <span class="cs-name">Our Mission</span>
+                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
+                </div>
+                <div class="cs-quote">
+                    <span class="cs-quote-text">
+                        We are committed to excellence, innovation, and integrity. We believe in delivering value, fostering strong relationships, and ensuring every project we undertake meets the highest standards of quality.
+                    </span>
+                    <span class="cs-name">Core Values</span>
+                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
+                </div>
+            </div>
+        </div>
+    </section>
+          
+    <!-- ============================================ -->
+    <!--                Why Choose Us                 -->
+    <!-- ============================================ -->
+
+    <section id="why-choose-1657">
+        <div class="cs-container">
+            <div class="cs-content">
+                <div class="cs-flex">
+                    <span class="cs-topper">Our Specialty</span>
+                    <h2 class="cs-title">What Sets Us Apart</h2>
+                </div>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        <span class="cs-number">CSS</span>
+                        <p class="cs-li-text">
+                            If you prefer vanilla CSS, everything has already been set up for you. You shouldn't need to merge in the SASS and LESS branches, and the ./starter-styles folder can be deleted.
+                        </p>
+                    </li>
+                    <li class="cs-li">
+                        <span class="cs-number">LESS</span>
+                        <p class="cs-li-text">
+                            If you want to use the LESS preprocessor, make sure the "less" branch has been merged to include the LESS processor. When all branches have been merged, you can find the kit styles in ./starter-styles. Copy these over to /assets/less, or delete them to start from scratch.
+                        </p>
+                    </li>
+                    <li class="cs-li">
+                        <span class="cs-number">SASS</span>
+                        <p class="cs-li-text">
+                            Same as before - merge in the "sass" branch to include the SASS processor. Delete the ./starter-styles folder or copy over the SASS styles into /assets/sass to get a headstart on the project
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cs-wrapper">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting12.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting12.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting12.jpg" alt="meeting" width="630" height="414">
+                </picture>
+
+                <p class="cs-review">
+                    <svg class="cs-quote" preserveAspectRatio="none" viewBox="0 0 100 93" fill="none" xmlns="http://www.w3.org/2000/svg" preser>
+                        <g opacity=".4" clip-path="url(#a)" fill="var(--quoteColor)"><path d="M22.94 84H0L18.305.854H55L22.94 84ZM67.94 84H45L63.305.854H100L67.94 84Z"/></g>
+                        <defs>
+                            <clipPath id="a-1657"><path fill="#fff" transform="translate(0 .854)" d="M0 0h100v83.146H0z"/></clipPath>
+                        </defs>
+                    </svg>
+                    Unlike many other agencies, we focus on providing fully custom-designed websites that reflect your business’s unique personality. We don't use templates or cookie-cutter solutions – every project we take on is tailor-made to help your business stand out.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Reviews                     -->
+    <!-- ============================================ -->
+
+    <section id="reviews-1833">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Testimonials</span>
+                <h2 class="cs-title">Our Members Testimonials</h2>
+            </div>
+            <div class="blaze-slider">
+                <div class="blaze-container">
+                <div class="blaze-track-container">
+                    <div class="blaze-track">
+                    <div class="blaze-slide">
+                        <div class="cs-flex-group">
+                            <div class="cs-review-group">
+                                <!--Stars-->
+                                <img class="cs-stars" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/stars-gym.svg" alt="quotes" width="97" height="80" aria-hidden="true">
+                                <p class="cs-review-text">
+                                    ”Great gym! A new gym with modern equipment and facilities makes training so much easier. Always willing to help you with your training”
+                                </p>
+                                <span class="cs-name">Britney Allison</span>
+                                <span class="cs-job">Founder of Yokoloko</span>
+                                <!--Quote-->
+                                <img class="cs-quote" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black-quotes.svg" alt="quotes" width="97" height="80" aria-hidden="true">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blaze-slide">
+                        <div class="cs-flex-group">
+                            <div class="cs-review-group">
+                                <!--Stars-->
+                                <img class="cs-stars" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/stars-gym.svg" alt="quotes" width="97" height="80" aria-hidden="true">
+                                <p class="cs-review-text">
+                                    ”Great gym! A new gym with modern equipment and facilities makes training so much easier. Always willing to help you with your training”
+                                </p>
+                                <span class="cs-name">Britney Allison</span>
+                                <span class="cs-job">Founder of Yokoloko</span>
+                                <!--Quote-->
+                                <img class="cs-quote" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black-quotes.svg" alt="quotes" width="97" height="80" aria-hidden="true">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blaze-slide">
+                        <div class="cs-flex-group">
+                            <div class="cs-review-group">
+                                <!--Stars-->
+                                <img class="cs-stars" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/stars-gym.svg" alt="quotes" width="97" height="80" aria-hidden="true">
+                                <p class="cs-review-text">
+                                    ”Great gym! A new gym with modern equipment and facilities makes training so much easier. Always willing to help you with your training”
+                                </p>
+                                <span class="cs-name">Britney Allison</span>
+                                <span class="cs-job">Founder of Yokoloko</span>
+                                <!--Quote-->
+                                <img class="cs-quote" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black-quotes.svg" alt="quotes" width="97" height="80" aria-hidden="true">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="blaze-nav">
+                    <div class="blaze-pagination"></div>
+                </div>
+                </div>
+            </div>
+            <!--Slider Initialization Script-->
+            <script>
+                const el = document.querySelector('.blaze-slider')
+                new BlazeSlider(el)
+            </script>
+            <a href="{{ client.google_review }}" class="cs-button-solid" target="_blank">See More Reviews</a>
+        </div>
+        <!--Texture Graphic-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 1023px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dotted-texture-m.png">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 1024px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dotted-texture.png">
+            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dotted-texture.png" alt="dotted texture" width="1920" height="600">
+        </picture>
+    </section> 
+
+    <!-- ============================================ -->
+    <!--                    Team                      -->
+    <!-- ============================================ -->
+
+    <section id="meet-team-2071">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Our Team</span>
+                <h2 class="cs-title">Meet The Team Behind Bespoke Web Design</h2>
+                <p class="cs-text">
+                    Our team is made up of experienced professionals who are passionate about helping businesses succeed. From our lead designer, [Name], to our project manager, [Name], we work collaboratively to bring your vision to life.
+                </p>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <span class="cs-name">Dr. Ronald Richards</span>
+                    <div class="cs-flex">
+                        <span class="cs-job">Dental Surgeon</span>
+                        <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-name">Dr. Cameron Williamson</span>
+                    <div class="cs-flex">
+                        <span class="cs-job">Dental Surgeon</span>
+                        <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-name">Dr. Brooklyn Simmons</span>
+                    <div class="cs-flex">
+                        <span class="cs-job">Dental Surgeon</span>
+                        <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-name">Dr. Savannah Nguyen</span>
+                    <div class="cs-flex">
+                        <span class="cs-job">Dental Surgeon</span>
+                        <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-name">Dr. Albert Flores</span>
+                    <div class="cs-flex">
+                        <span class="cs-job">Dental Surgeon</span>
+                        <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-name">Dr. Eleanor Pena</span>
+                    <div class="cs-flex">
+                        <span class="cs-job">Dental Surgeon</span>
+                        <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-name">Dr. Dianne Russell</span>
+                    <div class="cs-flex">
+                        <span class="cs-job">Dental Surgeon</span>
+                        <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-name">Dr. Darlene Robertson</span>
+                    <div class="cs-flex">
+                        <span class="cs-job">Dental Surgeon</span>
+                        <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dentist-staff.jpeg">
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dentist-staff.jpeg">
+            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dentist-staff.jpeg" alt="dentist staff" width="1024" height="894">
+        </picture>
+    </section>
+
+{% include "components/cta.html" %}
+
+                                
+{% endblock %}
