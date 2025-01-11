@@ -1,8 +1,8 @@
 {
-    "name": "Bespoke Pumbling Template",
-    "email": "help@codestitch.app",
-    "phoneForTel": "555-123-4567",
-    "phoneFormatted": "(555) 123-4567",
+    "name": "KMS Pumbling",
+    "email": "info@kmsplumbingyeg.com",
+    "phoneForTel": "+15873404059",
+    "phoneFormatted": "(587) 340-4059",
     "address": {
         "lineOne": "Edmonton, Alberta CA",
         "lineTwo": "",
@@ -13,12 +13,12 @@
         "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d303582.86066459614!2d-113.49273724999999!3d53.526680549999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a0224580deff23%3A0x411fa00c4af6155d!2sEdmonton%2C%20AB%2C%20Canada!5e0!3m2!1sen!2sph!4v1736066642090!5m2!1sen!2sph"
     },
     "social": {
-        "facebook": "https://www.facebook.com/",
+        "facebook": "https://www.facebook.com/KMSPlumbingyeg/",
         "twitter": "https://twitter.com/",
-        "instagram": "https://www.instagram.com/",
+        "instagram": "https://www.instagram.com/kmsplumbing/",
         "youtube": "https://www.youtube.com/"
     },
-    "domain": "https://bespoke-pumbling-template.netlify.app",
+    "domain": "https://kms-pumbling-draft.netlify.app",
     "logo_url": "/assets/images/main_logo.png",
-    "google_review": "https://www.google.com/search?q=bespoke+web+design+edmonton&sca_esv=9a5e7dbe56d12357&rlz=1C1KNTJ_enPH1072PH1072&sxsrf=ADLYWIKOzMbIJyDJ6ANo7bsG_0ZgbInw0Q%3A1733759051084&ei=SxBXZ_bwBLXi2roP57CGsAQ&ved=0ahUKEwi2wvbig5uKAxU1sVYBHWeYAUYQ4dUDCA8&uact=5&oq=bespoke+web+design+edmonton&gs_lp=Egxnd3Mtd2l6LXNlcnAiG2Jlc3Bva2Ugd2ViIGRlc2lnbiBlZG1vbnRvbjIGEAAYFhgeMgsQABiABBiGAxiKBTILEAAYgAQYhgMYigUyCxAAGIAEGIYDGIoFMggQABiABBiiBDIIEAAYgAQYogQyCBAAGIAEGKIESO4PULcDWOYNcAF4AZABAJgBoAGgAaIKqgEDMC45uAEDyAEA-AEBmAIKoAK9CsICChAAGLADGNYEGEfCAgQQIxgnwgIIEAAYFhgKGB7CAgUQABjvBZgDAIgGAZAGCJIHAzEuOaAH6DM&sclient=gws-wiz-serp#lrd=0x53a01d8d2e47f6d9:0x63f14fbe2f9eb50,1,,,,"
+    "google_review": "https://www.google.com/search?hl=en-PH&gl=ph&q=KMS+Plumbing+%26+Gasfitting&ludocid=11240253190258795075&lsig=AB86z5U2-QCyOc8rECFsZoBqDgB_#lrd=0x53a03db06a8cbb61:0x9bfd66b91ed3a243,1,,,,"
 }
