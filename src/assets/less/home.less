@@ -200,8 +200,9 @@
             width: 100%;
             margin: 0;
             padding: 0;
-            display: grid;
-            grid-template-columns: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: (20/16rem);
         }
 
@@ -224,7 +225,6 @@
             width: (88/16rem);
             height: (88/16rem);
             margin-bottom: (24/16rem);
-            border: 1px solid #858585;
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -259,8 +259,8 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
     #steps-1172 {
-        .cs-card-group {
-            grid-template-columns: auto auto;
+        .cs-item {
+            width: 50%;
         }
     }
 }
@@ -272,8 +272,8 @@
             max-width: (1280/16rem);
         }
 
-        .cs-card-group {
-            grid-template-columns: auto auto auto auto auto;
+        .cs-item {
+            width: 33%;
         }
     }
 }
