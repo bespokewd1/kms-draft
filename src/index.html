@@ -555,6 +555,24 @@ eleventyNavigation:
             <a href="" class="cs-button-solid">View Gallery</a>
         </div>
     </section>
+
+    <!-- ============================================ -->
+    <!--                   Collabs                    -->
+    <!-- ============================================ -->
+
+    <section id="gallery-45">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Collaboration</span>
+                <h2 class="cs-title">Association & Memberships</h2>
+            </div>
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="{{ client.domain }}/assets/images/collabs.png">
+                <source media="(min-width: 601px)" srcset="{{ client.domain }}/assets/images/collabs.png">
+                <img loading="lazy" decoding="async" src="{{ client.domain }}/assets/images/collabs.png" alt="colalbsH" width="745" height="79">
+            </picture>
+        </div>
+    </section>  
                                 
     <!-- ============================================ -->
     <!--                    Blog                      -->
@@ -657,24 +675,6 @@ eleventyNavigation:
             </div>
         </div>
     </section>
-
-    <!-- ============================================ -->
-    <!--                   Collabs                    -->
-    <!-- ============================================ -->
-
-    <section id="gallery-45">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Collaboration</span>
-                <h2 class="cs-title">Association & Memberships</h2>
-            </div>
-            <picture class="cs-picture">
-                <source media="(max-width: 600px)" srcset="{{ client.domain }}/assets/images/collabs.png">
-                <source media="(min-width: 601px)" srcset="{{ client.domain }}/assets/images/collabs.png">
-                <img loading="lazy" decoding="async" src="{{ client.domain }}/assets/images/collabs.png" alt="colalbsH" width="745" height="79">
-            </picture>
-        </div>
-    </section>  
 
     {% include "components/cta.html" %}
                                                               
