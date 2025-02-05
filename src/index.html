@@ -4,16 +4,16 @@ description: "The main branch of the advanced starter kit. Contains a basic 11ty
 additional functionality. Similar to our Intermediate Kits."
 permalink: '/'
 eleventyNavigation:
-    key: 'Home'
-    order: '100'
+key: 'Home'
+order: '100'
 ---
 
 {% block head %}
-    <link rel="stylesheet" href="{{ client.domain }}/assets/css/home.css">
+<link rel="stylesheet" href="{{ client.domain }}/assets/css/home.css">
 
-     <!--          Blaze Assets        -->
-    <link rel="stylesheet" href="assets/css/blaze.css">
-    <script src="assets/js/blaze-slider.dev.js"></script>
+<!--          Blaze Assets        -->
+<link rel="stylesheet" href="assets/css/blaze.css">
+<script src="assets/js/blaze-slider.dev.js"></script>
 
 
 {% endblock %}
@@ -22,661 +22,784 @@ eleventyNavigation:
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    Hero                      -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
 
-    <section id="hero-227">
-        <div class="cs-container">
-            <div class="cs-flex-group">
-                <span class="cs-topper">mountain hiking society</span>
-                <h1 class="cs-title">Your Edmonton-Based Business</h1>
-                <p class="cs-text">
-                    Helping your business thrive in Edmonton and beyond with tailored services.
-                </p>
-                <a href="tel:{{ client.phoneForTel }}" class="cs-button-solid">Call Us Now</a>
-                <a href="" class="cs-button-transparent">
-                    <img class="cs-img" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg" alt="play icon" width="17" height="17" aria-hidden="true">
-                    Finance It
+<section id="hero-227">
+    <div class="cs-container">
+        <div class="cs-flex-group">
+            <span class="cs-topper">KMS Plumbing and Gasfitting</span>
+            <h1 class="cs-title">Top-Rated Plumbing Services in Edmonton</h1>
+            <p class="cs-text">
+                For over 10 years, KMS Plumbing & Gasfitting has been among the most trusted home service companies in
+                Edmonton. Owned and operated by a Red Seal certified plumber & gasfitter whose experience, knowledge &
+                expertise are applied to handle a full range of residential plumbing issues.
+            </p>
+            <a href="tel:{{ client.phoneForTel }}" class="cs-button-solid">Call Us Now</a>
+            <a href="" class="cs-button-transparent">
+                <img class="cs-img" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
+                    alt="play icon" width="17" height="17" aria-hidden="true">
+                Finance Available
+            </a>
+        </div>
+        <!--Service Cards-->
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <span class="cs-number">01</span>
+                    <h2 class="cs-h2">The KMS Difference</h2>
+                    <p class="cs-item-text">
+                        <span class="cs-small-text">- Regular training and certifications ensure our team stays updated
+                            on industry best practices.</span><br>
+                        <span class="cs-small-text">- We use top-rated products and sustainable processes to deliver
+                            efficient, eco-friendly solutions.</span>
+                    </p>
                 </a>
-            </div>
-            <!--Service Cards-->
-            <ul class="cs-card-group">
-                <li class="cs-item">
-                    <a class="cs-link" href="">
-                        <span class="cs-number">01</span>
-                        <h2 class="cs-h2">Efficiency Through Expertise</h2>
-                        <p class="cs-item-text">
-                            <span class="cs-small-text">- Regular training and certifications ensure our team stays updated on industry best practices.</span><br>
-                            <span class="cs-small-text">- We use top-rated products and sustainable processes to deliver efficient, eco-friendly solutions.</span>
-                        </p>
-                    </a>
-                </li>
-                <li class="cs-item">
-                    <a class="cs-link" href="">
-                        <span class="cs-number">02</span>
-                        <h2 class="cs-h2">Education for Homeowners</h2>
-                        <p class="cs-item-text">
-                            We help you understand: <br><br>
-                            <span class="cs-small-text">- Regular maintenance schedules.</span><br>
-                            <span class="cs-small-text">- Maintenance tips to extend system life.</span><br>
-                            <span class="cs-small-text">- How to address common issues and when to call a professional.</span>
-                        </p>
-                    </a>
-                </li>
-                <li class="cs-item">
-                    <a class="cs-link" href="">
-                        <span class="cs-number">03</span>
-                        <h2 class="cs-h2">Environmental Responsibility</h2>
-                        <p class="cs-item-text">
-                            <span class="cs-small-text">- Proud participants in the Energy Star program.</span><br>
-                            <span class="cs-small-text">- Eco-conscious waste disposal and sustainable product recommendations.</span>
-                        </p>
-                    </a>
-                </li>
-            </ul>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <span class="cs-number">02</span>
+                    <h2 class="cs-h2">Education for Homeowners</h2>
+                    <p class="cs-item-text">
+                        We help you understand: <br><br>
+                        <span class="cs-small-text">- Regular maintenance schedules.</span><br>
+                        <span class="cs-small-text">- Maintenance tips to extend system life.</span><br>
+                        <span class="cs-small-text">- How to address common issues and when to call a
+                            professional.</span>
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <span class="cs-number">03</span>
+                    <h2 class="cs-h2">Environmental Responsibility</h2>
+                    <p class="cs-item-text">
+                        <span class="cs-small-text">- Proud participants in the Energy Star program.</span><br>
+                        <span class="cs-small-text">- Eco-conscious waste disposal and sustainable product
+                            recommendations.</span>
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Background Image -->
+    <picture class="cs-picture">
+        <source media="(max-width: 600px)" srcset="{{ client.domain }}/assets/images/og_image.jpg">
+        <source media="(min-width: 601px)" srcset="{{ client.domain }}/assets/images/og_image.jpg">
+        <img decoding="async" src="{{ client.domain }}/assets/images/og_image.jpg" alt="mountains" width="2250"
+            height="1500" aria-hidden="true">
+    </picture>
+</section>
+
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-523">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Who We Are</span>
+            <h2 class="cs-title">KMS Plumbing & Gasfitting</h2>
+            <p class="cs-text">
+                We are a local Edmonton business offering services tailored to help other small businesses grow. Our
+                goal is to provide personalized and reliable services that set you apart in your industry. We take pride
+                in understanding your unique needs and delivering results that make a difference."
+            </p>
+            <a href="/about/" class="cs-button-solid">Read More</a>
         </div>
-
-        <!-- Background Image -->
-        <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="{{ client.domain }}/assets/images/og_image.jpg">
-            <source media="(min-width: 601px)" srcset="{{ client.domain }}/assets/images/og_image.jpg">
-            <img decoding="async" src="{{ client.domain }}/assets/images/og_image.jpg" alt="mountains" width="2250" height="1500" aria-hidden="true">
-        </picture>
-    </section>
-                                
-
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
-
-    <section id="sbs-523" >
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Who We Are</span>
-                <h2 class="cs-title">About KMS Plumbing & Gasfitting</h2>
-                <p class="cs-text">
-                    We are a local Edmonton business offering services tailored to help other small businesses grow. Our goal is to provide personalized and reliable services that set you apart in your industry. We take pride in understanding your unique needs and delivering results that make a difference."
-                </p>
-                <a href="/about/" class="cs-button-solid">Read More</a>
-            </div>
-            <div class="cs-image-group">
-                <!--Large Image-->
-                <picture class="cs-picture cs-picture-large">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting.jpeg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting.jpeg">
-                    <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting.jpeg" alt="lab" width="334" height="380">
-                </picture>
-                <!--Small Image-->
-                <picture class="cs-picture cs-picture-small">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting-women.jpeg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting-women.jpeg">
-                    <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting-women.jpeg" alt="lab" width="183" height="158">
-                </picture>
-            </div>
+        <div class="cs-image-group">
+            <!--Large Image-->
+            <picture class="cs-picture cs-picture-large">
+                <source media="(max-width: 600px)"
+                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting.jpeg">
+                <source media="(min-width: 601px)"
+                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting.jpeg">
+                <img aria-hidden="true" loading="lazy" decoding="async"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting.jpeg" alt="lab"
+                    width="334" height="380">
+            </picture>
+            <!--Small Image-->
+            <picture class="cs-picture cs-picture-small">
+                <source media="(max-width: 600px)"
+                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting-women.jpeg">
+                <source media="(min-width: 601px)"
+                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting-women.jpeg">
+                <img aria-hidden="true" loading="lazy" decoding="async"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting-women.jpeg"
+                    alt="lab" width="183" height="158">
+            </picture>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- ============================================ -->
-    <!--                  Services                    -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
 
-    <section id="services-1644">
-        <div class="cs-container">
-            <div id="cs-content-829">
+<section id="services-1644">
+    <div class="cs-container">
+        <div id="cs-content-829">
+            <div class="cs-flex">
+                <span class="cs-topper">Our Services</span>
+                <h2 class="cs-title">Our Expert Plumbing Services</h2>
+            </div>
+            <p class="cs-text">
+                At KMS Plumbing & Gasfitting, we offer a comprehensive range of plumbing solutions tailored to meet the
+                unique needs of Edmonton and nearby residents.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <img class="cs-icon" loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/checkmark-circle-gold.svg"
+                        alt="icon" width="48" height="48" aria-hidden="true">
+                </div>
                 <div class="cs-flex">
-                    <span class="cs-topper">Our Services</span>
-                    <h2 class="cs-title">Our Expert Plumbing Services</h2>
+                    <h2 class="cs-h2">Hot Water Solutions</h2>
+                    <p class="cs-item-text">
+                        - Installation, maintenance, and repair of hot water tanks
+                    </p>
+                    <p class="cs-item-text">
+                        - Tankless water systems (rebates available)
+                    </p>
                 </div>
-                <p class="cs-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempora nulla sit reprehenderit quod suscipit, soluta minus impedit libero dolor et aspernatur ratione blanditiis nihil!
-                </p>
-            </div>  
-            <ul class="cs-card-group">
-                <li class="cs-item">
-                    <div class="cs-image-group">
-                        <img class="cs-icon" loading="lazy" decoding="async"
-                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/checkmark-circle-gold.svg" alt="icon" width="48"
-                                height="48" aria-hidden="true">
-                    </div>
-                    <div class="cs-flex">
-                        <h2 class="cs-h2">Hot Water Solutions</h2>
-                        <p class="cs-item-text">
-                            - Installation, maintenance, and repair of hot water tanks
-                        </p>
-                        <p class="cs-item-text">
-                            - Tankless water systems (rebates available)
-                        </p>
-                    </div>
-                </li>
-                <li class="cs-item">
-                    <div class="cs-image-group">
-                        <img class="cs-icon" loading="lazy" decoding="async"
-                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/dashboard-gold.svg" alt="icon" width="48"
-                                height="48" aria-hidden="true">
-                    </div>
-                    <div class="cs-flex">
-                        <h2 class="cs-h2">Plumbing Repairs</h2>
-                        <p class="cs-item-text">
-                            - Fixing leaks
-                        </p>
-                        <p class="cs-item-text">
-                            - Unclogging drains and pipes
-                        </p>
-                        <p class="cs-item-text">
-                            - Backwater valve installation
-                        </p>
-                    </div>
-                </li>
-                <li class="cs-item">
-                    <div class="cs-image-group">
-                        <img class="cs-icon" loading="lazy" decoding="async"
-                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/Lifebuoy-gold.svg" alt="icon" width="48"
-                                height="48" aria-hidden="true">
-                    </div>
-                    <div class="cs-flex">
-                        <h2 class="cs-h2">Drain Cleaning & Maintenance</h2>
-                        <p class="cs-item-text">
-                            - Professional drain cleaning services
-                        </p>
-                        <p class="cs-item-text">
-                            - Prevention of blockages and sewer issues
-                        </p>
-                    </div>
-                </li>
-                <li class="cs-item">
-                    <div class="cs-image-group">
-                        <img class="cs-icon" loading="lazy" decoding="async"
-                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/Like-gold.svg" alt="icon" width="48"
-                                height="48" aria-hidden="true">
-                    </div>
-                    <div class="cs-flex">
-                        <h2 class="cs-h2">Fixture Installations</h2>
-                        <p class="cs-item-text">
-                            - Faucets, sinks, toilets, showers, and bathtubs
-                        </p>
-                    </div>
-                </li>
-            </ul>
-            <a href="/services/" class="cs-button-solid">Find Out About More Services</a>
-        </div>                            
-    </section>                  
-
-    <!-- ============================================ -->
-    <!--               Why Choose Us                  -->
-    <!-- ============================================ -->
-
-    <section id="steps-1172">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">We Guarantee</span>
-                <h2 class="cs-title">Why Edmonton chooses KMS? </h2>
-                <p class="cs-text">
-                    As this kit relies on merging different branches to get started, we'll need to do a few things first to ensure this happens smoothly and nothing gets missed.
-                </p>
-            </div>
-            <ul class="cs-card-group">
-                <li class="cs-item">
-                    <picture class="cs-picture">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="{{ client.domain }}/assets/images/red-seal.png" alt="red seal" width="100" height="100">
-                    </picture>
-                    <h3 class="cs-h3">Red Seal</h3>
-                </li>
-                <li class="cs-item">
-                    <picture class="cs-picture">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="{{ client.domain }}/assets/images/hassle-free.png" alt="hassle free" width="100" height="100">
-                    </picture>
-                    <h3 class="cs-h3">Hassle Free</h3>
-                </li>
-                <li class="cs-item">
-                    <picture class="cs-picture">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="{{ client.domain }}/assets/images/quality-work.png" alt="quality work" width="100" height="100">
-                    </picture>
-                    <h3 class="cs-h3">Quality Work</h3>
-                </li>     
-                <li class="cs-item">
-                    <picture class="cs-picture">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="{{ client.domain }}/assets/images/fast-response.png" alt="fast response" width="100" height="100">
-                    </picture>
-                    <h3 class="cs-h3">Fast Response</h3>
-                </li>  
-                <li class="cs-item">
-                    <picture class="cs-picture">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="{{ client.domain }}/assets/images/warranty.png" alt="warranty" width="100" height="100">
-                    </picture>
-                    <h3 class="cs-h3">Warranty</h3>
-                </li>                
-            </ul>
-            <a href="" class="cs-button-solid">Get Started</a>
-        </div>
-        <!--Tire Screech-->
-    </section>
-
-    <!-- ============================================ -->
-    <!--                Why Choose Us                 -->
-    <!-- ============================================ -->
-
-    <section id="why-choose-1657">
-        <div class="cs-container">
-            <div class="cs-content">
+            </li>
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <img class="cs-icon" loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/dashboard-gold.svg" alt="icon"
+                        width="48" height="48" aria-hidden="true">
+                </div>
                 <div class="cs-flex">
-                    <span class="cs-topper">Our Specialty</span>
-                    <h2 class="cs-title">Why Choose Us?</h2>
+                    <h2 class="cs-h2">Plumbing Repairs</h2>
+                    <p class="cs-item-text">
+                        - Fixing leaks
+                    </p>
+                    <p class="cs-item-text">
+                        - Unclogging drains and pipes
+                    </p>
+                    <p class="cs-item-text">
+                        - Backwater valve installation
+                    </p>
                 </div>
-                <ul class="cs-ul">
-                    <li class="cs-li">
-                        <span class="cs-number">Quality & Expertise</span>
-                        <p class="cs-li-text">
-                            Backed by 15+ years of experience, we deliver dependable workmanship and unparalleled customer service.
-                        </p>
-                    </li>
-                    <li class="cs-li">
-                        <span class="cs-number">Client Education:</span>
-                        <p class="cs-li-text">
-                            We empower homeowners with knowledge to maintain and prolong their plumbing systems' efficiency.
-                        </p>
-                    </li>
-                    <li class="cs-li">
-                        <span class="cs-number">Safety First</span>
-                        <p class="cs-li-text">
-                            Your household’s safety is our #1 priority, and we follow strict safety standards to ensure peace of mind.
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <div class="cs-wrapper">
-                <picture class="cs-picture">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting12.jpg">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting12.jpg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting12.jpg" alt="meeting" width="630" height="414">
-                </picture>
+            </li>
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <img class="cs-icon" loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/Lifebuoy-gold.svg" alt="icon"
+                        width="48" height="48" aria-hidden="true">
+                </div>
+                <div class="cs-flex">
+                    <h2 class="cs-h2">Drain Cleaning & Maintenance</h2>
+                    <p class="cs-item-text">
+                        - Professional drain cleaning services
+                    </p>
+                    <p class="cs-item-text">
+                        - Prevention of blockages and sewer issues
+                    </p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <img class="cs-icon" loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/Like-gold.svg" alt="icon"
+                        width="48" height="48" aria-hidden="true">
+                </div>
+                <div class="cs-flex">
+                    <h2 class="cs-h2">Fixture Installations</h2>
+                    <p class="cs-item-text">
+                        - Faucets, sinks, toilets, showers, and bathtubs
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <a href="/services/" class="cs-button-solid">Find Out About More Services</a>
+    </div>
+</section>
 
-                <p class="cs-review">
-                    <strong>Our Commitment to Safety</strong><br>
-                    We exceed industry standards by:<br>
-                    <span class="cs-small-text">- Using high-quality materials and secure licensed subcontractors</span><br>
-                    <span class="cs-small-text">- Conducting hazard assessments to identify and mitigate potential risks (e.g., asbestos, electrical hazards)</span><br>
-                    <span class="cs-small-text">- Adhering to the latest safety protocols, including the National Plumbing Code (NPC 2019) and WHMIS regulations</span><br>
-                    <span class="cs-small-text">- Utilizing PPE and maintaining safe work practices on every job</span>
+<!-- ============================================ -->
+<!--               Why Choose Us                  -->
+<!-- ============================================ -->
+
+<section id="steps-1172">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">We Guarantee</span>
+            <h2 class="cs-title">Why Edmonton chooses KMS? </h2>
+            <p class="cs-text">
+                As this kit relies on merging different branches to get started, we'll need to do a few things first to
+                ensure this happens smoothly and nothing gets missed.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" loading="lazy" decoding="async"
+                        src="{{ client.domain }}/assets/images/red-seal.png" alt="red seal" width="100" height="100">
+                </picture>
+                <h3 class="cs-h3">Red Seal</h3>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" loading="lazy" decoding="async"
+                        src="{{ client.domain }}/assets/images/hassle-free.png" alt="hassle free" width="100"
+                        height="100">
+                </picture>
+                <h3 class="cs-h3">Hassle Free</h3>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" loading="lazy" decoding="async"
+                        src="{{ client.domain }}/assets/images/quality-work.png" alt="quality work" width="100"
+                        height="100">
+                </picture>
+                <h3 class="cs-h3">Quality Work</h3>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" loading="lazy" decoding="async"
+                        src="{{ client.domain }}/assets/images/fast-response.png" alt="fast response" width="100"
+                        height="100">
+                </picture>
+                <h3 class="cs-h3">Fast Response</h3>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" loading="lazy" decoding="async"
+                        src="{{ client.domain }}/assets/images/warranty.png" alt="warranty" width="100" height="100">
+                </picture>
+                <h3 class="cs-h3">Warranty</h3>
+            </li>
+        </ul>
+        <a href="" class="cs-button-solid">Get Started</a>
+    </div>
+    <!--Tire Screech-->
+</section>
+
+<!-- ============================================ -->
+<!--                Why Choose Us                 -->
+<!-- ============================================ -->
+
+<section id="why-choose-1657">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Our Specialty</span>
+                <h2 class="cs-title">Why Choose Us?</h2>
+            </div>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <span class="cs-number">Quality & Expertise</span>
+                    <p class="cs-li-text">
+                        Backed by 15+ years of experience, we deliver dependable workmanship and unparalleled customer
+                        service.
+                    </p>
+                </li>
+                <li class="cs-li">
+                    <span class="cs-number">Client Education:</span>
+                    <p class="cs-li-text">
+                        We empower homeowners with knowledge to maintain and prolong their plumbing systems' efficiency.
+                    </p>
+                </li>
+                <li class="cs-li">
+                    <span class="cs-number">Safety First</span>
+                    <p class="cs-li-text">
+                        Your household’s safety is our #1 priority, and we follow strict safety standards to ensure
+                        peace of mind.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-wrapper">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)"
+                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting12.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)"
+                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting12.jpg">
+                <img loading="lazy" decoding="async"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting12.jpg" alt="meeting"
+                    width="630" height="414">
+            </picture>
+
+            <p class="cs-review">
+                <strong>Our Commitment to Safety</strong><br>
+                We exceed industry standards by:<br>
+                <span class="cs-small-text">- Using high-quality materials and secure licensed subcontractors</span><br>
+                <span class="cs-small-text">- Conducting hazard assessments to identify and mitigate potential risks
+                    (e.g., asbestos, electrical hazards)</span><br>
+                <span class="cs-small-text">- Adhering to the latest safety protocols, including the National Plumbing
+                    Code (NPC 2019) and WHMIS regulations</span><br>
+                <span class="cs-small-text">- Utilizing PPE and maintaining safe work practices on every job</span>
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section id="sbsr-1309">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <div class="cs-image-group">
+            <!--Floating Box-->
+            <div class="cs-box">
+                <span class="cs-desc">Building a better website, together</span>
+            </div>
+            <!--Image-->
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)"
+                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/tax1.jpg">
+                <source media="(min-width: 601px)"
+                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/tax1.jpg">
+                <img loading="lazy" decoding="async"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/tax1.jpg" alt="meeting" width="630"
+                    height="630" aria-hidden="true">
+            </picture>
+        </div>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">Help & Support</span>
+            <h2 class="cs-title">Guidance every step of the way</h2>
+            <p class="cs-text">Outside of a cool new feature, each branch comes with an introductory landing page (just
+                like this one) and a branch-specific README. The landing page gives you a quick overview of the branch,
+                with the README providing more technical details should you wish to expand.</p>
+            <p class="cs-text">Additionally, all project-critical actions that need to be taken have a comment
+                containing "CS-TODO". After merging in your branches, you can search the codebase for "CS-TODO", find
+                the most important changes that need to be made, and action them effortlessly.</p>
+            <p class="cs-text">Finally, if you are still stuck or find a bug in the kit, you can use the CTAs in the
+                header to get directly in touch with the kit creators, or reach out to a community of hundreds of other
+                developers.</p>
+            <p class="cs-text">The kit continues to be supported going forward, with a complete set of tutorial videos
+                and additional feature branches planned in the very near future. Follow our subreddit to stay up to
+                date!</p>
+            <a class="cs-button-solid" aria-label="learn more about our programs" href="">Learn More</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                     FAQ                      -->
+<!-- ============================================ -->
+
+<section id="faq-351">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Asked questions</span>
+            <h2 class="cs-title">Frequently Asked Questions</h2>
+        </div>
+        <ul class="cs-faq-group">
+            <!-- Active class added as default -->
+            <li class="cs-faq-item active">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        What services does KMS Plumbing & Gasfitting offer?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    We provide a comprehensive range of residential plumbing services, including bathroom renovations,
+                    drain cleaning and repair, sewer backup repair, hot water tank and tankless water system
+                    installations, and hydronic in-floor heating solutions.
                 </p>
-            </div>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Who will perform the plumbing work in my home?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    All services are performed by a Red Seal certified plumber and gasfitter, ensuring that work is
+                    completed according to Alberta's jurisdictional codes and standards.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Are there any hidden fees or travel charges?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    No, we offer honest, flat-rate pricing with no hidden fees, travel charges, or call-out fees. Our
+                    pricing is transparent, and we even offer a price beat guarantee if you provide a competitor's
+                    quote.
+                </p>
+            </li>
+        </ul>
+        <!--Added second UL, this allows you to open an FAQ item on each side without messing up the flexbox for the other -->
+        <ul class="cs-faq-group">
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Do you offer financing options for your services?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Yes, we provide financing options to help manage the cost of your plumbing projects. You can learn
+                    more about our financing through Financeit.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        How can I schedule a service or get a free estimate?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    You can book your free estimate or schedule a service by visiting our online booking page. We strive
+                    to arrive on time with the necessary tools and expertise to complete the job efficiently.
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Reviews                     -->
+<!-- ============================================ -->
+
+<section id="reviews-1833">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Testimonials</span>
+            <h2 class="cs-title">Our Members Testimonials</h2>
         </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--             Side By Side Reverse             -->
-    <!-- ============================================ -->
-
-    <section id="sbsr-1309">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-image-group">
-                <!--Floating Box-->
-                <div class="cs-box">
-                    <span class="cs-desc">Building a better website, together</span>
-                </div>
-                <!--Image-->
-                <picture class="cs-picture">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/tax1.jpg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/tax1.jpg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/tax1.jpg" alt="meeting" width="630" height="630" aria-hidden="true">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-content">
-                <span class="cs-topper">Help & Support</span>
-                <h2 class="cs-title">Guidance every step of the way</h2>
-                <p class="cs-text">Outside of a cool new feature, each branch comes with an introductory landing page (just like this one) and a branch-specific README. The landing page gives you a quick overview of the branch, with the README providing more technical details should you wish to expand.</p>
-                <p class="cs-text">Additionally, all project-critical actions that need to be taken have a comment containing "CS-TODO". After merging in your branches, you can search the codebase for "CS-TODO", find the most important changes that need to be made, and action them effortlessly.</p>
-                <p class="cs-text">Finally, if you are still stuck or find a bug in the kit, you can use the CTAs in the header to get directly in touch with the kit creators, or reach out to a community of hundreds of other developers.</p>
-                <p class="cs-text">The kit continues to be supported going forward, with a complete set of tutorial videos and additional feature branches planned in the very near future. Follow our subreddit to stay up to date!</p>
-                <a class="cs-button-solid" aria-label="learn more about our programs" href="">Learn More</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                     FAQ                      -->
-    <!-- ============================================ -->
-
-    <section id="faq-351">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Asked questions</span>
-                <h2 class="cs-title">Frequently Asked Questions</h2>
-            </div>
-            <ul class="cs-faq-group">
-                <!-- Active class added as default -->
-                <li class="cs-faq-item active">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            How much are house cleaning services?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        Some 
-                    </p>
-                </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            What is your plan cancellation policy?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
-                    </p>
-                </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            How long should a house cleaning take?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
-                    </p>
-                </li>
-            </ul>
-            <!--Added second UL, this allows you to open an FAQ item on each side without messing up the flexbox for the other -->
-            <ul class="cs-faq-group">
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            How much are house cleaning services?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        Some cleaning plans require a minimum commitment term. Cancelling your plan before the minimum term is complete will result in a $99 fee. If you want to learn more information about how to cancel, please inbox us.
-                    </p>
-                </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            What is your plan cancellation policy?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
-                    </p>
-                </li>
-            </ul>
-        </div>
-    </section>
-    
-    <!-- ============================================ -->
-    <!--                  Reviews                     -->
-    <!-- ============================================ -->
-
-    <section id="reviews-1833">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Testimonials</span>
-                <h2 class="cs-title">Our Members Testimonials</h2>
-            </div>
-            <div class="blaze-slider">
-                <div class="blaze-container">
+        <div class="blaze-slider">
+            <div class="blaze-container">
                 <div class="blaze-track-container">
                     <div class="blaze-track">
-                    <div class="blaze-slide">
-                        <div class="cs-flex-group">
-                            <div class="cs-review-group">
-                                <!--Stars-->
-                                <img class="cs-stars" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/stars-gym.svg" alt="quotes" width="97" height="80" aria-hidden="true">
-                                <p class="cs-review-text">
-                                    ”Great gym! A new gym with modern equipment and facilities makes training so much easier. Always willing to help you with your training”
-                                </p>
-                                <span class="cs-name">Britney Allison</span>
-                                <span class="cs-job">Founder of Yokoloko</span>
-                                <!--Quote-->
-                                <img class="cs-quote" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black-quotes.svg" alt="quotes" width="97" height="80" aria-hidden="true">
+                        <div class="blaze-slide">
+                            <div class="cs-flex-group">
+                                <div class="cs-review-group">
+                                    <!--Stars-->
+                                    <img class="cs-stars" loading="lazy" decoding="async"
+                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/stars-gym.svg"
+                                        alt="quotes" width="97" height="80" aria-hidden="true">
+                                    <p class="cs-review-text">
+                                        ”We worked with Jack at KMS when we had our basement contracted. He did all the
+                                        plumbing for our basement bathroom. He provides high quality work and very
+                                        pleasant to work with. When we had an issue, he came out same day and kept in
+                                        contact with me to ensure it got completed. He even followed up to ensure all
+                                        was working well. I would hire again.”
+                                    </p>
+                                    <span class="cs-name">Miles McMillan</span>
+                                    <span class="cs-job">from Google Reviews</span>
+                                    <!--Quote-->
+                                    <img class="cs-quote" loading="lazy" decoding="async"
+                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black-quotes.svg"
+                                        alt="quotes" width="97" height="80" aria-hidden="true">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="blaze-slide">
-                        <div class="cs-flex-group">
-                            <div class="cs-review-group">
-                                <!--Stars-->
-                                <img class="cs-stars" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/stars-gym.svg" alt="quotes" width="97" height="80" aria-hidden="true">
-                                <p class="cs-review-text">
-                                    ”Great gym! A new gym with modern equipment and facilities makes training so much easier. Always willing to help you with your training”
-                                </p>
-                                <span class="cs-name">Britney Allison</span>
-                                <span class="cs-job">Founder of Yokoloko</span>
-                                <!--Quote-->
-                                <img class="cs-quote" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black-quotes.svg" alt="quotes" width="97" height="80" aria-hidden="true">
+                        <div class="blaze-slide">
+                            <div class="cs-flex-group">
+                                <div class="cs-review-group">
+                                    <!--Stars-->
+                                    <img class="cs-stars" loading="lazy" decoding="async"
+                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/stars-gym.svg"
+                                        alt="quotes" width="97" height="80" aria-hidden="true">
+                                    <p class="cs-review-text">
+                                        ”Jack installed a new faucet and some upgraded sink components for us; the
+                                        service and workmanship were fantastic. He was very thorough in assessing our
+                                        needs/expectations prior to the job; the customer service was excellent
+                                        throughout our experience. I highly recommend KMS Plumbing.”
+                                    </p>
+                                    <span class="cs-name">Dave O.</span>
+                                    <span class="cs-job">from Google Reviews</span>
+                                    <!--Quote-->
+                                    <img class="cs-quote" loading="lazy" decoding="async"
+                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black-quotes.svg"
+                                        alt="quotes" width="97" height="80" aria-hidden="true">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="blaze-slide">
-                        <div class="cs-flex-group">
-                            <div class="cs-review-group">
-                                <!--Stars-->
-                                <img class="cs-stars" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/stars-gym.svg" alt="quotes" width="97" height="80" aria-hidden="true">
-                                <p class="cs-review-text">
-                                    ”Great gym! A new gym with modern equipment and facilities makes training so much easier. Always willing to help you with your training”
-                                </p>
-                                <span class="cs-name">Britney Allison</span>
-                                <span class="cs-job">Founder of Yokoloko</span>
-                                <!--Quote-->
-                                <img class="cs-quote" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black-quotes.svg" alt="quotes" width="97" height="80" aria-hidden="true">
+                        <div class="blaze-slide">
+                            <div class="cs-flex-group">
+                                <div class="cs-review-group">
+                                    <!--Stars-->
+                                    <img class="cs-stars" loading="lazy" decoding="async"
+                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/stars-gym.svg"
+                                        alt="quotes" width="97" height="80" aria-hidden="true">
+                                    <p class="cs-review-text">
+                                        ”I just had my hot water tank replacement completed by Jack Kumar of KMS
+                                        Plumbing & Gas fitting. Prior to this job, Jack had replaced a toilet for us and
+                                        completed a hot water tank replacement for a senior friend of ours. As usual,
+                                        Jack is on time and professional. His workmanship is great. Housekeeping is
+                                        excellent. Pricing is reasonable. Thanks for your service Jack.”
+                                    </p>
+                                    <span class="cs-name">Alex Chan</span>
+                                    <span class="cs-job">From Google Reviews</span>
+                                    <!--Quote-->
+                                    <img class="cs-quote" loading="lazy" decoding="async"
+                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black-quotes.svg"
+                                        alt="quotes" width="97" height="80" aria-hidden="true">
+                                </div>
                             </div>
                         </div>
-                    </div>
                     </div>
                 </div>
                 <div class="blaze-nav">
                     <div class="blaze-pagination"></div>
                 </div>
-                </div>
             </div>
-            <!--Slider Initialization Script-->
-            <script>
-                const el = document.querySelector('.blaze-slider')
-                new BlazeSlider(el)
-            </script>
-            <a href="{{ client.google_review }}" class="cs-button-solid" target="_blank">See More Reviews</a>
         </div>
-        <!--Texture Graphic-->
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 1023px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dotted-texture-m.png">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 1024px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dotted-texture.png">
-            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dotted-texture.png" alt="dotted texture" width="1920" height="600">
-        </picture>
-    </section> 
+        <!--Slider Initialization Script-->
+        <script>
+            const el = document.querySelector('.blaze-slider')
+            new BlazeSlider(el)
+        </script>
+        <a href="{{ client.google_review }}" class="cs-button-solid" target="_blank">See More Reviews</a>
+    </div>
+    <!--Texture Graphic-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 1023px)"
+            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dotted-texture-m.png">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 1024px)"
+            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dotted-texture.png">
+        <img loading="lazy" decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dotted-texture.png" alt="dotted texture"
+            width="1920" height="600">
+    </picture>
+</section>
 
-    <!-- ============================================ -->
-    <!--              Regular  Gallery                -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--              Regular  Gallery                -->
+<!-- ============================================ -->
 
-    <section id="gallery-973" class="cs-section-breaker">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Our Portfolio</span>
-                <h2 class="cs-title">Some Work from Our Memorable Gallery</h2>
-                <p class="cs-text">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti repudiandae consectetur maiores nostrum ratione atque itaque earum, in officiis quod hic quidem voluptas. Illum velit delectus optio modi molestiae eius?
-                </p>
-            </div>
-            <div class="cs-gallery">
-                <!--Picture 1-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair10.jpg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair10.jpg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair10.jpg" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 2-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair11.jpg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair11.jpg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair11.jpg" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 3-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair12.jpg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair12.jpg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair12.jpg" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 4-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair14.jpg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair14.jpg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair14.jpg" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 5-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair15.jpg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair15.jpg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair15.jpg" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 6-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair16.jpg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair16.jpg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair16.jpg" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 7-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair17.jpg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair17.jpg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair17.jpg" alt="gallery" width="305" height="400">
-                </picture>
-                <!--Picture 8-->
-                <picture class="cs-image">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair13.jpg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair13.jpg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair13.jpg" alt="gallery" width="305" height="400">
-                </picture>
-            </div>
-            <a href="" class="cs-button-solid">View Gallery</a>
+<section id="gallery-973" class="cs-section-breaker">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Portfolio</span>
+            <h2 class="cs-title">Some Work from Our Memorable Gallery</h2>
+            <p class="cs-text">
+                Take a look at some of our successful projects in plumbing, gas fitting, and related services. From
+                residential installations to large-scale commercial systems, we take pride in delivering quality and
+                reliable results for our clients.
+            </p>
         </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Collabs                    -->
-    <!-- ============================================ -->
-
-    <section id="gallery-45">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Collaboration</span>
-                <h2 class="cs-title">Association & Memberships</h2>
-            </div>
-            <picture class="cs-picture">
-                <source media="(max-width: 600px)" srcset="{{ client.domain }}/assets/images/collabs.png">
-                <source media="(min-width: 601px)" srcset="{{ client.domain }}/assets/images/collabs.png">
-                <img loading="lazy" decoding="async" src="{{ client.domain }}/assets/images/collabs.png" alt="colalbsH" width="745" height="79">
+        <div class="cs-gallery">
+            <!--Picture 1-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)"
+                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair10.jpg">
+                <source media="(min-width: 601px)"
+                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair10.jpg">
+                <img loading="lazy" decoding="async"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair10.jpg" alt="gallery"
+                    width="305" height="400">
+            </picture>
+            <!--Picture 2-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)"
+                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair11.jpg">
+                <source media="(min-width: 601px)"
+                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair11.jpg">
+                <img loading="lazy" decoding="async"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair11.jpg" alt="gallery"
+                    width="305" height="400">
+            </picture>
+            <!--Picture 3-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)"
+                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair12.jpg">
+                <source media="(min-width: 601px)"
+                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair12.jpg">
+                <img loading="lazy" decoding="async"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair12.jpg" alt="gallery"
+                    width="305" height="400">
+            </picture>
+            <!--Picture 4-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)"
+                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair14.jpg">
+                <source media="(min-width: 601px)"
+                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair14.jpg">
+                <img loading="lazy" decoding="async"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair14.jpg" alt="gallery"
+                    width="305" height="400">
+            </picture>
+            <!--Picture 5-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)"
+                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair15.jpg">
+                <source media="(min-width: 601px)"
+                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair15.jpg">
+                <img loading="lazy" decoding="async"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair15.jpg" alt="gallery"
+                    width="305" height="400">
+            </picture>
+            <!--Picture 6-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)"
+                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair16.jpg">
+                <source media="(min-width: 601px)"
+                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair16.jpg">
+                <img loading="lazy" decoding="async"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair16.jpg" alt="gallery"
+                    width="305" height="400">
+            </picture>
+            <!--Picture 7-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)"
+                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair17.jpg">
+                <source media="(min-width: 601px)"
+                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair17.jpg">
+                <img loading="lazy" decoding="async"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair17.jpg" alt="gallery"
+                    width="305" height="400">
+            </picture>
+            <!--Picture 8-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)"
+                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair13.jpg">
+                <source media="(min-width: 601px)"
+                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair13.jpg">
+                <img loading="lazy" decoding="async"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair13.jpg" alt="gallery"
+                    width="305" height="400">
             </picture>
         </div>
-    </section>  
-                                
-    <!-- ============================================ -->
-    <!--                    Blog                      -->
-    <!-- ============================================ -->
+        <a href="" class="cs-button-solid">View Gallery</a>
+    </div>
+</section>
 
-    <section id="blog-1701">
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)"
-                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting-women.jpeg">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 601px)"
-                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting-women.jpeg">
-            <img loading="lazy" decoding="async"
-                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting-women.jpeg"
-                    alt="busines meeting" width="522" height="609" aria-hidden="true">
-        </picture>
-        <div class="cs-container">
-            <div class="cs-news">
-                <div class="cs-content">
-                    <span class="cs-topper">Our Blog</span>
-                    <h2 class="cs-title">Latest News</h2>
-                </div>
-                <div class="cs-card-group">
-                    <div class="cs-item">
-                        <picture class="cs-picture">
-                            <source media="(max-width: 600px)"
-                                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-news-one.png">
-                            <source media="(min-width: 601px)"
-                                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-news-one.png">
-                            <img loading="lazy" decoding="async"
-                                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-news-one.png"
-                                    alt="volunteers" width="630" height="601" aria-hidden="true">
-                        </picture>
-                        <div class="cs-item-text">
-                            <h3 class="cs-h3">With more than 100 highly experienced professionals averaging 29+ years of experience.
-                            </h3>
-                            <p class="cs-desc">
-                                In industry best practices and lessons learned, we provide value-added services and solutions to a wide variety of industry, both onshore and offshore.
-                            </p>
-                            <a href="" class="cs-link">
-                                <span class="cs-link-text">Get Direction</span>
-                                <img class="cs-arrow" loading="lazy" decoding="async"
-                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-arrow-right.svg"
-                                        alt="icon" width="20" height="20" aria-hidden="true" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="cs-item">
-                        <picture class="cs-picture">
-                            <source media="(max-width: 600px)"
-                                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-news-two.png">
-                            <source media="(min-width: 601px)"
-                                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-news-two.png">
-                            <img loading="lazy" decoding="async"
-                                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-news-two.png"
-                                    alt="volunteers" width="630" height="601" aria-hidden="true">
-                        </picture>
-                        <div class="cs-item-text">
-                            <h3 class="cs-h3">
-                                Consulting and training firm that specializes in process safety, risk management, occupational health
-                            </h3>
-                            <p class="cs-desc">
-                                Risk management, occupational health and safety, fire protection, emergency and crisis management, and security risk management.
-                            </p>
-                            <a href="" class="cs-link">
-                                <span class="cs-link-text">Get Direction</span>
-                                <img class="cs-arrow" loading="lazy" decoding="async"
-                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-arrow-right.svg"
-                                        alt="icon" width="20" height="20" aria-hidden="true" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="cs-item">
-                        <picture class="cs-picture">
-                            <source media="(max-width: 600px)"
-                                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-news-three.png">
-                            <source media="(min-width: 601px)"
-                                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-news-three.png">
-                            <img loading="lazy" decoding="async"
-                                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-news-three.png"
-                                    alt="volunteers" width="630" height="601" aria-hidden="true">
-                        </picture>
-                        <div class="cs-item-text">
-                            <h3 class="cs-h3">With more than 100 highly experienced professionals averaging 29+ years of experience.
-                            </h3>
-                            <p class="cs-desc">
-                                In industry best practices and lessons learned, we provide value-added services and solutions to a wide variety of industry, both onshore and offshore.
-                            </p>
-                            <a href="" class="cs-link">
-                                <span class="cs-link-text">Get Direction</span>
-                                <img class="cs-arrow" loading="lazy" decoding="async"
-                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-arrow-right.svg"
-                                        alt="icon" width="20" height="20" aria-hidden="true" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <a href="" class="cs-button-solid">Read More of Our Blog</a>
-            </div>
+<!-- ============================================ -->
+<!--                   Collabs                    -->
+<!-- ============================================ -->
+
+<section id="gallery-45">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Collaboration</span>
+            <h2 class="cs-title">Association & Memberships</h2>
         </div>
-    </section>
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="{{ client.domain }}/assets/images/collabs.png">
+            <source media="(min-width: 601px)" srcset="{{ client.domain }}/assets/images/collabs.png">
+            <img loading="lazy" decoding="async" src="{{ client.domain }}/assets/images/collabs.png" alt="colalbsH"
+                width="745" height="79">
+        </picture>
+    </div>
+</section>
 
-    {% include "components/cta.html" %}
-                                                              
+<!-- ============================================ -->
+<!--                    Blog                      -->
+<!-- ============================================ -->
+
+<section id="blog-1701">
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)"
+            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting-women.jpeg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)"
+            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting-women.jpeg">
+        <img loading="lazy" decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting-women.jpeg"
+            alt="busines meeting" width="522" height="609" aria-hidden="true">
+    </picture>
+    <div class="cs-container">
+        <div class="cs-news">
+            <div class="cs-content">
+                <span class="cs-topper">Our Blog</span>
+                <h2 class="cs-title">Latest News</h2>
+            </div>
+            <div class="cs-card-group">
+                <div class="cs-item">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-news-one.png">
+                        <source media="(min-width: 601px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-news-one.png">
+                        <img loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-news-one.png"
+                            alt="volunteers" width="630" height="601" aria-hidden="true">
+                    </picture>
+                    <div class="cs-item-text">
+                        <h3 class="cs-h3">With more than 100 highly experienced professionals averaging 29+ years of
+                            experience.
+                        </h3>
+                        <p class="cs-desc">
+                            In industry best practices and lessons learned, we provide value-added services and
+                            solutions to a wide variety of industry, both onshore and offshore.
+                        </p>
+                        <a href="" class="cs-link">
+                            <span class="cs-link-text">Get Direction</span>
+                            <img class="cs-arrow" loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-arrow-right.svg"
+                                alt="icon" width="20" height="20" aria-hidden="true" />
+                        </a>
+                    </div>
+                </div>
+                <div class="cs-item">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-news-two.png">
+                        <source media="(min-width: 601px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-news-two.png">
+                        <img loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-news-two.png"
+                            alt="volunteers" width="630" height="601" aria-hidden="true">
+                    </picture>
+                    <div class="cs-item-text">
+                        <h3 class="cs-h3">
+                            Consulting and training firm that specializes in process safety, risk management,
+                            occupational health
+                        </h3>
+                        <p class="cs-desc">
+                            Risk management, occupational health and safety, fire protection, emergency and crisis
+                            management, and security risk management.
+                        </p>
+                        <a href="" class="cs-link">
+                            <span class="cs-link-text">Get Direction</span>
+                            <img class="cs-arrow" loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-arrow-right.svg"
+                                alt="icon" width="20" height="20" aria-hidden="true" />
+                        </a>
+                    </div>
+                </div>
+                <div class="cs-item">
+                    <picture class="cs-picture">
+                        <source media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-news-three.png">
+                        <source media="(min-width: 601px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-news-three.png">
+                        <img loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-news-three.png"
+                            alt="volunteers" width="630" height="601" aria-hidden="true">
+                    </picture>
+                    <div class="cs-item-text">
+                        <h3 class="cs-h3">With more than 100 highly experienced professionals averaging 29+ years of
+                            experience.
+                        </h3>
+                        <p class="cs-desc">
+                            In industry best practices and lessons learned, we provide value-added services and
+                            solutions to a wide variety of industry, both onshore and offshore.
+                        </p>
+                        <a href="" class="cs-link">
+                            <span class="cs-link-text">Get Direction</span>
+                            <img class="cs-arrow" loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-arrow-right.svg"
+                                alt="icon" width="20" height="20" aria-hidden="true" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="cs-button-solid">Read More of Our Blog</a>
+        </div>
+    </div>
+</section>
+
+{% include "components/cta.html" %}
+
 
 {% endblock %}
