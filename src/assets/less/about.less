@@ -153,50 +153,7 @@
             margin: 0;
         }
     }
-}
-
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #sbs-1014 {
-            background-color: rgba(0, 0, 0, 0.2);
-            .cs-image-group {
-                &:before,
-                &:after {
-                    background: var(--accent);
-                }
-            }
-
-            .cs-picture2 {
-                background-color: var(--dark);
-                /* 6px - 12px */
-                border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
-            }
-
-            .cs-title,
-            .cs-text,
-            .cs-h3,
-            .cs-quote-text,
-            .cs-name {
-                color: var(--bodyTextColorWhite);
-            }
-
-            .cs-quote {
-                background-color: rgba(0, 0, 0, 0.6);
-            }
-
-            .cs-job {
-                color: var(--bodyTextColorWhite);
-                opacity: 0.8;
-            }
-
-            .cs-quote-icon {
-                opacity: 0.2;
-            }
-        }
-    }
-}
-                         
+}                     
 
 
 @media only screen and (min-width: 0rem) {
@@ -432,24 +389,4 @@
             grid-column: span 3;
         }
     }
-}
-
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #meet-team-2071 {
-            &:before {
-                background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 19.7%, var(--dark) 59.51%);
-            }
-
-            .cs-title, .cs-text, .cs-name, .cs-job, .cs-department {
-                color: var(--bodyTextColorWhite);
-            }
-
-            .cs-text, .cs-department {
-                opacity: 0.8;
-            }
-        }
-    }
-}
-                                
+}                   
