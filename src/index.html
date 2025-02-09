@@ -4,8 +4,8 @@ description: "The main branch of the advanced starter kit. Contains a basic 11ty
 additional functionality. Similar to our Intermediate Kits."
 permalink: '/'
 eleventyNavigation:
-    key: 'Home'
-    order: '100'
+key: 'Home'
+order: '100'
 ---
 
 {% block head %}
@@ -29,60 +29,19 @@ eleventyNavigation:
 <section id="hero-227">
     <div class="cs-container">
         <div class="cs-flex-group">
-            <span class="cs-topper">Specializing in Heating, Plumbing, and Eco-Friendly Cleaning Services Across Edmonton</span>
-            <h1 class="cs-title">Edmonton’s Trusted & Reliable Choice for Expert Services Since 2012</h1>
+            <span class="cs-topper">KMS Plumbing & Gasfitting</span>
+            <h1 class="cs-title">Edmonton’s Trusted Plumbing Expert Since 2012</h1>
             <p class="cs-text">
-                For over 10 years, KMS Plumbing & Gasfitting has been among the most trusted home service companies in
-                Edmonton. Owned and operated by a Red Seal certified plumber & gasfitter whose experience, knowledge &
-                expertise are applied to handle a full range of residential plumbing issues.
+                Red Seal Certified Plumber & Gasfitter, Providing Reliable Residential & Commercial Plumbing Solutions
             </p>
             <a href="tel:{{ client.phoneForTel }}" class="cs-button-solid">Call Us Now</a>
-            <a href="/contact/" class="cs-button-transparent">
+            <a href="/contact/" class="cs-button-solid">
                 <img class="cs-img" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
                     alt="play icon" width="17" height="17" aria-hidden="true">
                 Book Online!
             </a>
         </div>
-        <!--Service Cards-->
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <a class="cs-link" href="">
-                    <span class="cs-number">01</span>
-                    <h2 class="cs-h2">The KMS Difference</h2>
-                    <p class="cs-item-text">
-                        <span class="cs-small-text">- Regular training and certifications ensure our team stays updated
-                            on industry best practices.</span><br>
-                        <span class="cs-small-text">- We use top-rated products and sustainable processes to deliver
-                            efficient, eco-friendly solutions.</span>
-                    </p>
-                </a>
-            </li>
-            <li class="cs-item">
-                <a class="cs-link" href="">
-                    <span class="cs-number">02</span>
-                    <h2 class="cs-h2">Education for Homeowners</h2>
-                    <p class="cs-item-text">
-                        We help you understand: <br><br>
-                        <span class="cs-small-text">- Regular maintenance schedules.</span><br>
-                        <span class="cs-small-text">- Maintenance tips to extend system life.</span><br>
-                        <span class="cs-small-text">- How to address common issues and when to call a
-                            professional.</span>
-                    </p>
-                </a>
-            </li>
-            <li class="cs-item">
-                <a class="cs-link" href="">
-                    <span class="cs-number">03</span>
-                    <h2 class="cs-h2">Environmental Responsibility</h2>
-                    <p class="cs-item-text">
-                        <span class="cs-small-text">- Proud participants in the Energy Star program.</span><br>
-                        <span class="cs-small-text">- Eco-conscious waste disposal and sustainable product
-                            recommendations.</span>
-                    </p>
-                </a>
-            </li>
-        </ul>
-    </div>
+       
 
     <!-- Background Image -->
     <picture class="cs-picture">
@@ -98,43 +57,6 @@ eleventyNavigation:
 <!--                 Side By Side                 -->
 <!-- ============================================ -->
 
-<section id="sbs-523">
-    <div class="cs-container">
-        <div class="cs-content">
-            <span class="cs-topper">Who We Are</span>
-            <h2 class="cs-title">KMS Plumbing & Gasfitting</h2>
-            <p class="cs-text">
-                KMS Plumbing & Gasfitting is a trusted local company in Edmonton, Alberta, proudly owned and operated by
-                Jack Kumar, a Red Seal-certified plumber and gasfitter with over 15 years of industry experience. We
-                specialize in safe, reliable, and efficient plumbing and gasfitting services designed to protect your
-                home and family.
-            </p>
-            <a href="/about/" class="cs-button-solid">Read More</a>
-        </div>
-        <div class="cs-image-group">
-            <!--Large Image-->
-            <picture class="cs-picture cs-picture-large">
-                <source media="(max-width: 600px)"
-                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting.jpeg">
-                <source media="(min-width: 601px)"
-                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting.jpeg">
-                <img aria-hidden="true" loading="lazy" decoding="async"
-                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting.jpeg" alt="lab"
-                    width="334" height="380">
-            </picture>
-            <!--Small Image-->
-            <picture class="cs-picture cs-picture-small">
-                <source media="(max-width: 600px)"
-                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting-women.jpeg">
-                <source media="(min-width: 601px)"
-                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting-women.jpeg">
-                <img aria-hidden="true" loading="lazy" decoding="async"
-                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting-women.jpeg"
-                    alt="lab" width="183" height="158">
-            </picture>
-        </div>
-    </div>
-</section>
 
 <!-- ============================================ -->
 <!--                  Services                    -->
@@ -156,13 +78,13 @@ eleventyNavigation:
             <li class="cs-item">
                 <div class="cs-image-group">
                     <img class="cs-icon" loading="lazy" decoding="async"
-                        src="{{ client.domain }}/assets/images/hot-water-solutions.webp"
-                        alt="icon" width="48" height="48" aria-hidden="true">
+                        src="{{ client.domain }}/assets/images/hot-water-solutions.webp" alt="icon" width="48"
+                        height="48" aria-hidden="true">
                 </div>
                 <div class="cs-flex">
-                    <h2 class="cs-h2">Hot Water Solutions</h2>
+                    <h2 class="cs-h2">Plumbing</h2>
                     <p class="cs-item-text">
-                        - Installation, maintenance, and repair of hot water tanks
+                        - Service Repair, Fixture Installation, Renovations
                     </p>
                     <p class="cs-item-text">
                         - Tankless water systems (rebates available)
@@ -172,16 +94,16 @@ eleventyNavigation:
             <li class="cs-item">
                 <div class="cs-image-group">
                     <img class="cs-icon" loading="lazy" decoding="async"
-                        src="{{ client.domain }}/assets/images/pumbling-repairs.webp" alt="icon"
-                        width="48" height="48" aria-hidden="true">
+                        src="{{ client.domain }}/assets/images/pumbling-repairs.webp" alt="icon" width="48" height="48"
+                        aria-hidden="true">
                 </div>
                 <div class="cs-flex">
-                    <h2 class="cs-h2">Plumbing Repairs</h2>
+                    <h2 class="cs-h2">Gasfitting</h2>
                     <p class="cs-item-text">
-                        - Fixing leaks
+                        - Gaslines
                     </p>
                     <p class="cs-item-text">
-                        - Unclogging drains and pipes
+                        - Garage Heaters
                     </p>
                     <p class="cs-item-text">
                         - Backwater valve installation
@@ -195,25 +117,28 @@ eleventyNavigation:
                         width="48" height="48" aria-hidden="true">
                 </div>
                 <div class="cs-flex">
-                    <h2 class="cs-h2">Drain Cleaning & Maintenance</h2>
+                    <h2 class="cs-h2">Drain drain-cleaning-and-maintenance</h2>
                     <p class="cs-item-text">
-                        - Professional drain cleaning services
+                        - Unclogging
                     </p>
                     <p class="cs-item-text">
-                        - Prevention of blockages and sewer issues
+                        - Drain Cleaning & Repair
+                    </p>
+                    <p class="cs-item-text">
+                        - Sewer
                     </p>
                 </div>
             </li>
             <li class="cs-item">
                 <div class="cs-image-group">
                     <img class="cs-icon" loading="lazy" decoding="async"
-                        src="{{ client.domain }}/assets/images/fixture-installation.webp" alt="icon"
-                        width="48" height="48" aria-hidden="true">
+                        src="{{ client.domain }}/assets/images/fixture-installation.webp" alt="icon" width="48"
+                        height="48" aria-hidden="true">
                 </div>
                 <div class="cs-flex">
-                    <h2 class="cs-h2">Fixture Installations</h2>
+                    <h2 class="cs-h2">How Water Solutions</h2>
                     <p class="cs-item-text">
-                        - Faucets, sinks, toilets, showers, and bathtubs
+                        - Tankless Water Heater, Hot Water Tank
                     </p>
                 </div>
             </li>
@@ -245,7 +170,15 @@ eleventyNavigation:
                         src="{{ client.domain }}/assets/images/hassle-free.png" alt="hassle free" width="100"
                         height="100">
                 </picture>
-                <h3 class="cs-h3">100% Satisfaction Guarantee.</h3>
+                <h3 class="cs-h3">Transparency</h3>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" loading="lazy" decoding="async"
+                        src="{{ client.domain }}/assets/images/hassle-free.png" alt="hassle free" width="100"
+                        height="100">
+                </picture>
+                <h3 class="cs-h3">Free Estimates</h3>
             </li>
             <li class="cs-item">
                 <picture class="cs-picture">
@@ -259,74 +192,23 @@ eleventyNavigation:
                     <img class="cs-icon" loading="lazy" decoding="async"
                         src="{{ client.domain }}/assets/images/warranty.png" alt="warranty" width="100" height="100">
                 </picture>
-                <h3 class="cs-h3">Fully Insured</h3>
+                <h3 class="cs-h3">Fully Qualified & Insured</h3>
             </li>
         </ul>
+        <li class="cs-item">
+            <picture class="cs-picture">
+                <img class="cs-icon" loading="lazy" decoding="async"
+                    src="{{ client.domain }}/assets/images/warranty.png" alt="warranty" width="100" height="100">
+            </picture>
+            <h3 class="cs-h3">Quality Guarantee</h3>
+        </li>
+    </ul>
         <a href="/contact/" class="cs-button-solid">Get Started</a>
     </div>
     <!--Tire Screech-->
 </section>
 
-<!-- ============================================ -->
-<!--                Why Choose Us                 -->
-<!-- ============================================ -->
 
-<section id="why-choose-1657">
-    <div class="cs-container">
-        <div class="cs-content">
-            <div class="cs-flex">
-                <span class="cs-topper">Our Specialty</span>
-                <h2 class="cs-title">Why Choose Us?</h2>
-            </div>
-            <ul class="cs-ul">
-                <li class="cs-li">
-                    <span class="cs-number">Quality & Expertise</span>
-                    <p class="cs-li-text">
-                        Backed by 15+ years of experience, we deliver dependable workmanship and unparalleled customer
-                        service.
-                    </p>
-                </li>
-                <li class="cs-li">
-                    <span class="cs-number">Client Education:</span>
-                    <p class="cs-li-text">
-                        We empower homeowners with knowledge to maintain and prolong their plumbing systems' efficiency.
-                    </p>
-                </li>
-                <li class="cs-li">
-                    <span class="cs-number">Safety First</span>
-                    <p class="cs-li-text">
-                        Your household’s safety is our #1 priority, and we follow strict safety standards to ensure
-                        peace of mind.
-                    </p>
-                </li>
-            </ul>
-        </div>
-        <div class="cs-wrapper">
-            <picture class="cs-picture">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)"
-                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting12.jpg">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)"
-                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting12.jpg">
-                <img loading="lazy" decoding="async"
-                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting12.jpg" alt="meeting"
-                    width="630" height="414">
-            </picture>
-
-            <p class="cs-review">
-                <strong>Our Commitment to Safety</strong><br>
-                We exceed industry standards by:<br>
-                <span class="cs-small-text">- Using high-quality materials and secure licensed subcontractors</span><br>
-                <span class="cs-small-text">- Conducting hazard assessments to identify and mitigate potential risks
-                    (e.g., asbestos, electrical hazards)</span><br>
-                <span class="cs-small-text">- Adhering to the latest safety protocols, including the National Plumbing
-                    Code (NPC 2019) and WHMIS regulations</span><br>
-                <span class="cs-small-text">- Utilizing PPE and maintaining safe work practices on every job</span>
-            </p>
-        </div>
-    </div>
-</section>
 
 <!-- ============================================ -->
 <!--             Side By Side Reverse             -->
@@ -378,32 +260,19 @@ eleventyNavigation:
 <section id="faq-351">
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-topper">Asked questions</span>
-            <h2 class="cs-title">Frequently Asked Questions</h2>
+            <span class="cs-topper">Frequently Asked Questions</span>
+            <h2 class="cs-title">You have Questions? We have Answers!</h2>
         </div>
         <ul class="cs-faq-group">
             <!-- Active class added as default -->
             <li class="cs-faq-item active">
                 <button class="cs-button">
                     <span class="cs-button-text">
-                        What services does KMS Plumbing & Gasfitting offer?
+                        Do you provide any warranties on your services?
                     </span>
                 </button>
                 <p class="cs-item-p">
-                    We provide a comprehensive range of residential plumbing services, including bathroom renovations,
-                    drain cleaning and repair, sewer backup repair, hot water tank and tankless water system
-                    installations, and hydronic in-floor heating solutions.
-                </p>
-            </li>
-            <li class="cs-faq-item">
-                <button class="cs-button">
-                    <span class="cs-button-text">
-                        Who will perform the plumbing work in my home?
-                    </span>
-                </button>
-                <p class="cs-item-p">
-                    All services are performed by a Red Seal certified plumber and gasfitter, ensuring that work is
-                    completed according to Alberta's jurisdictional codes and standards.
+                    Yes, all our services come with a 1-year service warranty.
                 </p>
             </li>
             <li class="cs-faq-item">
@@ -413,9 +282,17 @@ eleventyNavigation:
                     </span>
                 </button>
                 <p class="cs-item-p">
-                    No, we offer honest, flat-rate pricing with no hidden fees, travel charges, or call-out fees. Our
-                    pricing is transparent, and we even offer a price beat guarantee if you provide a competitor's
-                    quote.
+                    No, we offer free estimates with no travel or hidden fees.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        What payment methods do you accept?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    We accept debit, credit, and offer flexible financing options.
                 </p>
             </li>
         </ul>
@@ -424,23 +301,21 @@ eleventyNavigation:
             <li class="cs-faq-item">
                 <button class="cs-button">
                     <span class="cs-button-text">
-                        Do you offer financing options for your services?
+                        Who performs the work?
                     </span>
                 </button>
                 <p class="cs-item-p">
-                    Yes, we provide financing options to help manage the cost of your plumbing projects. You can learn
-                    more about our financing through Financeit.
+                    All work is completed by a Red Seal Certified plumber & gasfitter with over 15 years of experience.
                 </p>
             </li>
             <li class="cs-faq-item">
                 <button class="cs-button">
                     <span class="cs-button-text">
-                        How can I schedule a service or get a free estimate?
+                        How do I schedule a service?
                     </span>
                 </button>
                 <p class="cs-item-p">
-                    You can book your free estimate or schedule a service by visiting our online booking page. We strive
-                    to arrive on time with the necessary tools and expertise to complete the job efficiently.
+                    You can book online or call us. We’ll schedule a free on-site estimate at your convenience and notify you 30 minutes before arrival. After assessing the issue, we provide an upfront written estimate. If you accept, we’ll schedule the repair or installation and ensure your home is left as it was. A follow-up will occur one week after the service to ensure satisfaction.
                 </p>
             </li>
         </ul>
@@ -476,7 +351,7 @@ eleventyNavigation:
                                         was working well. I would hire again.”
                                     </p>
                                     <span class="cs-name">Miles McMillan</span>
-                                    <img src="{{ client.domain }}/assets/images/google-reviews.webp" height=50/>
+                                    <img src="{{ client.domain }}/assets/images/google-reviews.webp" height=50 />
                                     <!--Quote-->
                                     <img class="cs-quote" loading="lazy" decoding="async"
                                         src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black-quotes.svg"
@@ -561,102 +436,7 @@ eleventyNavigation:
 <!--              Regular  Gallery                -->
 <!-- ============================================ -->
 
-<section id="gallery-973" class="cs-section-breaker">
-    <div class="cs-container">
-        <div class="cs-content">
-            <span class="cs-topper">Our Portfolio</span>
-            <h2 class="cs-title">Some Work from Our Memorable Gallery</h2>
-            <p class="cs-text">
-                Take a look at some of our successful projects in plumbing, gas fitting, and related services. From
-                residential installations to large-scale commercial systems, we take pride in delivering quality and
-                reliable results for our clients.
-            </p>
-        </div>
-        <div class="cs-gallery">
-            <!--Picture 1-->
-            <picture class="cs-image">
-                <source media="(max-width: 600px)"
-                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair10.jpg">
-                <source media="(min-width: 601px)"
-                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair10.jpg">
-                <img loading="lazy" decoding="async"
-                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair10.jpg" alt="gallery"
-                    width="305" height="400">
-            </picture>
-            <!--Picture 2-->
-            <picture class="cs-image">
-                <source media="(max-width: 600px)"
-                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair11.jpg">
-                <source media="(min-width: 601px)"
-                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair11.jpg">
-                <img loading="lazy" decoding="async"
-                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair11.jpg" alt="gallery"
-                    width="305" height="400">
-            </picture>
-            <!--Picture 3-->
-            <picture class="cs-image">
-                <source media="(max-width: 600px)"
-                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair12.jpg">
-                <source media="(min-width: 601px)"
-                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair12.jpg">
-                <img loading="lazy" decoding="async"
-                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair12.jpg" alt="gallery"
-                    width="305" height="400">
-            </picture>
-            <!--Picture 4-->
-            <picture class="cs-image">
-                <source media="(max-width: 600px)"
-                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair14.jpg">
-                <source media="(min-width: 601px)"
-                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair14.jpg">
-                <img loading="lazy" decoding="async"
-                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair14.jpg" alt="gallery"
-                    width="305" height="400">
-            </picture>
-            <!--Picture 5-->
-            <picture class="cs-image">
-                <source media="(max-width: 600px)"
-                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair15.jpg">
-                <source media="(min-width: 601px)"
-                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair15.jpg">
-                <img loading="lazy" decoding="async"
-                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair15.jpg" alt="gallery"
-                    width="305" height="400">
-            </picture>
-            <!--Picture 6-->
-            <picture class="cs-image">
-                <source media="(max-width: 600px)"
-                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair16.jpg">
-                <source media="(min-width: 601px)"
-                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair16.jpg">
-                <img loading="lazy" decoding="async"
-                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair16.jpg" alt="gallery"
-                    width="305" height="400">
-            </picture>
-            <!--Picture 7-->
-            <picture class="cs-image">
-                <source media="(max-width: 600px)"
-                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair17.jpg">
-                <source media="(min-width: 601px)"
-                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair17.jpg">
-                <img loading="lazy" decoding="async"
-                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair17.jpg" alt="gallery"
-                    width="305" height="400">
-            </picture>
-            <!--Picture 8-->
-            <picture class="cs-image">
-                <source media="(max-width: 600px)"
-                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair13.jpg">
-                <source media="(min-width: 601px)"
-                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair13.jpg">
-                <img loading="lazy" decoding="async"
-                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hair13.jpg" alt="gallery"
-                    width="305" height="400">
-            </picture>
-        </div>
-        <a href="" class="cs-button-solid">View Gallery</a>
-    </div>
-</section>
+
 
 <!-- ============================================ -->
 <!--                   Collabs                    -->
