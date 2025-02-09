@@ -899,7 +899,7 @@
             text-transform: uppercase;
             margin: 0;
             padding: 0 (16/16rem);
-            color: var(--bodyTextColorWhite);
+            color: var(--primary);
             display: block;
             position: relative;
             z-index: 1;
@@ -924,6 +924,8 @@
             }
 
             &:hover {
+                color: var(--bodyTextColorWhite);
+                
                 &:before {
                     opacity: 1;
                     transform: translate(-50%, -50%) scale(1);
