@@ -4,8 +4,8 @@ description: "The main branch of the advanced starter kit. Contains a basic 11ty
 additional functionality. Similar to our Intermediate Kits."
 permalink: '/'
 eleventyNavigation:
-    key: 'Home'
-    order: '100'
+key: 'Home'
+order: '100'
 ---
 
 {% block head %}
@@ -41,21 +41,51 @@ eleventyNavigation:
                 Book Online!
             </a>
         </div>
-       
 
-    <!-- Background Image -->
-    <picture class="cs-picture">
-        <source media="(max-width: 600px)" srcset="{{ client.domain }}/assets/images/plumber-header.webp">
-        <source media="(min-width: 601px)" srcset="{{ client.domain }}/assets/images/plumber-header.webp">
-        <img decoding="async" src="{{ client.domain }}/assets/images/plumber-header.webp" alt="mountains" width="2250"
-            height="1500" aria-hidden="true">
-    </picture>
+
+        <!-- Background Image -->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="{{ client.domain }}/assets/images/plumber-header.webp">
+            <source media="(min-width: 601px)" srcset="{{ client.domain }}/assets/images/plumber-header.webp">
+            <img decoding="async" src="{{ client.domain }}/assets/images/plumber-header.webp" alt="mountains"
+                width="2250" height="1500" aria-hidden="true">
+        </picture>
 </section>
 
 
 <!-- ============================================ -->
-<!--                 Side By Side                 -->
+<!--                 Review Badge            -->
 <!-- ============================================ -->
+
+<div class="review-badge">
+    <!-- Logos for Google and Facebook -->
+    <div class="logos">
+        <img src="https://kingstreeplumbing.ca/wp-content/uploads/2022/12/Google-Reviews2.png" alt="Google Reviews"
+            class="logo google-logo" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Facebook_logo_2019.png" alt="Facebook Reviews"
+            class="logo facebook-logo" />
+    </div>
+
+    <!-- Review Rating Section -->
+    <div class="review-rating">
+        <div class="stars">
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star filled">★</span>
+            <span class="star half">☆</span>
+        </div>
+        <div class="rating-text">
+            <span class="rating">4.5 / 5</span>
+            <span class="reviews-count">60+ reviews</span>
+        </div>
+    </div>
+
+    <!-- Button to View All Reviews -->
+    <div class="view-reviews-button">
+        <a href="#" class="btn">View All Reviews</a>
+    </div>
+</div>
 
 
 <!-- ============================================ -->
@@ -152,16 +182,16 @@ eleventyNavigation:
 <!-- ============================================ -->
 <section id="hero-446">
     <ul class="cs-card-group">
-              <li class="cs-item">
-                  <span class="cs-number"></span>
-                  <span class="cs-desc">We offer financing on any plumbing/heating installation and home renovation
-                      projects starts from $700</span> <br>
-                  <a target="_blank" href="https://www.financeit.ca" class="cs-button-solid1">AVAIL</a>
-              </li>
-             
-          </ul>
-  
-      </section>
+        <li class="cs-item">
+            <span class="cs-number"></span>
+            <span class="cs-desc">We offer financing on any plumbing/heating installation and home renovation
+                projects starts from $700</span> <br>
+            <a target="_blank" href="https://www.financeit.ca" class="cs-button-solid1">AVAIL</a>
+        </li>
+
+    </ul>
+
+</section>
 
 
 
@@ -220,7 +250,7 @@ eleventyNavigation:
             </picture>
             <h3 class="cs-h3">Quality Guarantee</h3>
         </li>
-    </ul>
+        </ul>
         <a href="/contact/" class="cs-button-solid">Get Started</a>
     </div>
     <!--Tire Screech-->
@@ -333,7 +363,10 @@ eleventyNavigation:
                     </span>
                 </button>
                 <p class="cs-item-p">
-                    You can book online or call us. We’ll schedule a free on-site estimate at your convenience and notify you 30 minutes before arrival. After assessing the issue, we provide an upfront written estimate. If you accept, we’ll schedule the repair or installation and ensure your home is left as it was. A follow-up will occur one week after the service to ensure satisfaction.
+                    You can book online or call us. We’ll schedule a free on-site estimate at your convenience and
+                    notify you 30 minutes before arrival. After assessing the issue, we provide an upfront written
+                    estimate. If you accept, we’ll schedule the repair or installation and ensure your home is left as
+                    it was. A follow-up will occur one week after the service to ensure satisfaction.
                 </p>
             </li>
         </ul>
@@ -536,10 +569,13 @@ eleventyNavigation:
                     </picture>
                     <div class="cs-item-text">
                         <h3 class="cs-h3">
-                            5 Things to Know Before Hiring a Plumber? 
+                            5 Things to Know Before Hiring a Plumber?
                         </h3>
                         <p class="cs-desc">
-                            Hiring a plumber can feel overwhelming if you don’t know what to look for. In this blog, we’ll share 5 essential things to consider before choosing a plumber, including certifications, experience, pricing transparency, and more. Make an informed decision and ensure your plumbing needs are in the hands of a trusted professional!
+                            Hiring a plumber can feel overwhelming if you don’t know what to look for. In this blog,
+                            we’ll share 5 essential things to consider before choosing a plumber, including
+                            certifications, experience, pricing transparency, and more. Make an informed decision and
+                            ensure your plumbing needs are in the hands of a trusted professional!
                         </p>
                         <a href="" class="cs-link">
                             <span class="cs-link-text">Get Direction</span>
@@ -560,10 +596,13 @@ eleventyNavigation:
                             alt="volunteers" width="630" height="601" aria-hidden="true">
                     </picture>
                     <div class="cs-item-text">
-                        <h3 class="cs-h3">5 Most Common Plumbing Issues 
+                        <h3 class="cs-h3">5 Most Common Plumbing Issues
                         </h3>
                         <p class="cs-desc">
-                            Plumbing problems can disrupt your daily routine and cause unnecessary stress. In this blog, we’ll explore the 5 most common plumbing issues homeowners face, how to identify them early, and tips to prevent costly repairs. From leaky faucets to clogged drains, we’ve got you covered!
+                            Plumbing problems can disrupt your daily routine and cause unnecessary stress. In this blog,
+                            we’ll explore the 5 most common plumbing issues homeowners face, how to identify them early,
+                            and tips to prevent costly repairs. From leaky faucets to clogged drains, we’ve got you
+                            covered!
                         </p>
                         <a href="" class="cs-link">
                             <span class="cs-link-text">Get Direction</span>
