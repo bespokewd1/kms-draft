@@ -4,16 +4,16 @@ description: "The main branch of the advanced starter kit. Contains a basic 11ty
 additional functionality. Similar to our Intermediate Kits."
 permalink: 'about/'
 eleventyNavigation:
-    key: 'About'
-    order: '200'
+key: 'About'
+order: '200'
 ---
 
 {% block head %}
-    <link rel="stylesheet" href="{{ client.domain }}/assets/css/about.css">
+<link rel="stylesheet" href="{{ client.domain }}/assets/css/about.css">
 
-    <!--          Blaze Assets        -->
-    <link rel="stylesheet" href="{{ client.domain }}/assets/css/blaze.css">
-    <script src="{{ client.domain }}/assets/js/blaze-slider.dev.js"></script>
+<!--          Blaze Assets        -->
+<link rel="stylesheet" href="{{ client.domain }}/assets/css/blaze.css">
+<script src="{{ client.domain }}/assets/js/blaze-slider.dev.js"></script>
 
 {% endblock %}
 
@@ -21,219 +21,231 @@ eleventyNavigation:
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                   Banner                     -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
 
-    <div id="banner-1106-1112">
-        <div class="cs-container">
-            <span class="cs-int-title">About Us</span>
-            <div class="cs-breadcrumbs">
-                <a href="/" class="cs-link">Home</a>
-                <a href="/about/" class="cs-link cs-active">About Us</a>
-            </div>
+<div id="banner-1106-1112">
+    <div class="cs-container">
+        <span class="cs-int-title">About Us</span>
+        <div class="cs-breadcrumbs">
+            <a href="/" class="cs-link">Home</a>
+            <a href="/about/" class="cs-link cs-active">About Us</a>
         </div>
-        <!--Background Image-->
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic-20.jpg">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic-20.jpg">
-            <img decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic-20.jpg" alt="mechanic" width="1280" height="568" aria-hidden="true">
-        </picture>
-    </div> 
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)"
+            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic-20.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)"
+            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic-20.jpg">
+        <img decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mechanic-20.jpg"
+            alt="mechanic" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
 
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
 
-    <section id="sbs-1014">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-image-group">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/about_leftimage.png">
-                    <source media="(min-width: 601px)" srcset="/assets/images/about_leftimage.png">
-                    <img loading="lazy" decoding="async" src="/assets/images/about_leftimage.png" alt="breakfast" width="522" height="581" aria-hidden="true">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/about_rightimage.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/about_rightimage.jpg">
-                    <img loading="lazy" decoding="async" src="/assets/images/about_rightimage.jpg" alt="breakfast" width="414" height="400" aria-hidden="true">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-content">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">Who We Are</h2>
-                <p class="cs-text">
-                    Founded in 2012, KMS Plumbing & Gasfitting Ltd is an owner-operated provider of plumbing, drain cleaning, and gasfitting services in the Edmonton area. We strive to provide exceptional customer service and quality workmanship at a fair price. We are dedicated to providing a seamless and hassle-free service experience with prompt communication, professional service, and upfront pricing.
-                </p>
-                
-                
-            </div>
+<section id="sbs-1014">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <div class="cs-image-group">
+            <picture class="cs-picture cs-picture1">
+                <source media="(max-width: 600px)" srcset="/assets/images/about_leftimage.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/about_leftimage.webp">
+                <img loading="lazy" decoding="async" src="/assets/images/about_leftimage.webp" alt="breakfast"
+                    width="522" height="581" aria-hidden="true">
+            </picture>
+            <picture class="cs-picture cs-picture2">
+                <source media="(max-width: 600px)" srcset="/assets/images/about_rightimage.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/about_rightimage.webp">
+                <img loading="lazy" decoding="async" src="/assets/images/about_rightimage.webp" alt="breakfast"
+                    width="414" height="400" aria-hidden="true">
+            </picture>
         </div>
-    </section>
-          
-    <!-- ============================================ -->
-    <!--                Why Choose Us                 -->
-    <!-- ============================================ -->
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">About Us</span>
+            <h2 class="cs-title">Who We Are</h2>
+            <p class="cs-text">
+                Founded in 2012, KMS Plumbing & Gasfitting Ltd is an owner-operated provider of plumbing, drain
+                cleaning, and gasfitting services in the Edmonton area. We strive to provide exceptional customer
+                service and quality workmanship at a fair price. We are dedicated to providing a seamless and
+                hassle-free service experience with prompt communication, professional service, and upfront pricing.
+            </p>
 
-    <section id="why-choose-1657">
-        <div class="cs-container">
-            <div class="cs-content">
-                <div class="cs-flex">
-                    <span class="cs-topper">Our Specialty</span>
-                    <h2 class="cs-title">Why Choose Us?</h2>
-                </div>
-                <ul class="cs-ul">
-                    <li class="cs-li">
-                        <span class="cs-number">Transparency</span>
-                        <p class="cs-li-text">
-                            No Hidden Fees, No Travel Charges, No Extra Charges. Clear and upfront pricing.
-                        </p>
-                    </li>
-                    <li class="cs-li">
-                        <span class="cs-number">Free Estimates</span>
-                        <p class="cs-li-text">
-                            Free on-site estimates
-                        </p>
-                    </li>
-                    <li class="cs-li">
-                        <span class="cs-number">Fully Qualified & Insured</span>
-                        <p class="cs-li-text">
-                            We are owner-operated, that means all work is conducted by a Red Seal Certified Plumber & Gasfitter with over 15 years of experience. Our quality standards and workmanship are held against the highest standards. From the moment we enter your home to when we leave, you can expect the utmost care and attention.
-                        </p>
-                    </li>
-                    <li class="cs-li">
-                        <span class="cs-number">Quality Guarantee</span>
-                        <p class="cs-li-text">
-                            KMS Plumbing and Gasfitting is committed to providing the highest quality of workmanship and exceptional customer service.
-                        </p>
-                    </li>
-                </ul>
-            </div>
-           
+
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- ============================================ -->
-    <!--                  Reviews                     -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                Why Choose Us                 -->
+<!-- ============================================ -->
 
-    <section id="reviews-1833">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Testimonials</span>
-                <h2 class="cs-title">Our Members Testimonials</h2>
+<section id="why-choose-1657">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Our Specialty</span>
+                <h2 class="cs-title">Why Choose Us?</h2>
             </div>
-            <div class="blaze-slider">
-                <div class="blaze-container">
-                    <div class="blaze-track-container">
-                        <div class="blaze-track">
-                            <div class="blaze-slide">
-                                <div class="cs-flex-group">
-                                    <div class="cs-review-group">
-                                        <!--Stars-->
-                                        <img class="cs-stars" loading="lazy" decoding="async"
-                                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/stars-gym.svg"
-                                            alt="quotes" width="97" height="80" aria-hidden="true">
-                                        <p class="cs-review-text">
-                                            ”We worked with Jack at KMS when we had our basement contracted. He did all the
-                                            plumbing for our basement bathroom. He provides high quality work and very
-                                            pleasant to work with. When we had an issue, he came out same day and kept in
-                                            contact with me to ensure it got completed. He even followed up to ensure all
-                                            was working well. I would hire again.”
-                                        </p>
-                                        <span class="cs-name">Miles McMillan</span>
-                                        <img src="{{ client.domain }}/assets/images/google-reviews.webp" height=50 />
-                                        <!--Quote-->
-                                        <img class="cs-quote" loading="lazy" decoding="async"
-                                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black-quotes.svg"
-                                            alt="quotes" width="97" height="80" aria-hidden="true">
-                                    </div>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <span class="cs-number">Transparency</span>
+                    <p class="cs-li-text">
+                        No Hidden Fees, No Travel Charges, No Extra Charges. Clear and upfront pricing.
+                    </p>
+                </li>
+                <li class="cs-li">
+                    <span class="cs-number">Free Estimates</span>
+                    <p class="cs-li-text">
+                        Free on-site estimates
+                    </p>
+                </li>
+                <li class="cs-li">
+                    <span class="cs-number">Fully Qualified & Insured</span>
+                    <p class="cs-li-text">
+                        We are owner-operated, that means all work is conducted by a Red Seal Certified Plumber &
+                        Gasfitter with over 15 years of experience. Our quality standards and workmanship are held
+                        against the highest standards. From the moment we enter your home to when we leave, you can
+                        expect the utmost care and attention.
+                    </p>
+                </li>
+                <li class="cs-li">
+                    <span class="cs-number">Quality Guarantee</span>
+                    <p class="cs-li-text">
+                        KMS Plumbing and Gasfitting is committed to providing the highest quality of workmanship and
+                        exceptional customer service.
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Reviews                     -->
+<!-- ============================================ -->
+
+<section id="reviews-1833">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Testimonials</span>
+            <h2 class="cs-title">Our Members Testimonials</h2>
+        </div>
+        <div class="blaze-slider">
+            <div class="blaze-container">
+                <div class="blaze-track-container">
+                    <div class="blaze-track">
+                        <div class="blaze-slide">
+                            <div class="cs-flex-group">
+                                <div class="cs-review-group">
+                                    <!--Stars-->
+                                    <img class="cs-stars" loading="lazy" decoding="async"
+                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/stars-gym.svg"
+                                        alt="quotes" width="97" height="80" aria-hidden="true">
+                                    <p class="cs-review-text">
+                                        ”We worked with Jack at KMS when we had our basement contracted. He did all the
+                                        plumbing for our basement bathroom. He provides high quality work and very
+                                        pleasant to work with. When we had an issue, he came out same day and kept in
+                                        contact with me to ensure it got completed. He even followed up to ensure all
+                                        was working well. I would hire again.”
+                                    </p>
+                                    <span class="cs-name">Miles McMillan</span>
+                                    <img src="{{ client.domain }}/assets/images/google-reviews.webp" height=50 />
+                                    <!--Quote-->
+                                    <img class="cs-quote" loading="lazy" decoding="async"
+                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black-quotes.svg"
+                                        alt="quotes" width="97" height="80" aria-hidden="true">
                                 </div>
                             </div>
-                            <div class="blaze-slide">
-                                <div class="cs-flex-group">
-                                    <div class="cs-review-group">
-                                        <!--Stars-->
-                                        <img class="cs-stars" loading="lazy" decoding="async"
-                                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/stars-gym.svg"
-                                            alt="quotes" width="97" height="80" aria-hidden="true">
-                                        <p class="cs-review-text">
-                                            ”Jack installed a new faucet and some upgraded sink components for us; the
-                                            service and workmanship were fantastic. He was very thorough in assessing our
-                                            needs/expectations prior to the job; the customer service was excellent
-                                            throughout our experience. I highly recommend KMS Plumbing.”
-                                        </p>
-                                        <span class="cs-name">Dave O.</span>
-                                        <span class="cs-job">from Google Reviews</span>
-                                        <!--Quote-->
-                                        <img class="cs-quote" loading="lazy" decoding="async"
-                                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black-quotes.svg"
-                                            alt="quotes" width="97" height="80" aria-hidden="true">
-                                    </div>
+                        </div>
+                        <div class="blaze-slide">
+                            <div class="cs-flex-group">
+                                <div class="cs-review-group">
+                                    <!--Stars-->
+                                    <img class="cs-stars" loading="lazy" decoding="async"
+                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/stars-gym.svg"
+                                        alt="quotes" width="97" height="80" aria-hidden="true">
+                                    <p class="cs-review-text">
+                                        ”Jack installed a new faucet and some upgraded sink components for us; the
+                                        service and workmanship were fantastic. He was very thorough in assessing our
+                                        needs/expectations prior to the job; the customer service was excellent
+                                        throughout our experience. I highly recommend KMS Plumbing.”
+                                    </p>
+                                    <span class="cs-name">Dave O.</span>
+                                    <span class="cs-job">from Google Reviews</span>
+                                    <!--Quote-->
+                                    <img class="cs-quote" loading="lazy" decoding="async"
+                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black-quotes.svg"
+                                        alt="quotes" width="97" height="80" aria-hidden="true">
                                 </div>
                             </div>
-                            <div class="blaze-slide">
-                                <div class="cs-flex-group">
-                                    <div class="cs-review-group">
-                                        <!--Stars-->
-                                        <img class="cs-stars" loading="lazy" decoding="async"
-                                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/stars-gym.svg"
-                                            alt="quotes" width="97" height="80" aria-hidden="true">
-                                        <p class="cs-review-text">
-                                            ”I just had my hot water tank replacement completed by Jack Kumar of KMS
-                                            Plumbing & Gas fitting. Prior to this job, Jack had replaced a toilet for us and
-                                            completed a hot water tank replacement for a senior friend of ours. As usual,
-                                            Jack is on time and professional. His workmanship is great. Housekeeping is
-                                            excellent. Pricing is reasonable. Thanks for your service Jack.”
-                                        </p>
-                                        <span class="cs-name">Alex Chan</span>
-                                        <span class="cs-job">From Google Reviews</span>
-                                        <!--Quote-->
-                                        <img class="cs-quote" loading="lazy" decoding="async"
-                                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black-quotes.svg"
-                                            alt="quotes" width="97" height="80" aria-hidden="true">
-                                    </div>
+                        </div>
+                        <div class="blaze-slide">
+                            <div class="cs-flex-group">
+                                <div class="cs-review-group">
+                                    <!--Stars-->
+                                    <img class="cs-stars" loading="lazy" decoding="async"
+                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/stars-gym.svg"
+                                        alt="quotes" width="97" height="80" aria-hidden="true">
+                                    <p class="cs-review-text">
+                                        ”I just had my hot water tank replacement completed by Jack Kumar of KMS
+                                        Plumbing & Gas fitting. Prior to this job, Jack had replaced a toilet for us and
+                                        completed a hot water tank replacement for a senior friend of ours. As usual,
+                                        Jack is on time and professional. His workmanship is great. Housekeeping is
+                                        excellent. Pricing is reasonable. Thanks for your service Jack.”
+                                    </p>
+                                    <span class="cs-name">Alex Chan</span>
+                                    <span class="cs-job">From Google Reviews</span>
+                                    <!--Quote-->
+                                    <img class="cs-quote" loading="lazy" decoding="async"
+                                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black-quotes.svg"
+                                        alt="quotes" width="97" height="80" aria-hidden="true">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="blaze-nav">
-                        <div class="blaze-pagination"></div>
-                    </div>
+                </div>
+                <div class="blaze-nav">
+                    <div class="blaze-pagination"></div>
                 </div>
             </div>
-            <!--Slider Initialization Script-->
-            <script>
-                const el = document.querySelector('.blaze-slider')
-                new BlazeSlider(el)
-            </script>
-            <a href="{{ client.google_review }}" class="cs-button-solid" target="_blank">See More Reviews</a>
         </div>
-        <!--Texture Graphic-->
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 1023px)"
-                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dotted-texture-m.png">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 1024px)"
-                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dotted-texture.png">
-            <img loading="lazy" decoding="async"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dotted-texture.png" alt="dotted texture"
-                width="1920" height="600">
-        </picture>
-    </section>
+        <!--Slider Initialization Script-->
+        <script>
+            const el = document.querySelector('.blaze-slider')
+            new BlazeSlider(el)
+        </script>
+        <a href="{{ client.google_review }}" class="cs-button-solid" target="_blank">See More Reviews</a>
+    </div>
+    <!--Texture Graphic-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 1023px)"
+            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dotted-texture-m.png">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 1024px)"
+            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dotted-texture.png">
+        <img loading="lazy" decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dotted-texture.png" alt="dotted texture"
+            width="1920" height="600">
+    </picture>
+</section>
 
-    <!-- ============================================ -->
-    <!--                    Team                      -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                    Team                      -->
+<!-- ============================================ -->
 
-    
+
 
 {% include "components/cta.html" %}
 
-                                
+
 {% endblock %}
