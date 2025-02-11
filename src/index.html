@@ -62,40 +62,37 @@ eleventyNavigation:
 
  <!-- create a review badge here, just copy the one at https://kingstreeplumbing.ca/ -->
 
-<div class="review-badge">
+<section class="review-badge">
     <!-- Logos for Google and Facebook -->
     <div style="display: flex; justify-content: center; gap: 20px; align-items: center; margin-top: 20px;">
 
             <picture class="cs-picture">
-                <source media="(max-width: 600px)" srcset="{{ client.domain }}/assets/images/google-logo.webp">
-                <source media="(min-width: 601px)" srcset="{{ client.domain }}/assets/images/google-logo.webp">
-                <img decoding="async" src="{{ client.domain }}/assets/images/google-logo.webp" alt="mountains"
-                    width="100" height="100" aria-hidden="true">
+                <source media="(max-width: 600px)" srcset="{{ client.domain }}/assets/images/google-reviews-logo.webp">
+                <source media="(min-width: 601px)" srcset="{{ client.domain }}/assets/images/google-reviews-logo.webp">
+                <img decoding="async" src="{{ client.domain }}/assets/images/google-reviews-logo.webp" alt="google logo"
+                    width="702" height="300" aria-hidden="true">
             </picture>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
-            alt="Facebook Reviews" style="width: 50px; height: auto; max-width: 100%;" />
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="{{ client.domain }}/assets/images/facebook-reviews-logo.webp">
+                <source media="(min-width: 601px)" srcset="{{ client.domain }}/assets/images/facebook-reviews-logo.webp">
+                <img decoding="async" src="{{ client.domain }}/assets/images/facebook-reviews-logo.webp" alt="facebook logo"
+                    width="862" height="300" aria-hidden="true">
+            </picture>
     </div>
     
     <!-- Review Rating Section -->
     <div class="review-rating">
-        <div class="stars">
-            <span class="star filled">★</span>
-            <span class="star filled">★</span>
-            <span class="star filled">★</span>
-            <span class="star filled">★</span>
-            <span class="star half">☆</span>
-        </div>
         <div class="rating-text">
-            <span class="rating">4.5 / 5</span>
+            <span class="rating">5 / 5</span>
             <span class="reviews-count">60+ reviews</span>
         </div>
     </div>
 
     <!-- Button to View All Reviews -->
     <div class="view-reviews-button">
-        <a href="#" class="btn">View All Reviews</a>
+        <a href="{{client.google_review}}" class="btn" target=”_blank”>View All Reviews</a>
     </div>
-</div>
+</section>
 
 
 <!-- ============================================ -->
