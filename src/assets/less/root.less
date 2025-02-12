@@ -185,10 +185,10 @@
         text-decoration: none;
         font-weight: 700;
         margin: 0;
-        color: #fff;
+        color: var(--bodyTextColor);;
         padding: 0;
         background-color: transparent;
-        border: 1px solid var(--bodyTextColorWhite);
+        border: 1px solid var(--bodyTextColor);
         box-sizing: border-box;
         display: inline-flex;
         justify-content: center;
@@ -215,6 +215,9 @@
         }
 
         &:hover {
+            color: var(--bodyTextColor);;
+            border: 1px solid var(--bodyTextColor);
+
             &:before {
                 transform: scaleX(1);
             }
