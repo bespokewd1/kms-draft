@@ -1,0 +1,42 @@
+---
+title: "Coupons"
+description: "The classic CodeStitch blog, controlled by Decap CMS. Lists all blog posts and provides an option to 'feature' posts to a sidebar"
+permalink: 'coupons/'
+eleventyNavigation:
+    key: 'Coupons'
+    order: '500'
+---
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/blog.css">
+
+<!--          Blaze Assets        -->
+<link rel="stylesheet" href="{{ client.domain }}/assets/css/blaze.css">
+<script src="{{ client.domain }}/assets/js/blaze-slider.dev.js"></script>
+{% endblock %}
+
+{% block body %}
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1106-1112">
+    <div class="cs-container">
+        <span class="cs-int-title">Coupons</span>
+        <div class="cs-breadcrumbs">
+            <a href="/" class="cs-link">Home</a>
+            <a href="/coupons/" class="cs-link cs-active">Coupons</a>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/banner_image.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/banner_image.jpg">
+        <img decoding="async" src="/assets/images/banner_image.jpg" alt="mechanic" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div> 
+    
+{% endblock %}
