@@ -289,6 +289,13 @@ eleventyNavigation:
                 We've partnered with Financeit to offer flexible payment plans for your plumbing and heating needs. Spread costs over time with a simple application process and manageable monthly payments.
             </p>
         </div>
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{{ client.domain }}/assets/images/financeit-banner.webp">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="{{ client.domain }}/assets/images/financeit-banner.webp">
+            <img loading="lazy" decoding="async" src="{{ client.domain }}/assets/images/financeit-banner.webp" alt="financeit banner" width="516" height="98">
+        </picture>
         <ul class="cs-card-group">
             <li class="cs-item">
                 <picture class="cs-picture">
