@@ -3572,3 +3572,22 @@
     }
 }
                                 
+#coupons{
+    padding: var(--sectionPadding);
+    display: flex;
+
+    .single-coupon{
+        flex: 0 0 33%;
+        max-width: 33%
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #coupons{
+    
+        .single-coupon{
+            flex: 0 0 100%;
+            max-width: 100%
+        }
+    }
+}
