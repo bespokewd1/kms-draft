@@ -5,7 +5,7 @@ author: Code Stitch
 date: 2023-06-08T15:26:46.705Z
 tags:
     - post
-image: https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/people.jpg
+image: https://kms-draft.netlify.app/assets/images/gallery/plumber-img2.jpg
 imageAlt: People
 ---
 
