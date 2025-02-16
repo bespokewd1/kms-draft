@@ -16,8 +16,11 @@
         border-radius: 70px;
         background-color: var(--secondary);
     }
+    body:not(.scroll) .sticky-div {
+            display: none;
+        }
     @media all and (min-width: 601px) {
-        body:not(.scroll) .sticky-div {
+        .sticky-div {
             display: none;
         }
     }
