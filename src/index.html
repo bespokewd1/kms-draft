@@ -347,19 +347,23 @@ eleventyNavigation:
 <section id="steps-1172">
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-topper">Affordable Pricing</span>
-            <h2 class="cs-title">Financing Available for Plumbing & Heating Installation Projects</h2>
-            <p class="cs-text">
-                We've partnered with Financeit to offer flexible payment plans for your plumbing and heating needs. Spread costs over time with a simple application process and manageable monthly payments.
-            </p>
+            <div class="content-left">
+                <span class="cs-topper">Affordable Pricing</span>
+                <h2 class="cs-title">Financing Available for Plumbing & Heating Installation Projects</h2>
+                <p class="cs-text">
+                    We've partnered with Financeit to offer flexible payment plans for your plumbing and heating needs. Spread costs over time with a simple application process and manageable monthly payments.
+                </p>
+            </div>
+            <div>
+                <picture class="cs-picture finance-banner">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{{ client.domain }}/assets/images/financeit-banner.webp">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="{{ client.domain }}/assets/images/financeit-banner.webp">
+                    <img loading="lazy" decoding="async" src="{{ client.domain }}/assets/images/financeit-banner.webp" alt="financeit banner" width="516" height="98" id="financeit-banner">
+                </picture>
+            </div>
         </div>
-        <picture class="cs-picture finance-banner">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{{ client.domain }}/assets/images/financeit-banner.webp">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="{{ client.domain }}/assets/images/financeit-banner.webp">
-            <img loading="lazy" decoding="async" src="{{ client.domain }}/assets/images/financeit-banner.webp" alt="financeit banner" width="516" height="98" id="financeit-banner">
-        </picture>
         <ul class="cs-card-group">
             <li class="cs-item">
                 <picture class="cs-picture">
