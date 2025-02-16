@@ -3273,6 +3273,7 @@
   justify-content: center;
   padding: var(--sectionPadding);
   background-color: var(--primary);
+  margin-bottom: 20px;
 }
 #secondary-banner .cs-title {
   color: var(--bodyTextColorWhite);
