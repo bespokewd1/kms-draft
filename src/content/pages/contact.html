@@ -4,12 +4,12 @@ description: "The main branch of the advanced starter kit. Contains a basic 11ty
 additional functionality. Similar to our Intermediate Kits."
 permalink: 'contact/'
 eleventyNavigation:
-    key: 'Contact'
-    order: '700'
+key: 'Contact'
+order: '700'
 ---
 
 {% block head %}
-    <link rel="stylesheet" href="{{ client.domain }}/assets/css/contact.css">
+<link rel="stylesheet" href="{{ client.domain }}/assets/css/contact.css">
 
 <!--          Blaze Assets        -->
 <link rel="stylesheet" href="{{ client.domain }}/assets/css/blaze.css">
@@ -38,10 +38,11 @@ eleventyNavigation:
         <source media="(max-width: 600px)" srcset="/assets/images/banner_image.jpg">
         <!--Tablet and above Image-->
         <source media="(min-width: 601px)" srcset="/assets/images/banner_image.jpg">
-        <img decoding="async" src="/assets/images/banner_image.jpg" alt="mechanic" width="1280" height="568" aria-hidden="true">
+        <img decoding="async" src="/assets/images/banner_image.jpg" alt="mechanic" width="1280" height="568"
+            aria-hidden="true">
     </picture>
-</div> 
-                                
+</div>
+
 <!-- ============================================ -->
 <!--                   Contact                    -->
 <!-- ============================================ -->
@@ -52,19 +53,21 @@ eleventyNavigation:
             <span class="cs-topper">Contact Us</span>
             <h2 class="cs-title">Plumbing Experts You Can Trust!</h2>
             <p class="cs-text">
-                Need help with plumbing or gasfitting? Our Edmonton team is ready with expert advice, fast service, and free consultations. Call us today!
+                Need help with plumbing or gasfitting? Our Edmonton team is ready with expert advice, fast service, and
+                free consultations. Call us today!
             </p>
             <strong>HOURS OF OPERATION</strong>
             <p class="cs-text">
-                <strong>Hours of Operation:</strong><br>
+
                 Monday – Friday: 7 AM – 7 PM<br>
                 Saturday – Sunday: Closed
             </p>
-            
+
             <ul class="cs-ul">
                 <li class="cs-li">
                     <picture class="cs-icon-wrapper">
-                        <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-76.svg" alt="phone icon" class="cs-icon" width="40" height="40" decoding="async">
+                        <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-76.svg"
+                            alt="phone icon" class="cs-icon" width="40" height="40" decoding="async">
                     </picture>
                     <div class="cs-flex-group">
                         <span class="cs-header">Phone</span>
@@ -75,7 +78,8 @@ eleventyNavigation:
                 </li>
                 <li class="cs-li">
                     <picture class="cs-icon-wrapper">
-                        <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mail-76.svg" alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
+                        <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mail-76.svg"
+                            alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
                     </picture>
                     <div class="cs-flex-group">
                         <span class="cs-header">Email</span>
@@ -84,11 +88,13 @@ eleventyNavigation:
                 </li>
                 <li class="cs-li">
                     <picture class="cs-icon-wrapper">
-                        <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/pin-76.svg" alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
+                        <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/pin-76.svg"
+                            alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
                     </picture>
                     <div class="cs-flex-group">
                         <span class="cs-header">Address</span>
-                        <a href="{{ client.address.mapLink }}" class="cs-link" target="_blank">{{ client.address.lineOne }} {{ client.address.lineTwo }}</a>
+                        <a href="{{ client.address.mapLink }}" class="cs-link" target="_blank">{{ client.address.lineOne
+                            }} {{ client.address.lineTwo }}</a>
                     </div>
                 </li>
             </ul>
@@ -106,7 +112,8 @@ eleventyNavigation:
                 <input class="cs-input" required type="number" id="phone-1403" name="phone" placeholder="Phone">
             </label>
             <label class="cs-label">
-                <textarea class="cs-input cs-textarea" required name="Message" id="message-1403" placeholder="Write message..."></textarea>
+                <textarea class="cs-input cs-textarea" required name="Message" id="message-1403"
+                    placeholder="Write message..."></textarea>
             </label>
             <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
         </form>
@@ -119,7 +126,8 @@ eleventyNavigation:
 
 <section id="map-1403">
     <!--Replace this embed code with the google maps embed code of your clients location. To do so, google your clients business, click on the map picture that in the profile card to go to the map location. That will take you to Google maps, then find the share button in the left panel and click on it. You will be given a link to share and a button to copy link, ignore that! AAbove that is a tab that says "Embed a map", click that instead and it will bring up the embed code for you clients location in maps.  Click the button to copy the html and paste it in place of this entire iframe tag. Do not keep the original iframe. Replace it with the new one you got from google maps, unless you want to display a map of Wyoming, then you can keep this iframe. -->
-    <iframe src="{{ client.address.mapEmbed }}" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="{{ client.address.mapEmbed }}" width="600" height="450" style="border:0;" allowfullscreen=""
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
 <!-- ============================================ -->
 <!--                   Reviews                    -->
@@ -242,10 +250,10 @@ eleventyNavigation:
         </div>
     </div>
 </section>
-                                
 
-                                
+
+
 {% include "components/cta.html" %}
 
-                                
+
 {% endblock %}
