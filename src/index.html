@@ -36,7 +36,7 @@ eleventyNavigation:
             </p>
             <a href="tel:{{ client.phoneForTel }}" class="cs-button-solid">Call Us Now</a>
             <a href="/contact/" class="cs-button-solid">
-                <img class="cs-img" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
+                <img class="cs-img" decoding="async" src="{{ client.domain }}/assets/images/calendar.svg"
                     alt="play icon" width="17" height="17" aria-hidden="true">
                 Book Online!
             </a>
@@ -53,8 +53,6 @@ eleventyNavigation:
                 width="2250" height="1500" aria-hidden="true">
         </picture>
 </section>
-
-
 
 <!-- ============================================ -->
 <!--                 Review Badge            -->
