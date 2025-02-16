@@ -34,9 +34,13 @@ eleventyNavigation:
             <p class="cs-text">
                 Red Seal Certified Plumber & Gasfitter, Providing Reliable Residential & Commercial Plumbing Solutions
             </p>
-            <a href="tel:{{ client.phoneForTel }}" class="cs-button-solid">Call Us Now</a>
-            <a href="/contact/" class="cs-button-solid">
-                <img class="cs-img" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
+            <a href="tel:{{ client.phoneForTel }}" class="cs-button-solid">
+                <img class="cs-img" decoding="async" src="{{ client.domain }}/assets/images/phone-call-white.svg" width=17 height=17>
+                Call Us Now
+            </a>
+
+            <a href="/contact/" class="cs-button-transparent">
+                <img class="cs-img" decoding="async" src="{{ client.domain }}/assets/images/calendar.svg"
                     alt="play icon" width="17" height="17" aria-hidden="true">
                 Book Online!
             </a>
@@ -53,8 +57,6 @@ eleventyNavigation:
                 width="2250" height="1500" aria-hidden="true">
         </picture>
 </section>
-
-
 
 <!-- ============================================ -->
 <!--                 Review Badge            -->
@@ -87,6 +89,17 @@ eleventyNavigation:
     <a href="{{client.google_review}}" class="cs-button-solid" target=”_blank”>View All Reviews</a>
 </section>
 
+<!-- ============================================ -->
+<!--                     CTA                      -->
+<!-- ============================================ -->
+<section id="secondary-banner">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">SAVE $75 on any plumbing service!</h2>
+            <a href="/coupons/" target="_blank" class="cs-button-solid">AVAIL</a>
+        </div>
+    </div>
+</section>
 
 <!-- ============================================ -->
 <!--                  Services                    -->
@@ -314,19 +327,23 @@ eleventyNavigation:
 <section id="steps-1172">
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-topper">Affordable Pricing</span>
-            <h2 class="cs-title">Financing Available for Plumbing & Heating Installation Projects</h2>
-            <p class="cs-text">
-                We've partnered with Financeit to offer flexible payment plans for your plumbing and heating needs. Spread costs over time with a simple application process and manageable monthly payments.
-            </p>
+            <div class="content-left">
+                <span class="cs-topper">Affordable Pricing</span>
+                <h2 class="cs-title">Financing Available for Plumbing & Heating Installation Projects</h2>
+                <p class="cs-text">
+                    We've partnered with Financeit to offer flexible payment plans for your plumbing and heating needs. Spread costs over time with a simple application process and manageable monthly payments.
+                </p>
+            </div>
+            <div>
+                <picture class="cs-picture finance-banner">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{{ client.domain }}/assets/images/financeit-banner.webp">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="{{ client.domain }}/assets/images/financeit-banner.webp">
+                    <img loading="lazy" decoding="async" src="{{ client.domain }}/assets/images/financeit-banner.webp" alt="financeit banner" width="516" height="98" id="financeit-banner">
+                </picture>
+            </div>
         </div>
-        <picture class="cs-picture finance-banner">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{{ client.domain }}/assets/images/financeit-banner.webp">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="{{ client.domain }}/assets/images/financeit-banner.webp">
-            <img loading="lazy" decoding="async" src="{{ client.domain }}/assets/images/financeit-banner.webp" alt="financeit banner" width="516" height="98" id="financeit-banner">
-        </picture>
         <ul class="cs-card-group">
             <li class="cs-item">
                 <picture class="cs-picture">
@@ -760,7 +777,7 @@ eleventyNavigation:
                     </div>
                 </div>
             </div>
-            <a href="" class="cs-button-solid">Read More of Our Blog</a>
+            <a href="/blog/" class="cs-button-solid">Read More of Our Blog</a>
         </div>
     </div>
 </section>

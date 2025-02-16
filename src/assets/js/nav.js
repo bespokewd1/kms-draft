@@ -37,6 +37,16 @@ document.querySelector('body').classList.add('scroll')
     }
 });
 
+
+document.addEventListener('scroll2', (e) => { 
+    const scroll2 = document.documentElement.scrollTop;
+    if(scroll2 >= 400){
+document.querySelector('body').classList.add('scroll2')
+    } else {
+    document.querySelector('body').classList.remove('scroll2')
+    }
+});
+
 // mobile nav toggle code
 const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropdown'));
     for (const item of dropDowns) {

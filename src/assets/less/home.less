@@ -345,6 +345,17 @@
             display: grid;
             grid-template-columns: repeat(12, 1fr);
             gap: (20/16rem);
+
+            .cs-picture {
+                width: (88/16rem);
+                height: (88/16rem);
+                margin-bottom: (24/16rem);
+                border: 1px solid #858585;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
         }
 
         .cs-item {
@@ -386,16 +397,7 @@
             }
         }
 
-        .cs-picture {
-            width: (88/16rem);
-            height: (88/16rem);
-            margin-bottom: (24/16rem);
-            border: 1px solid #858585;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+
         .finance-banner.cs-picture{
             border: none;
         }
@@ -473,6 +475,16 @@
 
             &:after {
                 right: (-48/16rem);
+            }
+        }
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            flex-direction: row;
+            justify-content: space-between;
+            /* centers content horizontally, set to flex-start to left align */
+
+            .content-left{
+                text-align: left;
             }
         }
     }
