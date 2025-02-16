@@ -247,6 +247,7 @@
         &.scroll {
             #cs-navigation {
                 &:before {
+                    background-color: var(--bodyTextColorWhite);
                     height: 100%;
                 }
             }
@@ -258,7 +259,7 @@
         padding: (12/16rem) (16/16rem);
         /* prevents padding and border from affecting height and width */
         box-sizing: border-box;
-        background: rgba(26, 26, 26, 0.08);
+        background: var(--bodyTextColorWhite);
         -webkit-backdrop-filter: blur(27px);
         backdrop-filter: blur(27px);
         position: fixed;
@@ -270,7 +271,7 @@
             content: "";
             width: 100%;
             height: 0%;
-            background: #1a1a1a;
+            background: var(--bodyTextColorWhite);
             opacity: 1;
             position: absolute;
             display: block;
@@ -560,6 +561,7 @@
 /* Mobile - 1023px */
 @media only screen and (max-width: 63.9375rem) {
     #cs-navigation {
+        background-color: var(--bodyTextColorWhite);
         .cs-dropdown {
             position: relative;
             color: var(--bodyTextColorWhite);
@@ -3643,4 +3645,88 @@
             max-width: 100%
         }
     }
+}
+
+.trust-signals{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.trust-signals-contents{
+    width: 200px;
+    .cs-text{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .trust-signals{
+        flex-wrap: wrap;
+    }
+}
+
+#secondary-banner{
+    display: flex;
+    justify-content: center;
+    padding: var(--sectionPadding);
+    background-color: var(--primary);
+    .cs-title{
+        color: var(--bodyTextColorWhite);
+        text-align: center;      
+    }
+    .cs-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .cs-title{
+        margin-bottom: 50px;
+    }
+    .cs-button-solid{
+        background-color: var(--bodyTextColorWhite);
+        color: var(--headerColor);
+        width: 176px;
+        margin: auto;
+    }
+    .cs-button-solid:hover{
+        color: var(--bodyTextColorWhite);
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #financeit-banner{
+        width: 80vw;
+        height: auto;
+    }
+    #pricing-tag-line{
+        text-align: center;
+    }
+    .cs-review-text{
+        width: 90vw;
+    }
+}
+@media only screen and (min-width: 601px){
+    #secondary-banner{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+    .cs-title{
+        margin-bottom: 0;
+        font-size: 30px;
+        width: 70%;
+        text-align: left;
+        }
+    .cs-content{
+        flex-direction: row;
+    }
+    }
+}
+.service-checkbox{
+    display: flex;
+    gap: 10px;
+    align-content: center;
 }

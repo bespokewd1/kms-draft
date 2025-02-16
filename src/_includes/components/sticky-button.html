@@ -1,0 +1,26 @@
+
+<div class="sticky-div">
+    <a href="tel:{{ client.phoneForTel }}" class="cs-button-solid sticky-button">Call Today - {{ client.phoneFormatted }} </a>
+</div>
+
+<style>
+    .sticky-div{
+        position: fixed;
+        bottom: 10px;
+        width: 100%;
+        display: flex;
+        z-index: 100;
+    }
+    .cs-button-solid.sticky-button{
+        margin: auto;
+        border-radius: 70px;
+        background-color: var(--secondary);
+    }
+    @media all and (min-width: 601px) {
+        .sticky-div {
+            display: none;
+        }
+    }
+    
+
+</style>

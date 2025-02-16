@@ -6,7 +6,7 @@ date: 2023-06-08T15:28:08.486Z
 tags:
     - post
     - featured
-image: https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting7.jpg
+image: https://kms-draft.netlify.app/assets/images/gallery/plumber-img1.jpg
 imageAlt: People
 ---
 

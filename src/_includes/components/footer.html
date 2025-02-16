@@ -16,9 +16,8 @@
                 <a class="cs-social-link" aria-label="visit facebook profile" href="{{ client.social.facebook }}">
                     <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fface-grey1.svg" alt="facebook" width="11" height="11">
                 </a>
-            
-                <a class="cs-social-link" aria-label="visit instagram profile" href="{{ client.social.twitter }}">
-                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ftwitter-grey1.svg" alt="twitter" width="11" height="11">
+                <a class="cs-social-link" aria-label="visit instagram profile" href="{{ client.social.instagram }}">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Finstragm-grey3.svg" alt="twitter" width="11" height="11">
                 </a>
             </div>
         </div>
@@ -29,9 +28,12 @@
                 {% set navPages = collections.all | eleventyNavigation %}
                 {% for entry in navPages %}
                     <li class="cs-li">
-                        <a href="{{ entry.link }}" class="cs-link">{{ entry.key }}</a>
+                        <a href="{{ entry.url }}" class="cs-link">{{ entry.key }}</a>
                     </li>
                 {% endfor %}
+                <li class="cs-li">
+                    <a href="{{ client.domain }}#faq-351" class="cs-link">FAQ</a>
+                </li>
             </ul>
             
             
