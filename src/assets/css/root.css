@@ -3403,6 +3403,8 @@
   justify-content: center;
   padding: var(--sectionPadding);
   background-color: var(--primary);
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 #secondary-banner .cs-title {
   color: var(--bodyTextColorWhite);
@@ -3447,10 +3449,15 @@
     margin-bottom: 0;
     font-size: 30px;
     width: 70%;
-    text-align: left;
+    text-align: center;
   }
   #secondary-banner .cs-content {
     flex-direction: row;
+  }
+}
+@media only screen and (min-width: 769px) {
+  #secondary-banner .cs-title {
+    text-align: left;
   }
 }
 .service-checkbox {
