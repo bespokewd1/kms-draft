@@ -30,7 +30,7 @@
                             <li class="cs-li {% if hasChild %} cs-dropdown {% endif %}" {% if hasChild %} tabindex="0"{% endif %}>
 
                                 {# Similarly, if the link is active, apply the necessary classes #}
-                                <a href="{{ entry.url }}" class="cs-li-link {% if entry.url == page.url %} cs-active {% endif %}">
+                                <a href="{% if entry.key == 'Services' %}javascript:void(0);{% else %}{{ entry.url }}{% endif %}" class="cs-li-link {% if entry.url == page.url %} cs-active {% endif %}">
                                     {{ entry.key }}
                                     {% if hasChild %}
                                         <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
@@ -55,4 +55,3 @@
         <a class="cs-button-solid cs-nav-button" href="sms:{{ client.phoneforTel }}">TAP TO TEXT</a>
     </div>
 </header>
-                                
