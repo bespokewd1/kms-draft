@@ -3409,15 +3409,14 @@
 #secondary-banner .cs-title {
   color: var(--bodyTextColorWhite);
   text-align: center;
+  font-size: clamp(1.5375rem, 3.9vw, 3.0625rem);
+  margin: 0;
 }
 #secondary-banner .cs-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-#secondary-banner .cs-title {
-  margin-bottom: 50px;
-  font-size: clamp(1.5375rem, 3.9vw, 3.0625rem);
+  gap: 2rem;
 }
 #secondary-banner .cs-button-solid {
   background-color: var(--bodyTextColorWhite);
