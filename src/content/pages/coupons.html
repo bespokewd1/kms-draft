@@ -21,86 +21,67 @@ eleventyNavigation:
 <!--                   Banner                     -->
 <!-- ============================================ -->
 
-<div id="banner-1106-1112">
-    <div class="cs-container">
-        <span class="cs-int-title">Coupons</span>
-        <div class="cs-breadcrumbs">
-            <a href="/" class="cs-link">Home</a>
-            <a href="/coupons/" class="cs-link cs-active">Coupons</a>
-        </div>
-    </div>
-    <!--Background Image-->
-    <picture class="cs-background">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="/assets/images/banner_image.jpg">
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="/assets/images/banner_image.jpg">
-        <img decoding="async" src="/assets/images/banner_image.jpg" alt="mechanic" width="1280" height="568" aria-hidden="true">
-    </picture>
-</div> 
-
-<section id="coupons" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; padding: 20px;">
+<section id="coupons" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; padding: var(--sectionPadding);">
     <div class="single-coupon" style="position: relative; width: 100%; max-width: 320px; background-color: #fff; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); padding: 20px; box-sizing: border-box; transition: transform 0.3s;">
         <div class="coupon-header">
-            <h4 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 10px; color: #333;">PLUMBING SERVICES</h4>
+            <h4 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 10px; color: var(--headerColor);">PLUMBING SERVICES</h4>
         </div>
         <div class="coupon-body">
-            <h3 class="cs-title" style="font-size: 1.75rem; font-weight: bold; margin: 0; color: #f57c00;">SAVE $75!</h3>
-            <p class="cs-text" style="font-size: 1rem; color: #555; margin: 10px 0;">$75 Off Any Plumbing Service</p>
+            <h3 class="cs-title" style="font-size: 1.75rem; font-weight: bold; margin: 0; color: var(--secondary);">SAVE $75!</h3>
+            <p class="cs-text" style="font-size: var(--bodyFontSize); color: var(--bodyTextColor); margin: 10px 0;">$75 Off Any Plumbing Service</p>
             <div style="display: flex; flex-direction: column; gap: 10px;">
-                <a href="/" class="cs-button-solid" style="display: inline-block; background-color: #f57c00; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; text-align: center; width: 100%; box-sizing: border-box;">Schedule Online</a>
-                <a href="/" class="cs-button-transparent" style="display: inline-block; background-color: #1976d2; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; text-align: center; width: 100%; box-sizing: border-box;">View Details</a>
+                <a href="/" class="cs-button-solid" style="display: inline-block; background-color: var(--secondary); color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; text-align: center; width: 100%; box-sizing: border-box;">Schedule Online</a>
+                <a href="/" class="cs-button-transparent" style="display: inline-block; background-color: var(--primary); color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; text-align: center; width: 100%; box-sizing: border-box;">View Details</a>
             </div>
         </div>
-        <div class="save-logo" style="position: absolute; top: 10px; right: 10px; background-color: #f57c00; color: #fff; padding: 5px 10px; font-size: 0.9rem; font-weight: bold; border-radius: 4px;">Save</div>
+        <div class="save-logo" style="position: absolute; top: 10px; right: 10px; background-color: var(--secondary); color: #fff; padding: 5px 10px; font-size: 0.9rem; font-weight: bold; border-radius: 4px;">Save</div>
     </div>
 
     <div class="single-coupon" style="position: relative; width: 100%; max-width: 320px; background-color: #fff; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); padding: 20px; box-sizing: border-box; transition: transform 0.3s;">
         <div class="coupon-header">
-            <h4 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 10px; color: #333;">SEWER LINE DRAIN CLEANING SERVICES</h4>
+            <h4 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 10px; color: var(--headerColor);">SEWER LINE DRAIN CLEANING SERVICES</h4>
         </div>
         <div class="coupon-body">
-            <h3 class="cs-title" style="font-size: 1.75rem; font-weight: bold; margin: 0; color: #f57c00;">SAVE $100!</h3>
-            <p class="cs-text" style="font-size: 1rem; color: #555; margin: 10px 0;">$100 Off Any Main Sewer Line Drain Cleaning</p>
+            <h3 class="cs-title" style="font-size: 1.75rem; font-weight: bold; margin: 0; color: var(--secondary);">SAVE $100!</h3>
+            <p class="cs-text" style="font-size: var(--bodyFontSize); color: var(--bodyTextColor); margin: 10px 0;">$100 Off Any Main Sewer Line Drain Cleaning</p>
             <div style="display: flex; flex-direction: column; gap: 10px;">
-                <a href="/" class="cs-button-solid" style="display: inline-block; background-color: #f57c00; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; text-align: center; width: 100%; box-sizing: border-box;">Schedule Online</a>
-                <a href="/" class="cs-button-transparent" style="display: inline-block; background-color: #1976d2; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; text-align: center; width: 100%; box-sizing: border-box;">View Details</a>
+                <a href="/" class="cs-button-solid" style="display: inline-block; background-color: var(--secondary); color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; text-align: center; width: 100%; box-sizing: border-box;">Schedule Online</a>
+                <a href="/" class="cs-button-transparent" style="display: inline-block; background-color: var(--primary); color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; text-align: center; width: 100%; box-sizing: border-box;">View Details</a>
             </div>
         </div>
-        <div class="save-logo" style="position: absolute; top: 10px; right: 10px; background-color: #f57c00; color: #fff; padding: 5px 10px; font-size: 0.9rem; font-weight: bold; border-radius: 4px;">Save</div>
+        <div class="save-logo" style="position: absolute; top: 10px; right: 10px; background-color: var(--secondary); color: #fff; padding: 5px 10px; font-size: 0.9rem; font-weight: bold; border-radius: 4px;">Save</div>
     </div>
 
     <div class="single-coupon" style="position: relative; width: 100%; max-width: 320px; background-color: #fff; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); padding: 20px; box-sizing: border-box; transition: transform 0.3s;">
         <div class="coupon-header">
-            <h4 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 10px; color: #333;">SENIOR DISCOUNT</h4>
+            <h4 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 10px; color: var(--headerColor);">SENIOR DISCOUNT</h4>
         </div>
         <div class="coupon-body">
-            <h3 class="cs-title" style="font-size: 1.75rem; font-weight: bold; margin: 0; color: #f57c00;">SAVE $100!</h3>
-            <p class="cs-text" style="font-size: 1rem; color: #555; margin: 10px 0;">$100 Off any Plumbing or Drain Cleaning Services for Senior Citizens +62</p>
+            <h3 class="cs-title" style="font-size: 1.75rem; font-weight: bold; margin: 0; color: var(--secondary);">SAVE $100!</h3>
+            <p class="cs-text" style="font-size: var(--bodyFontSize); color: var(--bodyTextColor); margin: 10px 0;">$100 Off any Plumbing or Drain Cleaning Services for Senior Citizens +62</p>
             <div style="display: flex; flex-direction: column; gap: 10px;">
-                <a href="/" class="cs-button-solid" style="display: inline-block; background-color: #f57c00; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; text-align: center; width: 100%; box-sizing: border-box;">Schedule Online</a>
-                <a href="/" class="cs-button-transparent" style="display: inline-block; background-color: #1976d2; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; text-align: center; width: 100%; box-sizing: border-box;">View Details</a>
+                <a href="/" class="cs-button-solid" style="display: inline-block; background-color: var(--secondary); color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; text-align: center; width: 100%; box-sizing: border-box;">Schedule Online</a>
+                <a href="/" class="cs-button-transparent" style="display: inline-block; background-color: var(--primary); color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; text-align: center; width: 100%; box-sizing: border-box;">View Details</a>
             </div>
         </div>
-        <div class="save-logo" style="position: absolute; top: 10px; right: 10px; background-color: #f57c00; color: #fff; padding: 5px 10px; font-size: 0.9rem; font-weight: bold; border-radius: 4px;">Save</div>
+        <div class="save-logo" style="position: absolute; top: 10px; right: 10px; background-color: var(--secondary); color: #fff; padding: 5px 10px; font-size: 0.9rem; font-weight: bold; border-radius: 4px;">Save</div>
     </div>
 
     <div class="single-coupon" style="position: relative; width: 100%; max-width: 320px; background-color: #fff; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); padding: 20px; box-sizing: border-box; transition: transform 0.3s;">
         <div class="coupon-header">
-            <h4 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 10px; color: #333;">MILITARY DISCOUNT</h4>
+            <h4 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 10px; color: var(--headerColor);">MILITARY DISCOUNT</h4>
         </div>
         <div class="coupon-body">
-            <h3 class="cs-title" style="font-size: 1.75rem; font-weight: bold; margin: 0; color: #f57c00;">SAVE $100!</h3>
-            <p class="cs-text" style="font-size: 1rem; color: #555; margin: 10px 0;">$100 Off any Plumbing or Drain Cleaning Service for Edmonton Police or Military Personnel</p>
+            <h3 class="cs-title" style="font-size: 1.75rem; font-weight: bold; margin: 0; color: var(--secondary);">SAVE $100!</h3>
+            <p class="cs-text" style="font-size: var(--bodyFontSize); color: var(--bodyTextColor); margin: 10px 0;">$100 Off any Plumbing or Drain Cleaning Service for Edmonton Police or Military Personnel</p>
             <div style="display: flex; flex-direction: column; gap: 10px;">
-                <a href="/" class="cs-button-solid" style="display: inline-block; background-color: #f57c00; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; text-align: center; width: 100%; box-sizing: border-box;">Schedule Online</a>
-                <a href="/" class="cs-button-transparent" style="display: inline-block; background-color: #1976d2; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; text-align: center; width: 100%; box-sizing: border-box;">View Details</a>
+                <a href="/" class="cs-button-solid" style="display: inline-block; background-color: var(--secondary); color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; text-align: center; width: 100%; box-sizing: border-box;">Schedule Online</a>
+                <a href="/" class="cs-button-transparent" style="display: inline-block; background-color: var(--primary); color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; text-align: center; width: 100%; box-sizing: border-box;">View Details</a>
             </div>
         </div>
-        <div class="save-logo" style="position: absolute; top: 10px; right: 10px; background-color: #f57c00; color: #fff; padding: 5px 10px; font-size: 0.9rem; font-weight: bold; border-radius: 4px;">Save</div>
+        <div class="save-logo" style="position: absolute; top: 10px; right: 10px; background-color: var(--secondary); color: #fff; padding: 5px 10px; font-size: 0.9rem; font-weight: bold; border-radius: 4px;">Save</div>
     </div>
 </section>
-
 
 
 <!-- ============================================ -->
