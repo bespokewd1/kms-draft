@@ -2,90 +2,90 @@
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Saira';
+  font-family: "Saira";
   font-style: normal;
   font-weight: 300;
-  src: url('../fonts/saira-v20-latin-300.woff2') format('woff2');
+  src: url("../fonts/saira-v20-latin-300.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* saira-regular - latin */
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Saira';
+  font-family: "Saira";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/saira-v20-latin-regular.woff2') format('woff2');
+  src: url("../fonts/saira-v20-latin-regular.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* saira-italic - latin */
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Saira';
+  font-family: "Saira";
   font-style: italic;
   font-weight: 400;
-  src: url('../fonts/saira-v20-latin-italic.woff2') format('woff2');
+  src: url("../fonts/saira-v20-latin-italic.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* saira-500 - latin */
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Saira';
+  font-family: "Saira";
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/saira-v20-latin-500.woff2') format('woff2');
+  src: url("../fonts/saira-v20-latin-500.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* saira-500italic - latin */
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Saira';
+  font-family: "Saira";
   font-style: italic;
   font-weight: 500;
-  src: url('../fonts/saira-v20-latin-500italic.woff2') format('woff2');
+  src: url("../fonts/saira-v20-latin-500italic.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* saira-600 - latin */
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Saira';
+  font-family: "Saira";
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/saira-v20-latin-600.woff2') format('woff2');
+  src: url("../fonts/saira-v20-latin-600.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* saira-600italic - latin */
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Saira';
+  font-family: "Saira";
   font-style: italic;
   font-weight: 600;
-  src: url('../fonts/saira-v20-latin-600italic.woff2') format('woff2');
+  src: url("../fonts/saira-v20-latin-600italic.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* saira-700 - latin */
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Saira';
+  font-family: "Saira";
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/saira-v20-latin-700.woff2') format('woff2');
+  src: url("../fonts/saira-v20-latin-700.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* saira-700italic - latin */
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Saira';
+  font-family: "Saira";
   font-style: italic;
   font-weight: 700;
-  src: url('../fonts/saira-v20-latin-700italic.woff2') format('woff2');
+  src: url("../fonts/saira-v20-latin-700italic.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /*-- -------------------------- -->
@@ -94,11 +94,11 @@
 @media only screen and (min-width: 0rem) {
   :root {
     /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
-    --primary: #3D92CF;
-    --primaryLight: #F4A44A;
+    --primary: #3d92cf;
+    --primaryLight: #f4a44a;
     --primaryBreaker: #f0f0f020;
-    --secondary: #D06928;
-    --secondaryLight: #F4A44A;
+    --secondary: #d06928;
+    --secondaryLight: #f4a44a;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
@@ -110,7 +110,7 @@
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
     --bodyFontFamily: Helvetica, Aria, sans-serif;
-    --headerFontFamily: 'Saira', Helvetica, sans-serif;
+    --headerFontFamily: "Saira", Helvetica, sans-serif;
   }
   body {
     font-family: var(--bodyFontFamily);
@@ -2100,7 +2100,7 @@
   }
   #reviews-1833:before {
     /* gradient that softens the transition from the pattern to the edge of the section */
-    content: '';
+    content: "";
     width: 100%;
     height: 20%;
     background: linear-gradient(to bottom, #222222 0%, rgba(34, 34, 34, 0) 100%);
@@ -2112,7 +2112,7 @@
   }
   #reviews-1833:after {
     /* gradient that softens the transition from the pattern to the edge of the section */
-    content: '';
+    content: "";
     width: 100%;
     height: 20%;
     background: linear-gradient(to bottom, rgba(34, 34, 34, 0) 0%, #222222 100%);
@@ -2231,7 +2231,7 @@
     position: absolute;
     top: 0;
     /* 100px - 160px */
-    right: calc(clamp(6.25rem, 17vw, 10rem)*-1);
+    right: calc(clamp(6.25rem, 17vw, 10rem) * -1);
     z-index: -1;
   }
   #reviews-1833 .cs-waves img {
@@ -2367,7 +2367,7 @@
   }
   #services-1644 .cs-item:before {
     /* gradient line divider */
-    content: '';
+    content: "";
     width: 100%;
     height: 1px;
     background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #bababa 50%, rgba(255, 255, 255, 0) 100%);
@@ -2946,7 +2946,7 @@
     box-sizing: border-box;
   }
   #content-1450 .cs-button-solid:before {
-    content: '';
+    content: "";
     position: absolute;
     height: 100%;
     width: 0%;
@@ -3204,6 +3204,140 @@
   }
 }
 /*-- -------------------------- -->
+<---          Collabs            -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #gallery-45 {
+    padding: var(--sectionPadding);
+    position: relative;
+    /* Prevents overflow from the image going off screen */
+    overflow: hidden;
+  }
+  #gallery-45 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #gallery-45 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #gallery-45 .cs-image-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 16px - 20px */
+    gap: clamp(1rem, 1.5vw, 1.25rem);
+  }
+  #gallery-45 .cs-item {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1;
+    margin: 0;
+    position: relative;
+    display: block;
+    background-color: #0067ff70;
+    padding: 1rem;
+  }
+  #gallery-45 .cs-item:hover .cs-hover-box {
+    opacity: 1;
+  }
+  #gallery-45 .cs-item:hover .cs-icon {
+    /* return to original position */
+    transform: rotateY(0);
+  }
+  #gallery-45 .cs-item:hover .cs-h3 {
+    opacity: 1;
+    /* Return to original position */
+    transform: translateY(0);
+  }
+  #gallery-45 .cs-item:hover .cs-hover-box-text {
+    opacity: 1;
+    /* Return to original position */
+    transform: translateY(0);
+  }
+  #gallery-45 .cs-picture {
+    margin: auto;
+    width: 100%;
+    height: 75px;
+    display: block;
+    position: relative;
+  }
+  #gallery-45 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80%;
+    width: 100%;
+    object-fit: contain;
+  }
+  #gallery-45 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #gallery-45 .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+  }
+  #gallery-45 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #gallery-45 .cs-image-group {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+  }
+  #gallery-45 .cs-item {
+    grid-column: span 6;
+  }
+}
+/* In Between - 600px */
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #gallery-45 .cs-item {
+    grid-column: span 2;
+  }
+}
+/*-- -------------------------- -->
 <---        Custom Styles        -->
 <--- -------------------------- -*/
 .review-badge {
@@ -3256,6 +3390,7 @@
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 .trust-signals-contents {
   width: 200px;
@@ -3263,17 +3398,11 @@
 .trust-signals-contents .cs-text {
   text-align: center;
 }
-@media only screen and (max-width: 600px) {
-  .trust-signals {
-    flex-wrap: wrap;
-  }
-}
 #secondary-banner {
   display: flex;
   justify-content: center;
   padding: var(--sectionPadding);
   background-color: var(--primary);
-  margin-bottom: 20px;
 }
 #secondary-banner .cs-title {
   color: var(--bodyTextColorWhite);
@@ -3312,10 +3441,7 @@
   #secondary-banner {
     display: flex;
     justify-content: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 2rem;
   }
   #secondary-banner .cs-title {
     margin-bottom: 0;
