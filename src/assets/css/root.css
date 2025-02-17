@@ -3401,7 +3401,7 @@
 #secondary-banner {
   display: flex;
   justify-content: center;
-  padding: var(--sectionPadding);
+  padding: 2rem;
   background-color: var(--primary);
   gap: 2rem;
   flex-wrap: wrap;
