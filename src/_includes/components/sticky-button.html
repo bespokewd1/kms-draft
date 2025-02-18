@@ -5,19 +5,6 @@
 </div>
 
 <style>
-  @keyframes slideIn {
-    0% {
-      visibility: hidden;
-      opacity: 0;
-      transform: translateY(50%);
-    }
-    100% {
-      visibility: visible;
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
   .sticky-div {
     position: fixed;
     bottom: 8px;
@@ -27,17 +14,10 @@
     opacity: 0;
     transform: translateY(50%);
     z-index: 100;
-    /* transition: */
-    /*   transform 200ms ease-in, */
-    /*   visibility 200ms ease-in, */
-    /*   opacity 200ms ease-in; */
-
-    /* Apply the animation */
-    animation-name: slideIn;
-    animation-duration: 300ms;
-    animation-timing-function: ease-in;
-    animation-delay: 1000ms;
-    animation-fill-mode: forwards;
+    transition:
+      transform 200ms ease-in,
+      visibility 200ms ease-in,
+      opacity 200ms ease-in;
   }
   .cs-button-solid.sticky-button {
     margin: auto;
@@ -45,9 +25,9 @@
     background-color: var(--secondary);
   }
 
-  /* body.scroll .sticky-div { */
-  /*   visibility: visible; */
-  /*   opacity: 1; */
-  /*   transform: translateY(0); */
-  /* } */
+  body.scroll .sticky-div {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
 </style>
