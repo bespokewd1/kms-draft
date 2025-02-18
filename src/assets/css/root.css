@@ -899,6 +899,9 @@
   :root {
     --canadaBannerHeight: 5.6rem;
   }
+  .canada-banner {
+    padding-top: 1.375rem;
+  }
   .canada-banner .cs-container img {
     width: 5%;
   }
