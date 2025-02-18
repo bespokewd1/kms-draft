@@ -3752,7 +3752,8 @@
 <---        Custom Styles        -->
 <--- -------------------------- -*/
 .review-badge {
-  padding: var(--sectionPadding);
+  // padding: var(--sectionPadding);
+  padding: clamp(3.2rem, 7vw, 5rem) 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3760,19 +3761,33 @@
 
   .cs-title {
     font-size: 2.5rem;
+    text-align: center;
   }
 }
 .review-logo-images {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  align-items: center;
+  display: grid;
+  // justify-content: center;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  // align-items: center;
+
+  > :nth-child(1) {
+    place-self: end;
+  }
+
+  > :nth-child(2) {
+    place-self: start;
+  }
 }
+
 @media only screen and (max-width: 600px) {
   .review-logo-images {
-    flex-direction: column;
+    // flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     img {
-      max-width: 60vw;
+      max-width: 50vw;
       height: auto;
     }
   }
