@@ -1,7 +1,8 @@
 ---
 title: KMS Plumbing & Gasfitting’s New Website – A Custom Upgrade for a Better
-  Experience! 2
-description: KMS Plumbing & Gasfitting’s New Website
+  Experience!
+description: KMS Plumbing & Gasfitting’s New Website A Custom Upgrade for a
+  Better Experience!
 author: KMS Team
 date: 2025-02-18T16:09:00.000Z
 tags:
