@@ -1,52 +1,88 @@
 ---
-title: Acuti modo
-description: Lorem markdownum tardantis unam mitissima dissimulator inposuit   corpus sintque tura tremenda, nec coetum.
+title: KMS Plumbing & Gasfitting’s New Website – A Custom Upgrade for a Better
+  Experience!
+description: New Modern website for KMS
 author: Code Stitch
-date: 2023-06-08T15:26:46.705Z
+date: 2025-02-18T14:24:00.000Z
 tags:
-    - post
+  - post
 image: https://kms-draft.netlify.app/assets/images/gallery/plumber-img2.jpg
 imageAlt: People
 ---
+We’re excited to unveil our newly upgraded website! We partnered
+with Bespoke Web Design Edmonton to create a fully custom experience
+that reflects our business and services.
 
-## Lacerans aliter tetigit praeterea rite
+Charles from Bespoke reached out at the perfect time—we needed
+someone who could handle the upgrade seamlessly, and they delivered
+beyond our expectations! But what really stood out? It’s not just a one-time
+deal—this is a long-term partnership to help our business grow.
 
-Lorem markdownum tardantis unam mitissima dissimulator inposuit corpus sintque tura tremenda, nec coetum. Est limen Isthmo sagittas patres emerguntque anxia
-[defenderet](http://www.morte.com/parvo.html) illi, est.
+At KMS Plumbing & Gasfitting, we take pride in providing top-quality
+service, and our website should showcase that. We moved from a basic
+Squarespace site to a fast, high-performance custom website designed
+around our business goals and customer needs.
 
--   Sua ille submittere viribus verba visa Myconon
--   Qvem nec
--   Frena prior rauco iaculum enim
--   Modo referat
--   Tibi mihi sumit bibit censuque licentia consistite
--   Sumptis Iunonis muneris quiete haec tori
+And the best part? The process was easy, hassle-free, and completely
+worth it!
 
-## Aut pedum tendit ut raptae
+## **Why We Upgraded – The Benefits of a Custom Website**
 
-Est vicinia, est herba ut et [duro](http://pars.net/iamcum), agnosse dicitur spectator gracili aquarum. **Amore adfer metam** queri quartus cunctas ego.
+We also got Bespoke Web Design’s Brand & Identity Marketing
+Package, which includes:
 
-Tectis Iovemque moriens fraternaeque Gorgonei equosque Oceanumque, huius corporis, contigerant metu vecta patietur versasse. Et undis superbus? Cura cortice
-saepe admisitque tamen iuvenum, vivere Lemnicolae est vidi dilapsa ianua gelidum, Ismenus. Est dic lacertos regnum quippe certo, ut vultus tollere.
+✅ A Fully Custom Website – Built around our vision, not a template.
 
-## Iacentes temptabat
+✅ 5 Personalized Social Media Assets Every Month – Custom graphics
+for our promotions & events, so posting is easier while we focus on our
+services.
 
-Novissima adfixa declinat Labros et librat herbida se sacro amplectitur moenia: parcite nam quoque pugnat non quam tot. Sole et enim inundet? Ecce urbesque
-_obliquis_, non patietur fuga fixa feros horruit [ferox tui](http://www.postquam.org/gravatumiphis.html), de.
+✅ Lightning-Fast & SEO-Friendly – Coded in vanilla
+JavaScript using MS Visual Studio Code, making it lightweight and
+favored by Google.
 
-1. Argentea ait exstabant trames
-2. Nocti liquidum Minervae Cerberus quas
-3. Neque removente
+✅ A Working Blog – Now we can share plumbing tips for our clients
+and readers
 
-## Respondere prior si ingemit bellare
+✅ Unlimited Edits – We can update content anytime as our business
+grows.
 
-Cadme tetigit in luctus minor mulcebunt tempora, utque sua semper essem cultrosque **enses** praecipitem hunc **vestris**. Restantem iussit poena; quod vendit
-electarumque mendacem nec sedens quidem Iovi torta cruribus, et? Venit alvum _anima_! Manibusque idem _Aconteus ducat_ multamque et tibi Siphnon; mitissima
-devenit aut poscitur flumina nymphas revocare obstitit Lyciaeque Meleagros fors.
+✅ Banners for Financing & Coupons – Customers can quickly see
+current offers and promotions
 
-Orbem dolendi corpore hic [flamma vertere recurvas](http://paruit.com/sineloqui.html), da pedes calido unus armis relinquunt,
-[flores Minervae formam](http://alumnaesibi.com/unda). Caelo [inposuit](http://invirginibus.org/trahuntur) viribus semper, vesci excipit facta putes. Patitur
-attonitos acutior dum liquefacta nostra habebat. Duabus victus me suae viscera natorum ferox contulerat, de tuus Pasiphaeia ruunt protinus?
+## \
+**The Process – Quick & Stress-Free**
 
-_Multis soror_, mundi paruerit quietem in, temeraria velantque guttura temerarius candens prostravit vera operatus, ut fecimus. Gyaros quaesiti in, a frustra,
-iacentia hosti. Suae iamque. Sustinet crimen toris, oves hanc est causa tum paravi phocen in natas, crudelis infra erat minimo? Inquit et **loqui studiisque
-Alpheos** venti spectata velocior [fida](http://www.animiquetantaque.net/atulterius.aspx) Iove habet Cometen rediit; tulisset!
+1️. Free Website Audit
+
+Charles from Bespoke Web Design Edmonton analyzed our old website
+and showed us areas for improvement—faster speed, better navigation, and a
+more professional look.
+
+2️. Simple Strategy Meeting
+
+We had a quick meeting to discuss our business goals and vision.
+The best part? Charles made everything easy to understand without the
+tech jargon.
+
+3️. Custom Design, Coded & Launched
+
+The team at Bespoke designed, coded, and deployed our new website—tailored
+exactly to our needs, without unnecessary extras.
+
+### Now, we have a
+technology partner we can talk to anytime—not just a web designer, but
+someone who understands our business and helps us grow!
+
+
+
+How to Structure It: (Photos)
+
+## Thinking About Upgrading Your Website?
+
+If your business is still using a template-based site, it might be
+time for an upgrade. Bespoke Web Design Edmonton makes the process simple,
+affordable, and stress-free—just like they did for us!
+
+Get a FREE website audit today! Visit Bespoke Web Design Edmonton to get started,
+or call 780-263-8028.
