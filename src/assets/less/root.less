@@ -917,6 +917,10 @@
     }
 
     .cs-button-solid {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
       font-size: (16/16rem);
       /* 46px - 56px */
       line-height: clamp(2.875em, 5.5vw, 3.5em);
@@ -930,7 +934,6 @@
       padding: 0 (32/16rem);
       background-color: var(--primary);
       border: 1px solid var(--primary);
-      display: inline-block;
       position: relative;
       z-index: 1;
       /* prevents padding from adding to the width */
@@ -941,9 +944,8 @@
         position: absolute;
         height: 100%;
         width: 0%;
-        background: var(--primary);
-        // since there is no animation for the header button
-        opacity: 0;
+        background: var(--secondary);
+        opacity: 1;
         top: 0;
         left: 0;
         z-index: -1;
@@ -951,10 +953,10 @@
       }
 
       &:hover {
+        border: 1px solid var(--secondary);
+        transition-delay: 250ms;
         &:before {
           width: 100%;
-          // since there is no animation for the header button
-          opacity: 0;
         }
       }
     }
@@ -1514,6 +1516,10 @@
     }
 
     .cs-button-solid {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
       font-size: (16/16rem);
       /* 46px - 56px */
       line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -1524,7 +1530,6 @@
       color: #fff;
       padding: 0;
       background-color: var(--secondary);
-      display: inline-block;
       position: relative;
       z-index: 1;
 
@@ -1568,6 +1573,7 @@
       display: inline-flex;
       justify-content: center;
       align-items: center;
+      gap: 0.5rem;
       position: relative;
       z-index: 1;
 
@@ -1600,7 +1606,7 @@
 
       .cs-img {
         display: block;
-        margin-right: (12/16rem);
+        margin: 0;
       }
     }
 
