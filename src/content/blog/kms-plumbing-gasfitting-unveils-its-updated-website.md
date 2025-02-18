@@ -4,6 +4,7 @@ description: KMS Plumbing & Gasfitting Unveils Its Updated Website!
 author: Team KMS
 date: 2025-02-18T16:12:00.000Z
 tags:
+  - featured
   - post
 image: /assets/images/cms/kms-van.jpg
 imageAlt: van
