@@ -111,6 +111,7 @@
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
     --bodyFontFamily: Helvetica, Aria, sans-serif;
     --headerFontFamily: "Saira", Helvetica, sans-serif;
+    --canadaBannerHeight: 6.5rem;
   }
   body {
     font-family: var(--bodyFontFamily);
@@ -858,6 +859,51 @@
   }
 }
 /*-- -------------------------- -->
+<---       Canada Banner        -->
+<--- -------------------------- -*/
+@media only screen and (min-width: 0rem) {
+  .canada-banner {
+    position: absolute;
+    top: var(--canadaBannerHeight);
+    z-index: 2;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background: var(--primary);
+    padding: 0.75rem;
+  }
+  .canada-banner .cs-container {
+    grid-area: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+  }
+  .canada-banner .cs-container img {
+    width: 15%;
+    height: auto;
+    place-self: end;
+  }
+  .canada-banner .cs-container .cs-text {
+    color: var(--bodyTextColorWhite);
+    width: fit-content;
+  }
+}
+@media only screen and (min-width: 35rem) {
+  .canada-banner .cs-container img {
+    width: 7%;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  :root {
+    --canadaBannerHeight: 5.6rem;
+  }
+  .canada-banner .cs-container img {
+    width: 5%;
+  }
+}
+/*-- -------------------------- -->
 <---            CTA             -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
@@ -1260,6 +1306,7 @@
     /* we put the padding top and bottom on the container instead of #Hero so the pseudo element lines go to the top and bottom of the section */
     /* 144px - 300px - leaving extra space for the navigation */
     /* changes on tablet */
+    margin-top: var(--canadaBannerHeight);
     padding: clamp(9rem, 25.95vw, 12rem) 0 0;
     /* 60px - 200px */
     padding-bottom: clamp(3.75rem, 12.5vw, 25rem);
