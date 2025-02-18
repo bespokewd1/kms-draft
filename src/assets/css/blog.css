@@ -22,7 +22,7 @@
     padding: 0 1.5rem;
     color: #fff;
     background-color: var(--headerColor);
-    border-radius: 0.25rem;
+    border-radius: 70px;
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -36,7 +36,7 @@
     background: #fff;
     opacity: 0;
     border: 1px solid var(--headerColor);
-    border-radius: 0.25rem;
+    border-radius: 70px;
     position: absolute;
     top: 0;
     left: 0;
@@ -226,9 +226,9 @@
     /* prevents padding from adding to the width */
     box-sizing: border-box;
     padding: 0 1.5rem;
+    border-radius: 70px;
     color: #fff;
     background-color: var(--headerColor);
-    border-radius: 0.25rem;
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -242,7 +242,7 @@
     background: #fff;
     opacity: 0;
     border: 1px solid var(--headerColor);
-    border-radius: 0.25rem;
+    border-radius: 70px;
     position: absolute;
     top: 0;
     left: 0;

@@ -140,6 +140,7 @@
   .cs-button-solid {
     font-size: 1rem;
     font-weight: 700;
+    border-radius: 70px;
     /* 46px - 56px */
     line-height: clamp(2.875rem, 5.5vw, 3.5rem);
     text-align: center;
@@ -159,6 +160,7 @@
   .cs-button-solid:before {
     content: "";
     width: 0%;
+    border-radius: 70px;
     height: 100%;
     background: #000;
     opacity: 1;
@@ -199,6 +201,7 @@
       content: "";
       position: absolute;
       display: block;
+      border-radius: 70px;
       background: #000;
       opacity: 1;
       /* so it sits on top of the border */
@@ -919,6 +922,7 @@
       line-height: clamp(2.875em, 5.5vw, 3.5em);
       text-decoration: none;
       font-weight: 700;
+      border-radius: 70px;
       text-align: center;
       margin: 0;
       color: #fff;
@@ -938,7 +942,8 @@
         height: 100%;
         width: 0%;
         background: var(--primary);
-        opacity: 1;
+        // since there is no animation for the header button
+        opacity: 0;
         top: 0;
         left: 0;
         z-index: -1;
@@ -948,6 +953,8 @@
       &:hover {
         &:before {
           width: 100%;
+          // since there is no animation for the header button
+          opacity: 0;
         }
       }
     }
@@ -1010,7 +1017,8 @@
       min-width: (150/16rem);
       padding: 0 (24/16rem);
       background-color: var(--primary);
-      border-radius: (4/16rem);
+      // border-radius: (4/16rem);
+      border-radius: 70px;
       display: inline-block;
       position: relative;
       z-index: 1;
@@ -1027,7 +1035,8 @@
         top: 0;
         left: 0;
         z-index: -1;
-        border-radius: (4/16rem);
+        // border-radius: (4/16rem);
+        border-radius: 70px;
         transition: width 0.3s;
       }
 
@@ -1554,6 +1563,7 @@
       padding: 0;
       background-color: transparent;
       border: 1px solid var(--bodyTextColorWhite);
+      border-radius: 70px;
       box-sizing: border-box;
       display: inline-flex;
       justify-content: center;
@@ -1568,6 +1578,7 @@
         background: #000;
         opacity: 1;
         /* so it sits on top of the border */
+        border-radius: 70px;
         top: -1px;
         left: -1px;
         right: -1px;
@@ -1580,6 +1591,8 @@
       }
 
       &:hover {
+        border-color: #000;
+        transition-delay: 250ms;
         &:before {
           transform: scaleX(1);
         }
@@ -3827,7 +3840,7 @@
   .cs-button-solid {
     background-color: var(--bodyTextColorWhite);
     color: var(--headerColor);
-    width: 176px;
+    // width: 176px;
     margin: auto;
   }
   .cs-button-solid:hover {
@@ -3877,4 +3890,3 @@
   gap: 10px;
   align-content: center;
 }
-
