@@ -5,7 +5,7 @@ author: Team KMS
 date: 2025-02-18T16:16:00.000Z
 tags:
   - post
-image: /assets/images/cms/kms-van.jpg
+image: /assets/images/cms/blog3.jpg
 imageAlt: van
 ---
 # **5 Most Common Plumbing Issues & How to Fix Them**
@@ -111,4 +111,4 @@ Plumbing problems can be frustrating, costly, and disruptive to your daily routi
 
 Plumbing issues can start small but turn into major headaches if ignored. Regular maintenance and early fixes can save you time, money, and stress.
 
-💡 **Need Professional Help?** If you’re dealing with stubborn plumbing problems, don’t wait until they get worse. **Contact \[Your Client’s Business Name] today for expert plumbing solutions!**
+💡 **Need Professional Help?** If you’re dealing with stubborn plumbing problems, don’t wait until they get worse. **Contact  KMS Plumbing and Gasfitting today for expert plumbing solutions! 15+ Years Experience and highly recommended in Edmonton.**
