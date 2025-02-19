@@ -112,6 +112,10 @@
     --bodyFontFamily: Helvetica, Aria, sans-serif;
     --headerFontFamily: "Saira", Helvetica, sans-serif;
     --canadaBannerHeight: 6.5rem;
+    --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
   }
   body {
     font-family: var(--bodyFontFamily);
@@ -256,6 +260,9 @@
   body.cs-open {
     overflow: hidden;
   }
+  body.scroll #cs-navigation {
+    box-shadow: var(--shadow-md);
+  }
   body.scroll #cs-navigation:before {
     background-color: var(--bodyTextColorWhite);
     height: 100%;
@@ -347,6 +354,9 @@
     object-fit: contain;
     /* places the image to the left edge of the parent */
     object-position: left;
+  }
+  #cs-navigation .cs-nav {
+    order: 3;
   }
   #cs-navigation .cs-toggle {
     width: 3.5rem;
@@ -529,7 +539,47 @@
     display: block;
   }
   #cs-navigation .cs-button-solid {
-    display: none;
+    order: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875em, 5.5vw, 3.5em);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 70px;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1rem;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #cs-navigation .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: var(--secondary);
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #cs-navigation .cs-button-solid:hover {
+    border: 1px solid var(--secondary);
+    transition-delay: 250ms;
+  }
+  #cs-navigation .cs-button-solid:hover:before {
+    width: 100%;
   }
 }
 /*-- -------------------------- -->
