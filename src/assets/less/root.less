@@ -526,8 +526,29 @@
       font-weight: bold;
       margin: 0;
       color: var(--headerColor);
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
       position: relative;
+      position: relative;
+
+      .services-icon {
+        color: var(--secondary);
+        display: inline-flex;
+        align-items: center;
+        padding-bottom: (3/16rem);
+      }
+
+      .coupon-icon {
+        color: #22c55e;
+        display: inline-flex;
+        align-items: center;
+        padding-bottom: (3/16rem);
+
+        > svg {
+          fill: #22c55e;
+        }
+      }
 
       &:before {
         /* active state underline */
@@ -734,6 +755,14 @@
     }
 
     .cs-li-link {
+      display: inline-block;
+      .services-icon {
+        display: none;
+      }
+
+      .coupon-icon {
+        display: none;
+      }
       &:hover {
         .cs-drop-icon {
           filter: grayscale(1) brightness(1000%);
@@ -876,10 +905,23 @@
       margin: 0;
       padding: 0 (16/16rem);
       color: var(--primary);
-      display: block;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
       position: relative;
       z-index: 1;
       transition: color 0.3s;
+
+      // Update Services icon color
+      svg.lucide-wrench {
+        color: var(--secondary);
+      }
+
+      // Update Coupons icon color
+      svg[viewBox="0 0 576 512"] {
+        color: #22c55e;
+        fill: currentColor;
+      }
 
       &:before {
         /* on scroll background */

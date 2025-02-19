@@ -490,8 +490,25 @@
     font-weight: bold;
     margin: 0;
     color: var(--headerColor);
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
     position: relative;
+  }
+  #cs-navigation .cs-li-link .services-icon {
+    color: var(--secondary);
+    display: inline-flex;
+    align-items: center;
+    padding-bottom: 0.1875rem;
+  }
+  #cs-navigation .cs-li-link .coupon-icon {
+    color: #22c55e;
+    display: inline-flex;
+    align-items: center;
+    padding-bottom: 0.1875rem;
+  }
+  #cs-navigation .cs-li-link .coupon-icon > svg {
+    fill: #22c55e;
   }
   #cs-navigation .cs-li-link:before {
     /* active state underline */
@@ -660,6 +677,15 @@
   #cs-navigation .cs-drop-li:nth-of-type(9) {
     transition-delay: 0.45s;
   }
+  #cs-navigation .cs-li-link {
+    display: inline-block;
+  }
+  #cs-navigation .cs-li-link .services-icon {
+    display: none;
+  }
+  #cs-navigation .cs-li-link .coupon-icon {
+    display: none;
+  }
   #cs-navigation .cs-li-link:hover .cs-drop-icon {
     filter: grayscale(1) brightness(1000%);
   }
@@ -781,10 +807,19 @@
     margin: 0;
     padding: 0 1rem;
     color: var(--primary);
-    display: block;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
     position: relative;
     z-index: 1;
     transition: color 0.3s;
+  }
+  #cs-navigation .cs-li-link svg.lucide-wrench {
+    color: var(--secondary);
+  }
+  #cs-navigation .cs-li-link svg[viewBox="0 0 576 512"] {
+    color: #22c55e;
+    fill: currentColor;
   }
   #cs-navigation .cs-li-link:before {
     /* on scroll background */
