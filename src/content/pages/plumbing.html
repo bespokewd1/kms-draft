@@ -9,7 +9,7 @@ eleventyNavigation:
 ---
 
 {% block head %}
-<link rel="stylesheet" href="{{ client.domain }}/assets/css/services.css">
+<link rel="stylesheet" href="/assets/css/services.css">
 
 {% endblock %}
 
@@ -37,7 +37,7 @@ eleventyNavigation:
         <source media="(min-width: 601px)" srcset="/assets/images/banner_image.jpg">
         <img decoding="async" src="/assets/images/banner_image.jpg" alt="mechanic" width="1280" height="568" aria-hidden="true">
     </picture>
-</div> 
+</div>
 
 <!-- ============================================ -->
 <!--                     CTA                      -->
@@ -57,6 +57,7 @@ eleventyNavigation:
 
 <section id="services-218">
     <div class="cs-container">
+        <img class="cs-bg-image" aria-hidden="true" src="/assets/images/blog2.jpg" alt="">
         <div class="cs-content">
             <span class="cs-topper">Reliable Service You Can Trust</span>
             <h2 class="cs-title">Plumbing Services</h2>
@@ -88,12 +89,10 @@ eleventyNavigation:
                 </p>
             </li>
         </ul>
-        <!-- Floating Watermark -->
-        <img class="cs-watermark" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Services/svg-graphic.svg" alt="icon" width="77" height="77">
     </div>
 </section>
-                                
-          
+
+
 <!-- ============================================ -->
 <!--                   Pricing                    -->
 <!-- ============================================ -->
@@ -167,7 +166,7 @@ eleventyNavigation:
 <!-- ============================================ -->
 <!--                     CTA                      -->
 <!-- ============================================ -->
- 
+
 <section id="secondary-banner">
     <div class="cs-container">
         <div class="cs-content">
@@ -238,7 +237,7 @@ eleventyNavigation:
         </div>
     </div>
 </section>
-             
+
 <section id="secondary-banner">
     <div class="cs-container">
         <div class="cs-content">
@@ -250,5 +249,5 @@ eleventyNavigation:
 
 
 {% include "components/cta.html" %}
-                                
+
 {% endblock %}

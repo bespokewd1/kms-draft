@@ -17,6 +17,10 @@
       align-items: center;
       /* 48px - 64px */
       gap: clamp(3rem, 6vw, 4rem);
+
+      .cs-bg-image {
+        display: none;
+      }
     }
 
     .cs-content {
@@ -157,12 +161,42 @@
 @media only screen and (min-width: 48rem) {
   #services-218 {
     .cs-container {
+      --bg-width: 65%;
       max-width: (1280/16rem);
       position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: var(--bg-width);
+        background: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 1) 0%,
+          transparent 35%
+        );
+        pointer-events: none;
+      }
+
+      .cs-bg-image {
+        display: block;
+        width: var(--bg-width);
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        right: 0;
+        z-index: -2;
+      }
     }
 
     .cs-content {
       width: 50%;
+      max-height: (247/16rem);
+      padding-bottom: 1px;
+      backdrop-filter: blur(1px);
     }
 
     .cs-card-group {
@@ -451,4 +485,3 @@
     }
   }
 }
-

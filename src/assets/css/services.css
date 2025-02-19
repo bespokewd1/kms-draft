@@ -17,6 +17,9 @@
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
+  #services-218 .cs-container .cs-bg-image {
+    display: none;
+  }
   #services-218 .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: left;
@@ -136,11 +139,35 @@
 /* Tablet */
 @media only screen and (min-width: 48rem) {
   #services-218 .cs-container {
+    --bg-width: 65%;
     max-width: 80rem;
     position: relative;
   }
+  #services-218 .cs-container:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: var(--bg-width);
+    background: linear-gradient(to right, #ffffff 0%, transparent 35%);
+    pointer-events: none;
+  }
+  #services-218 .cs-container .cs-bg-image {
+    display: block;
+    width: var(--bg-width);
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    z-index: -2;
+  }
   #services-218 .cs-content {
     width: 50%;
+    max-height: 15.4375rem;
+    padding-bottom: 1px;
+    backdrop-filter: blur(1px);
   }
   #services-218 .cs-card-group {
     display: grid;
