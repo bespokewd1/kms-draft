@@ -248,11 +248,28 @@
 <---     Mobile Navigation      -->
 <--- -------------------------- -*/
 
-@media only screen and (max-width: 23rem) {
+@media only screen and (min-width: 0rem) {
   #cs-navigation {
     .cs-container {
       .cs-button-solid {
         display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 20rem) {
+  #cs-navigation {
+    .cs-container {
+      .cs-button-solid {
+        display: inline-flex;
+        font-size: (14/16rem);
+        padding: 0;
+
+        svg {
+          width: (16/16rem);
+          height: (16/16rem);
+        }
       }
     }
   }
