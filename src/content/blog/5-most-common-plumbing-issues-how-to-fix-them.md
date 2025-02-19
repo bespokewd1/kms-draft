@@ -5,6 +5,7 @@ author: Team KMS
 date: 2025-02-18T16:16:00.000Z
 tags:
   - post
+  - featured
 image: /assets/images/cms/blog3.jpg
 imageAlt: van
 ---
