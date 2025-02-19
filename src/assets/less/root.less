@@ -844,7 +844,7 @@
     .cs-ul-wrapper {
       /* absolutely positioned to be dead center */
       position: absolute;
-      left: 50%;
+      left: 45%;
       top: 50%;
       transform: translate(-50%, -50%);
     }
@@ -856,7 +856,7 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      gap: (24/16rem);
+      gap: (8/16rem);
     }
 
     .cs-li {
@@ -933,7 +933,7 @@
       margin: 0;
       color: #fff;
       min-width: (150/16rem);
-      padding: 0 (32/16rem);
+      padding: 0 (16/16rem);
       background-color: var(--primary);
       border: 1px solid var(--primary);
       position: relative;
@@ -961,6 +961,18 @@
           width: 100%;
         }
       }
+    }
+  }
+}
+
+@media only screen and (min-width: 80rem) {
+  #cs-navigation {
+    .cs-ul {
+      gap: (24/16rem);
+    }
+
+    .cs-button-solid {
+      padding: 0 (32/16rem);
     }
   }
 }
