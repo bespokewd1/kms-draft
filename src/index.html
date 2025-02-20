@@ -144,36 +144,77 @@ eleventyNavigation:
                         src="{{ client.domain }}/assets/images/hot-water-solutions.webp" alt="icon" width="48"
                         height="48" aria-hidden="true">
                 </div>
-                <div class="cs-flex">
-                    <h2 class="cs-h2">Plumbing</h2>
-                    <p><span style="color: orange; font-weight: bold;">✔</span> <strong>Service Repairs:</strong> Expert plumbing repairs to restore functionality.</p>
-                    <p><span style="color: orange; font-weight: bold;">✔</span> <strong>Fixture Installations:</strong> Professional installation of sinks, faucets, and more.</p>
-                    <p><span style="color: orange; font-weight: bold;">✔</span> <strong>Renovations:</strong> Tailored plumbing solutions for renovations.</p>
+                <div class="cs-flex cs-accordion">
+
+                    <h2 class=" cs-accordion-header">
+                        <button data-trigger>
+                            <img class="cs-mobile-icon" loading="lazy" decoding="async"
+                                src="{{ client.domain }}/assets/images/hot-water-solutions.webp" alt="icon" width="30"
+                                height="30" aria-hidden="true">
+
+                            <span class="cs-h2">
+
+                                Plumbing
+                            </span>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-up"><path d="m18 15-6-6-6 6"/></svg>
+                        </button>
+                    </h2>
+
+                    <div class="cs-accordion-body">
+                        <p>
+                            <span style="color: orange; font-weight: bold;">✔</span> <strong>Service Repairs:</strong> Expert plumbing repairs to restore functionality.
+                        </p>
+                        <p>
+                            <span style="color: orange; font-weight: bold;">✔</span> <strong>Fixture Installations:</strong> Professional installation of sinks, faucets, and more.
+                        </p>
+                        <p>
+                            <span style="color: orange; font-weight: bold;">✔</span> <strong>Renovations:</strong> Tailored plumbing solutions for renovations.
+                        </p>
+                    </div>
                 </div>
             </li>
+
             <li class="cs-item">
                 <div class="cs-image-group">
                     <img class="cs-icon" loading="lazy" decoding="async"
                         src="{{ client.domain }}/assets/images/pumbling-repairs.webp" alt="icon" width="48" height="48"
                         aria-hidden="true">
                 </div>
-                <div class="cs-flex">
-                    <h2 class="cs-h2">Gasfitting</h2>
-                    <div class="service-checkbox">
-                        <img loading="lazy" decoding="async"
-                            src="{{ client.domain }}/assets/images/check-mark.webp" alt="icon" width="17"
-                            height="17" aria-hidden="true">
-                        <p class="cs-item-text">
-                            <b>Gas Line Installation</b>: Safe and efficient gas line setup.
-                        </p>
-                    </div>
-                    <div class="service-checkbox">
-                        <img loading="lazy" decoding="async"
+                <div class="cs-flex cs-accordion">
+                    <h2 class=" cs-accordion-header">
+                        <button data-trigger>
+                            <img class="cs-mobile-icon" loading="lazy" decoding="async"
+                                src="{{ client.domain }}/assets/images/pumbling-repairs.webp" alt="icon" width="30"
+                                height="30" aria-hidden="true">
+
+                            <span class="cs-h2">
+
+                                Gasfitting
+                            </span>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-up"><path d="m18 15-6-6-6 6"/></svg>
+                        </button>
+                        </h2>
+                    <div class="cs-accordion-body">
+
+                        <div class="service-checkbox">
+                            <img loading="lazy" decoding="async"
                                 src="{{ client.domain }}/assets/images/check-mark.webp" alt="icon" width="17"
                                 height="17" aria-hidden="true">
-                        <p class="cs-item-text">
-                            <b>Garage Heaters</b>: Installation and maintenance of garage heating systems.
-                        </p>
+                            <p class="cs-item-text">
+                                <b>Gas Line Installation</b>: Safe and efficient gas line setup.
+                            </p>
+                        </div>
+                        <div class="service-checkbox">
+                            <img loading="lazy" decoding="async"
+                                    src="{{ client.domain }}/assets/images/check-mark.webp" alt="icon" width="17"
+                                    height="17" aria-hidden="true">
+                            <p class="cs-item-text">
+                                <b>Garage Heaters</b>: Installation and maintenance of garage heating systems.
+                            </p>
+                        </div>
+
                     </div>
                 </div>
             </li>
@@ -183,32 +224,49 @@ eleventyNavigation:
                         src="{{ client.domain }}/assets/images/drain-cleaning-and-maintenance.webp" alt="icon"
                         width="48" height="48" aria-hidden="true">
                 </div>
-                <div class="cs-flex">
-                    <h2 class="cs-h2">Drain Cleaning</h2>
-                    <div class="service-checkbox">
-                        <img loading="lazy" decoding="async"
-                        src="{{ client.domain }}/assets/images/check-mark.webp" alt="icon" width="17"
-                        height="17" aria-hidden="true">
-                        <p class="cs-item-text">
-                            <b>Unclogging</b>: Fast, effective drain clearing.
-                        </p>
-                    </div>
-                    <div class="service-checkbox">
-                        <img loading="lazy" decoding="async"
-                        src="{{ client.domain }}/assets/images/check-mark.webp" alt="icon" width="17"
-                        height="17" aria-hidden="true">
-                        <p class="cs-item-text">
-                            <b>Drain Cleaning & Repair</b>: Comprehensive cleaning and repairs.
-                        </p>
-                    </div>
-                    <div class="service-checkbox">
-                        <img loading="lazy" decoding="async"
-                        src="{{ client.domain }}/assets/images/check-mark.webp" alt="icon" width="17"
-                        height="17" aria-hidden="true">
-                        <p class="cs-item-text">
-                            <b>Sewer Services</b>: Sewer line cleaning, inspection, and repair.
-                        </p>
-                    </div>
+                <div class="cs-flex cs-accordion">
+
+                    <h2 class=" cs-accordion-header">
+                            <button data-trigger>
+                                <img class="cs-mobile-icon" loading="lazy" decoding="async"
+                                    src="{{ client.domain }}/assets/images/drain-cleaning-and-maintenance.webp" alt="icon" width="30"
+                                    height="30" aria-hidden="true">
+
+                                <span class="cs-h2">
+
+                                    Drain Cleaning
+                                </span>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-up"><path d="m18 15-6-6-6 6"/></svg>
+                            </button>
+                        </h2>
+                        <div class="cs-accordion-body">
+                            <div class="service-checkbox">
+                                <img loading="lazy" decoding="async"
+                                src="{{ client.domain }}/assets/images/check-mark.webp" alt="icon" width="17"
+                                height="17" aria-hidden="true">
+                                <p class="cs-item-text">
+                                    <b>Unclogging</b>: Fast, effective drain clearing.
+                                </p>
+                            </div>
+                            <div class="service-checkbox">
+                                <img loading="lazy" decoding="async"
+                                src="{{ client.domain }}/assets/images/check-mark.webp" alt="icon" width="17"
+                                height="17" aria-hidden="true">
+                                <p class="cs-item-text">
+                                    <b>Drain Cleaning & Repair</b>: Comprehensive cleaning and repairs.
+                                </p>
+                            </div>
+                            <div class="service-checkbox">
+                                <img loading="lazy" decoding="async"
+                                src="{{ client.domain }}/assets/images/check-mark.webp" alt="icon" width="17"
+                                height="17" aria-hidden="true">
+                                <p class="cs-item-text">
+                                    <b>Sewer Services</b>: Sewer line cleaning, inspection, and repair.
+                                </p>
+                            </div>
+
+                        </div>
                 </div>
             </li>
             <li class="cs-item">
@@ -217,25 +275,40 @@ eleventyNavigation:
                         src="{{ client.domain }}/assets/images/fixture-installation.webp" alt="icon" width="48"
                         height="48" aria-hidden="true">
                 </div>
-                <div class="cs-flex">
-                    <h2 class="cs-h2">Hot Water Solutions</h2>
-                    <div class="service-checkbox">
-                        <img loading="lazy" decoding="async"
-                        src="{{ client.domain }}/assets/images/check-mark.webp" alt="icon" width="17"
-                        height="17" aria-hidden="true">
-                        <p class="cs-item-text">
-                            <b>Tankless Water Heaters</b>: Efficient, space-saving tankless heater installation.
-                        </p>
-                    </div>
-                    <div class="service-checkbox">
-                        <img loading="lazy" decoding="async"
-                        src="{{ client.domain }}/assets/images/check-mark.webp" alt="icon" width="17"
-                        height="17" aria-hidden="true">
-                        <p class="cs-item-text">
-                            <b>Hot Water Tank Services</b>: Installation, maintenance, and repairs for hot water tanks.
-                        </p>
-                    </div>
-                    
+                <div class="cs-flex cs-accordion">
+
+                    <h2 class=" cs-accordion-header">
+                            <button data-trigger>
+                                <img class="cs-mobile-icon" loading="lazy" decoding="async"
+                                    src="{{ client.domain }}/assets/images/fixture-installation.webp" alt="icon" width="30"
+                                    height="30" aria-hidden="true">
+
+                                <span class="cs-h2">
+
+                                    Hot Water Solutions
+                                </span>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-up"><path d="m18 15-6-6-6 6"/></svg>
+                            </button>
+                        </h2>
+                        <div class="cs-accordion-body">
+                            <div class="service-checkbox">
+                                <img loading="lazy" decoding="async"
+                                src="{{ client.domain }}/assets/images/check-mark.webp" alt="icon" width="17"
+                                height="17" aria-hidden="true">
+                                <p class="cs-item-text">
+                                    <b>Tankless Water Heaters</b>: Efficient, space-saving tankless heater installation.
+                                </p>
+                            </div>
+                            <div class="service-checkbox">
+                                <img loading="lazy" decoding="async"
+                                src="{{ client.domain }}/assets/images/check-mark.webp" alt="icon" width="17"
+                                height="17" aria-hidden="true">
+                                <p class="cs-item-text">
+                                    <b>Hot Water Tank Services</b>: Installation, maintenance, and repairs for hot water tanks.
+                                </p>
+                            </div>
+                        </div>
                 </div>
             </li>
         </ul>

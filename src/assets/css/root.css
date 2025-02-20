@@ -2593,6 +2593,85 @@
     color: var(--bodyTextColor);
   }
 }
+/*-- ------------ Accordion Mobile ------------------ -*/
+@media only screen and (min-width: 0rem) and (max-width: 767px) {
+  #services-1644 .cs-container > ul > li:last-child {
+    padding-bottom: 2rem;
+  }
+  #services-1644 .cs-container > ul > li:before {
+    display: none;
+  }
+  #services-1644 .cs-container > ul > li .cs-image-group {
+    display: none;
+  }
+  #services-1644 .cs-container > ul > li .cs-accordion {
+    display: grid;
+    grid-template-rows: auto 0fr;
+    transition: grid-template-rows 200ms ease-in-out;
+  }
+  #services-1644 .cs-container > ul > li .cs-accordion:before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #bababa 50%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0.6;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+  }
+  #services-1644 .cs-container > ul > li .cs-accordion.accordion-show {
+    grid-template-rows: auto 1fr !important;
+  }
+  #services-1644 .cs-container > ul > li .cs-accordion.accordion-show svg {
+    transform: rotate(0) !important;
+  }
+  #services-1644 .cs-container > ul > li .cs-accordion .cs-accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #services-1644 .cs-container > ul > li .cs-accordion .cs-accordion-header .cs-h2 {
+    margin: 0;
+  }
+  #services-1644 .cs-container > ul > li .cs-accordion .cs-accordion-header button[data-trigger] {
+    display: contents;
+  }
+  #services-1644 .cs-container > ul > li .cs-accordion .cs-accordion-header svg {
+    transform: rotate(180deg);
+    transition: transform 200ms ease-in-out;
+  }
+  #services-1644 .cs-container > ul > li .cs-accordion .cs-accordion-body {
+    overflow: hidden;
+  }
+}
+@media only screen and (min-width: 48rem) {
+  #services-1644 .cs-container > ul > li:before {
+    display: block;
+  }
+  #services-1644 .cs-container > ul > li .cs-accordion:before {
+    display: hidden;
+  }
+  #services-1644 .cs-container > ul > li .cs-accordion .cs-accordion-header {
+    display: contents;
+  }
+  #services-1644 .cs-container > ul > li .cs-accordion .cs-accordion-header .cs-h2 {
+    margin-bottom: 1rem;
+  }
+  #services-1644 .cs-container > ul > li .cs-accordion .cs-accordion-header button[data-trigger] {
+    display: contents;
+    pointer-events: none;
+  }
+  #services-1644 .cs-container > ul > li .cs-accordion .cs-accordion-header .cs-mobile-icon {
+    display: none;
+  }
+  #services-1644 .cs-container > ul > li .cs-accordion .cs-accordion-header svg {
+    display: none;
+  }
+  #services-1644 .cs-container > ul > li .cs-accordion .cs-accordion-body {
+    display: contents;
+  }
+}
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #services-1644 .cs-container {
