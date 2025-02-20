@@ -844,7 +844,7 @@
   #cs-navigation .cs-ul-wrapper {
     /* absolutely positioned to be dead center */
     position: absolute;
-    left: 45%;
+    left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
   }
@@ -1524,6 +1524,9 @@
   #hero-227 .cs-button-solid:hover:before {
     width: 100%;
   }
+  #hero-227 .cs-button-solid .cs-img {
+    margin-bottom: 0.25rem;
+  }
   #hero-227 .cs-button-transparent {
     font-size: 1rem;
     /* 46px - 56px */
@@ -1533,7 +1536,7 @@
     height: clamp(2.875rem, 5.5vw, 3.5rem);
     text-decoration: none;
     font-weight: 700;
-    margin: 0;
+    margin: 0 1.25rem 0 0;
     color: #fff;
     padding: 0;
     background-color: transparent;
@@ -1546,6 +1549,9 @@
     gap: 0.5rem;
     position: relative;
     z-index: 1;
+  }
+  #hero-227 .cs-button-transparent:not(:last-child) {
+    margin-bottom: 1rem;
   }
   #hero-227 .cs-button-transparent:before {
     content: "";
@@ -1575,6 +1581,7 @@
   #hero-227 .cs-button-transparent .cs-img {
     display: block;
     margin: 0;
+    margin-bottom: 0.25rem;
   }
   #hero-227 .cs-card-group {
     padding: 0;
@@ -1711,9 +1718,6 @@
   #hero-227 .cs-flex-group {
     /* 44px - 88px */
     margin-left: clamp(2.75rem, 5.9vw, 5.5rem);
-  }
-  #hero-227 .cs-button-solid {
-    margin-bottom: 0;
   }
   #hero-227 .cs-card-group {
     flex-direction: row;

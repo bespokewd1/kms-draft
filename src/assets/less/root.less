@@ -955,7 +955,7 @@
     .cs-ul-wrapper {
       /* absolutely positioned to be dead center */
       position: absolute;
-      left: 45%;
+      left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
     }
@@ -1752,6 +1752,10 @@
           width: 100%;
         }
       }
+
+      .cs-img {
+        margin-bottom: (4/16rem);
+      }
     }
 
     .cs-button-transparent {
@@ -1763,7 +1767,7 @@
       height: clamp(2.875rem, 5.5vw, 3.5rem);
       text-decoration: none;
       font-weight: 700;
-      margin: 0;
+      margin: 0 1.25rem 0 0;
       color: #fff;
       padding: 0;
       background-color: transparent;
@@ -1776,6 +1780,10 @@
       gap: 0.5rem;
       position: relative;
       z-index: 1;
+
+      &:not(:last-child) {
+        margin-bottom: (16/16rem);
+      }
 
       &:before {
         content: "";
@@ -1807,6 +1815,7 @@
       .cs-img {
         display: block;
         margin: 0;
+        margin-bottom: (4/16rem);
       }
     }
 
@@ -1981,10 +1990,6 @@
     .cs-flex-group {
       /* 44px - 88px */
       margin-left: clamp(2.75rem, 5.9vw, 5.5rem);
-    }
-
-    .cs-button-solid {
-      margin-bottom: 0;
     }
 
     .cs-card-group {
