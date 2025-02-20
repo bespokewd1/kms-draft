@@ -2595,8 +2595,11 @@
 }
 /*-- ------------ Accordion Mobile ------------------ -*/
 @media only screen and (min-width: 0rem) and (max-width: 767px) {
+  #services-1644 .cs-container > ul > li {
+    padding-bottom: 1rem;
+  }
   #services-1644 .cs-container > ul > li:last-child {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
   }
   #services-1644 .cs-container > ul > li:before {
     display: none;
