@@ -3631,6 +3631,7 @@
 .review-logo-images > :nth-child(2) {
   place-self: start;
 }
+/*mobile - small tablet*/
 @media only screen and (max-width: 600px) {
   .review-logo-images {
     grid-template-columns: 1fr 1fr;
@@ -3647,13 +3648,16 @@
     text-align: center;
   }
 }
+/*small desktop*/
 @media only screen and (min-width: 48rem) {
   .review-badge {
     display: grid;
-    grid-template-columns: auto 1fr;
+    place-content: center;
+    grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     grid-template-areas: "badge description" "button description";
-    column-gap: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   .review-badge > .review-logo-images {
     grid-area: badge;
@@ -3663,12 +3667,13 @@
     padding-top: 0.75rem;
   }
   .review-badge > .review-logo-images img {
-    max-width: 20vw;
+    max-width: 200px;
     height: auto;
   }
   .review-badge > .cs-title {
     grid-area: description;
     place-self: center;
+    font-size: var(--headerFontSize);
   }
   .review-badge > .cs-button-solid {
     grid-area: button;
@@ -3676,21 +3681,9 @@
     place-self: center;
   }
 }
-#coupons {
-  padding: var(--sectionPadding);
-  display: flex;
-}
-#coupons .single-coupon {
-  flex: 0 0 33%;
-  max-width: 33%;
-}
-@media only screen and (max-width: 600px) {
-  #coupons {
-    flex-wrap: wrap;
-  }
-  #coupons .single-coupon {
-    flex: 0 0 100%;
-    max-width: 100%;
+@media only screen and (min-width: 48rem) {
+  .review-badge .review-logo-images img {
+    max-width: 250px;
   }
 }
 .trust-signals {
@@ -3769,4 +3762,127 @@
   display: flex;
   gap: 10px;
   align-content: center;
+}
+/*-- -------------------------- -->
+<---        Coupons Styles        -->
+<--- -------------------------- -*/
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#coupons {
+  padding: var(--sectionPadding);
+  padding-top: clamp(5rem, 32.95vw, 8rem);
+  width: 100%;
+  max-width: 80rem;
+  margin: auto;
+}
+.coupons-grid {
+  --max-col-width: 300px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--max-col-width), 100%), 1fr));
+  gap: 20px;
+}
+.coupons-grid .coupon {
+  opacity: 0;
+  /* start hidden */
+  animation: fadeInUp 0.5s forwards;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.coupons-grid .coupon:nth-child(1) {
+  animation-delay: 0.15s;
+}
+.coupons-grid .coupon:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.coupons-grid .coupon:nth-child(3) {
+  animation-delay: 0.45s;
+}
+.coupons-grid .coupon:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.coupons-grid .coupon:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.coupons-grid .coupon .coupon-header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.coupons-grid .coupon .coupon-body {
+  padding: 15px;
+  flex-grow: 1;
+}
+.coupons-grid .coupon .coupon-body p {
+  margin: 10px 0;
+  font-size: 0.95rem;
+}
+.coupons-grid .coupon .coupon-footer {
+  padding: 15px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.coupons-grid .coupon .coupon-footer img {
+  height: auto;
+}
+.coupons-grid .coupon .buttons {
+  display: flex;
+  gap: 10px;
+}
+.coupons-grid .coupon .buttons .btn {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.coupons-grid .coupon .buttons .btn:hover {
+  background-color: #0056b3;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .coupon-header {
+    font-size: 1rem;
+    padding: 12px;
+  }
+  .coupon-header p {
+    font-size: 0.9rem;
+  }
+  .buttons {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+  .buttons .btn {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .coupon-body p {
+    font-size: 0.85rem;
+  }
 }
