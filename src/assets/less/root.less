@@ -4088,20 +4088,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: (24/16rem);
 
   .cs-title {
     font-size: 2.5rem;
     text-align: center;
+    margin-bottom: 0;
   }
 }
 .review-logo-images {
   display: grid;
-  // justify-content: center;
   place-items: center;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  // align-items: center;
+  gap: (24/16rem);
 
   > :nth-child(1) {
     place-self: end;
@@ -4114,11 +4113,12 @@
 
 @media only screen and (max-width: 600px) {
   .review-logo-images {
-    // flex-direction: column;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    .cs-picture:last-child {
+      padding-top: (16/16rem);
+    }
     img {
-      max-width: 50vw;
+      max-width: 40vw;
       height: auto;
     }
   }
@@ -4127,6 +4127,51 @@
       font-size: 1.75rem;
       text-align: center;
     }
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  .review-badge {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "badge description"
+      "button description";
+    column-gap: 0;
+
+    > .review-logo-images {
+      grid-area: badge;
+      place-self: end;
+
+      .cs-picture:last-child {
+        padding-top: (12/16rem);
+      }
+
+      img {
+        max-width: 20vw;
+        height: auto;
+      }
+    }
+
+    > .cs-title {
+      grid-area: description;
+      place-self: center;
+    }
+
+    > .cs-button-solid {
+      grid-area: button;
+      width: fit-content;
+      place-self: center;
+    }
+
+    // .cs-picture:last-child {
+    //   padding-top: (16/16rem);
+    // }
+    // img {
+    //   max-width: 40vw;
+    //   height: auto;
+    // }
   }
 }
 

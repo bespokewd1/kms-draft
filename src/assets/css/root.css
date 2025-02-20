@@ -3612,17 +3612,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 .review-badge .cs-title {
   font-size: 2.5rem;
   text-align: center;
+  margin-bottom: 0;
 }
 .review-logo-images {
   display: grid;
   place-items: center;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 .review-logo-images > :nth-child(1) {
   place-self: end;
@@ -3632,16 +3633,47 @@
 }
 @media only screen and (max-width: 600px) {
   .review-logo-images {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .review-logo-images .cs-picture:last-child {
+    padding-top: 1rem;
   }
   .review-logo-images img {
-    max-width: 50vw;
+    max-width: 40vw;
     height: auto;
   }
   .review-badge .cs-title {
     font-size: 1.75rem;
     text-align: center;
+  }
+}
+@media only screen and (min-width: 48rem) {
+  .review-badge {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "badge description" "button description";
+    column-gap: 0;
+  }
+  .review-badge > .review-logo-images {
+    grid-area: badge;
+    place-self: end;
+  }
+  .review-badge > .review-logo-images .cs-picture:last-child {
+    padding-top: 0.75rem;
+  }
+  .review-badge > .review-logo-images img {
+    max-width: 20vw;
+    height: auto;
+  }
+  .review-badge > .cs-title {
+    grid-area: description;
+    place-self: center;
+  }
+  .review-badge > .cs-button-solid {
+    grid-area: button;
+    width: fit-content;
+    place-self: center;
   }
 }
 #coupons {
