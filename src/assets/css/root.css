@@ -2596,10 +2596,7 @@
 /*-- ------------ Accordion Mobile ------------------ -*/
 @media only screen and (min-width: 0rem) and (max-width: 767px) {
   #services-1644 .cs-container > ul > li {
-    padding-bottom: 1rem;
-  }
-  #services-1644 .cs-container > ul > li:last-child {
-    padding-bottom: 1rem;
+    padding: 0.5rem 0.5rem 0;
   }
   #services-1644 .cs-container > ul > li:before {
     display: none;
@@ -2646,6 +2643,10 @@
   }
   #services-1644 .cs-container > ul > li .cs-accordion .cs-accordion-body {
     overflow: hidden;
+  }
+  #services-1644 .cs-container > ul > li .cs-accordion .cs-accordion-body > * {
+    margin: 0;
+    padding-bottom: 1rem;
   }
 }
 @media only screen and (min-width: 48rem) {

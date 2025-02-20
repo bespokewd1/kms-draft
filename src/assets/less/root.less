@@ -2983,11 +2983,7 @@
     .cs-container {
       > ul {
         > li {
-          padding-bottom: (16/16rem);
-
-          &:last-child {
-            padding-bottom: (16/16rem);
-          }
+          padding: (8/16rem) (8/16rem) 0;
 
           &:before {
             display: none;
@@ -2999,6 +2995,7 @@
             display: grid;
             grid-template-rows: auto 0fr;
             transition: grid-template-rows 200ms ease-in-out;
+
             &:before {
               content: "";
               width: 100%;
@@ -3045,6 +3042,10 @@
 
             .cs-accordion-body {
               overflow: hidden;
+              > * {
+                margin: 0;
+                padding-bottom: (16/16rem);
+              }
             }
           }
         }
