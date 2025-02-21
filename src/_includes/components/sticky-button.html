@@ -25,7 +25,7 @@
     background-color: var(--secondary);
   }
 
-  body.scroll .sticky-div {
+  body.show-btn .sticky-div {
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
@@ -44,7 +44,6 @@
       console.warn(
         'No <main id="main"> element found. Sticky button will always be visible.',
       );
-      document.body.classList.add("scroll"); // if main is not found, always show sticky button
       return;
     }
 
@@ -52,7 +51,6 @@
       console.warn(
         '<main id="main"> has no first child. Sticky button will always be visible.',
       );
-      document.body.classList.add("scroll"); // if main has no first child, always show sticky button
       return;
     }
 
@@ -65,9 +63,9 @@
       const rect = firstChildOfMain.getBoundingClientRect();
       // Check if the bottom of the first child is above the viewport
       if (rect.bottom <= 0) {
-        body.classList.add("scroll");
+        body.classList.add("show-btn");
       } else {
-        body.classList.remove("scroll");
+        body.classList.remove("show-btn");
       }
     }
 
