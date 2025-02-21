@@ -1700,6 +1700,7 @@
     font-size: 0.8125rem;
     min-width: 7rem;
     padding: 0 0.375rem;
+    gap: clamp(0rem, 0.5vw, 0.5rem);
   }
   #hero-227 .cs-flex-group .cs-button-solid .cs-image,
   #hero-227 .cs-flex-group .cs-button-transparent .cs-image {
