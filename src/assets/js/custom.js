@@ -180,3 +180,68 @@ function lazyLoadQRCodes() {
 
 // Initialize QR code lazy loading
 document.addEventListener('DOMContentLoaded', lazyLoadQRCodes);
+
+
+// ------------- Dialog Modal by Query STring -------------//
+
+/**
+ * @file custom.js
+ * Handles custom JavaScript functionalities for the website, including coupon modal display.
+ */
+
+/**
+ * Function to extract a query parameter value from the URL.
+ * @param {string} paramName - The name of the query parameter to extract.
+ * @returns {string|null} The value of the query parameter or null if not found.
+ */
+function getQueryParam(paramName) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(paramName);
+}
+
+/**
+ * Function to remove a query parameter from the URL without reloading the page.
+ * @param {string} paramName - The name of the query parameter to remove.
+ */
+function removeQueryParam(paramName) {
+    const urlParams = new URLSearchParams(window.location.search);
+    urlParams.delete(paramName);
+    const newUrl = window.location.pathname + (urlParams.toString() ? '?' + urlParams.toString() : '');
+    window.history.replaceState({}, document.title, newUrl);
+}
+
+/**
+ * Function to initialize and control the coupon modal.
+ */
+function initCouponModal() {
+    const couponModal = document.getElementById('couponModal');
+    const closeModalButton = document.querySelector('.coupon-modal-close-button');
+    const modalContentElement = document.getElementById('couponModalContent');
+
+    if (!couponModal || !closeModalButton || !modalContentElement) {
+        console.error("Coupon modal elements not found.");
+        return; // Exit if modal elements are not found
+    }
+
+    const couponValue = getQueryParam('coupon');
+
+    if (couponValue) {
+        modalContentElement.textContent = couponValue;
+        couponModal.style.display = 'block';
+    }
+
+    closeModalButton.onclick = function() {
+        couponModal.style.display = 'none';
+        removeQueryParam('coupon');
+    }
+
+    window.onclick = function(event) {
+        if (event.target == couponModal) {
+            couponModal.style.display = 'none';
+            removeQueryParam('coupon');
+        }
+    }
+}
+
+// Initialize coupon modal functionality on page load
+document.addEventListener('DOMContentLoaded', initCouponModal);
