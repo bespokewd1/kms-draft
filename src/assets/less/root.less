@@ -197,7 +197,7 @@
     margin: 0;
     color: var(--bodyTextColor);
     padding: 0;
-    background-color: transparent;
+    background-color: transparent !important; /* to bypass acuity styling*/
     border: 1px solid var(--bodyTextColor);
     box-sizing: border-box;
     display: inline-flex;
@@ -250,27 +250,16 @@
 
 @media only screen and (min-width: 0rem) {
   #cs-navigation {
-    .cs-container {
-      .cs-button-solid {
-        display: none;
-      }
+    .cs-button-solid {
+      display: none;
     }
   }
 }
 
 @media only screen and (min-width: 20rem) {
   #cs-navigation {
-    .cs-container {
-      .cs-button-solid {
-        display: inline-flex;
-        font-size: (14/16rem);
-        padding: 0;
-
-        svg {
-          width: (16/16rem);
-          height: (16/16rem);
-        }
-      }
+    .cs-button-solid {
+      display: none;
     }
   }
 }
@@ -611,11 +600,11 @@
     }
 
     .cs-button-solid {
-      order: 2;
-      // display: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      display: none;
+      // order: 2;
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
       gap: 0.5rem;
       font-size: (16/16rem);
       /* 46px - 56px */
@@ -628,7 +617,7 @@
       color: #fff;
       min-width: (150/16rem);
       padding: 0 (16/16rem);
-      background-color: var(--primary);
+      background-color: var(--primary) !important; /*to bypass acuity styling*/
       border: 1px solid var(--primary);
       position: relative;
       z-index: 1;
@@ -955,7 +944,8 @@
     .cs-ul-wrapper {
       /* absolutely positioned to be dead center */
       position: absolute;
-      left: 50%;
+      // left: 50%;
+      left: 45%;
       top: 50%;
       transform: translate(-50%, -50%);
     }
@@ -985,7 +975,7 @@
       text-decoration: none;
       text-transform: uppercase;
       margin: 0;
-      padding: 0 (16/16rem);
+      padding: 0 clamp(0.5rem, 1vw, 1rem);
       color: var(--primary);
       display: inline-flex;
       align-items: center;
@@ -1058,12 +1048,16 @@
       color: #fff;
       min-width: (150/16rem);
       padding: 0 (16/16rem);
-      background-color: var(--primary);
+      background-color: var(--primary) !important; /*to bypass acuity styling*/
       border: 1px solid var(--primary);
       position: relative;
       z-index: 1;
       /* prevents padding from adding to the width */
       box-sizing: border-box;
+
+      .cs-img {
+        margin-bottom: (4/16rem);
+      }
 
       &:before {
         content: "";
@@ -1770,7 +1764,7 @@
       margin: 0 1.25rem 0 0;
       color: #fff;
       padding: 0;
-      background-color: transparent;
+      background-color: transparent !important; /* to bypass acuity styling*/
       border: 1px solid var(--bodyTextColorWhite);
       border-radius: 70px;
       box-sizing: border-box;
