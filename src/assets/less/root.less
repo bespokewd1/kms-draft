@@ -1287,8 +1287,8 @@
   #cs-footer-840 {
     padding: var(--sectionPadding);
     /* 30px - 50px */
+    padding-top: clamp(1.875rem, 5vw, 3.125rem);
     padding-bottom: clamp(1.875rem, 5vw, 3.125rem);
-    background-color: #1a1a1a;
 
     .cs-container {
       width: 100%;
@@ -1317,7 +1317,8 @@
     }
 
     .cs-text {
-      color: var(--bodyTextColorWhite);
+      // color: var(--bodyTextColorWhite);
+      color: var(--headerColor);
       opacity: 0.8;
       margin: 0 0 (32/16rem);
     }
@@ -1330,12 +1331,20 @@
       display: inline-flex;
       justify-content: flex-start;
       gap: (12/16em);
+      margin: 0 0 (32/16rem);
+    }
+
+    .cs-links-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: (32/16em);
     }
 
     .cs-social-link {
       width: (32/16rem);
       height: (32/16rem);
       background-color: #484848;
+      // background-color: var(--headerColor);
       border-radius: 50%;
       display: flex;
       justify-content: center;
@@ -1367,7 +1376,7 @@
       line-height: 1.5em;
       font-weight: 700;
       margin: 0 0 (20/16rem) 0;
-      color: var(--bodyTextColorWhite);
+      color: var(--headerColor);
       display: block;
       position: relative;
     }
@@ -1403,7 +1412,7 @@
       text-decoration: none;
       line-height: 1.5em;
       text-align: left;
-      color: #ffffff;
+      color: var(--headerColor);
       display: inline-flex;
       align-items: flex-start;
       gap: (8/16rem);
@@ -1426,7 +1435,7 @@
       width: 100%;
       max-width: (1280/16rem);
       /* 48px - 64px */
-      margin: clamp(3rem, 7vw, 4rem) auto 0;
+      margin: clamp(1.875rem, 5vw, 3.125rem) auto 0;
       padding-top: (24/16rem);
       border-top: 1px solid #484848;
       display: flex;
@@ -1444,7 +1453,6 @@
       text-decoration: none;
       width: auto;
       margin: 0;
-      color: #bababa;
       display: inline-block;
       position: relative;
       transition: color 0.3s;
@@ -1461,7 +1469,6 @@
       text-decoration: none;
       width: auto;
       margin: 0;
-      color: #bababa;
       display: inline-block;
       position: relative;
 
@@ -1541,13 +1548,16 @@
   #cs-footer-840 {
     .cs-container {
       /* pushes all flex children to the top */
-      align-items: flex-start;
-      justify-content: flex-end;
+      // align-items: flex-start;
+      // justify-content: flex-end;
+      align-items: center;
+      width: 80%;
       flex-wrap: nowrap;
     }
 
     .cs-logo-group {
-      width: 30%;
+      // width: 30%;
+      width: 100%;
       max-width: (400/16rem);
       /* pushes everything to the right of it as far as possible in a flexbox */
       margin-right: auto;
@@ -4485,7 +4495,7 @@
     }
 
     .coupon-header {
-      background-color: #007bff;
+      background-color: var(--primary);
       color: #fff;
       padding: 15px;
       text-align: center;
@@ -4525,15 +4535,39 @@
         font-size: 0.9rem;
         text-decoration: none;
         color: #fff;
-        background-color: #007bff;
+        background-color: var(--primary);
         border: none;
-        border-radius: 5px;
+        border-radius: 70px;
         cursor: pointer;
-        transition: background-color 0.3s;
+        transition: background-color 0.1s;
+        position: relative;
+
+        &:before {
+          content: "";
+          position: absolute;
+          border-radius: 70px;
+          height: 100%;
+          width: 0%;
+          background: var(--secondary);
+          opacity: 1;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          transition: width 0.3s;
+        }
 
         &:hover {
-          background-color: #0056b3;
+          // border: 1px solid var(--secondary);
+          background-color: transparent;
+          // transition-delay: 250ms;
+          &:before {
+            width: 100%;
+          }
         }
+
+        // &:hover {
+        //   background-color: #0056b3;
+        // }
       }
     }
   }

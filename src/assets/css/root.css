@@ -1125,8 +1125,8 @@
   #cs-footer-840 {
     padding: var(--sectionPadding);
     /* 30px - 50px */
+    padding-top: clamp(1.875rem, 5vw, 3.125rem);
     padding-bottom: clamp(1.875rem, 5vw, 3.125rem);
-    background-color: #1a1a1a;
   }
   #cs-footer-840 .cs-container {
     width: 100%;
@@ -1152,7 +1152,7 @@
     display: block;
   }
   #cs-footer-840 .cs-text {
-    color: var(--bodyTextColorWhite);
+    color: var(--headerColor);
     opacity: 0.8;
     margin: 0 0 2rem;
   }
@@ -1164,6 +1164,12 @@
     display: inline-flex;
     justify-content: flex-start;
     gap: 0.75em;
+    margin: 0 0 2rem;
+  }
+  #cs-footer-840 .cs-links-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
   }
   #cs-footer-840 .cs-social-link {
     width: 2rem;
@@ -1194,7 +1200,7 @@
     line-height: 1.5em;
     font-weight: 700;
     margin: 0 0 1.25rem 0;
-    color: var(--bodyTextColorWhite);
+    color: var(--headerColor);
     display: block;
     position: relative;
   }
@@ -1225,7 +1231,7 @@
     text-decoration: none;
     line-height: 1.5em;
     text-align: left;
-    color: #ffffff;
+    color: var(--headerColor);
     display: inline-flex;
     align-items: flex-start;
     gap: 0.5rem;
@@ -1245,7 +1251,7 @@
     width: 100%;
     max-width: 80rem;
     /* 48px - 64px */
-    margin: clamp(3rem, 7vw, 4rem) auto 0;
+    margin: clamp(1.875rem, 5vw, 3.125rem) auto 0;
     padding-top: 1.5rem;
     border-top: 1px solid #484848;
     display: flex;
@@ -1262,7 +1268,6 @@
     text-decoration: none;
     width: auto;
     margin: 0;
-    color: #bababa;
     display: inline-block;
     position: relative;
     transition: color 0.3s;
@@ -1277,7 +1282,6 @@
     text-decoration: none;
     width: auto;
     margin: 0;
-    color: #bababa;
     display: inline-block;
     position: relative;
   }
@@ -1340,12 +1344,12 @@
 @media only screen and (min-width: 64rem) {
   #cs-footer-840 .cs-container {
     /* pushes all flex children to the top */
-    align-items: flex-start;
-    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
     flex-wrap: nowrap;
   }
   #cs-footer-840 .cs-logo-group {
-    width: 30%;
+    width: 100%;
     max-width: 25rem;
     /* pushes everything to the right of it as far as possible in a flexbox */
     margin-right: auto;
@@ -3914,7 +3918,7 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 .coupons-grid .coupon .coupon-header {
-  background-color: #007bff;
+  background-color: var(--primary);
   color: #fff;
   padding: 15px;
   text-align: center;
@@ -3949,14 +3953,31 @@
   font-size: 0.9rem;
   text-decoration: none;
   color: #fff;
-  background-color: #007bff;
+  background-color: var(--primary);
   border: none;
-  border-radius: 5px;
+  border-radius: 70px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.1s;
+  position: relative;
+}
+.coupons-grid .coupon .buttons .btn:before {
+  content: "";
+  position: absolute;
+  border-radius: 70px;
+  height: 100%;
+  width: 0%;
+  background: var(--secondary);
+  opacity: 1;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: width 0.3s;
 }
 .coupons-grid .coupon .buttons .btn:hover {
-  background-color: #0056b3;
+  background-color: transparent;
+}
+.coupons-grid .coupon .buttons .btn:hover:before {
+  width: 100%;
 }
 /* Responsive adjustments */
 @media (max-width: 768px) {
