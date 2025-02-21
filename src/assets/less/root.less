@@ -1467,6 +1467,7 @@
       font-size: clamp(0.875rem, 1.5vw, 1rem);
       line-height: 1.5em;
       text-decoration: none;
+      color: var(--primary);
       width: auto;
       margin: 0;
       display: inline-block;
@@ -1487,6 +1488,7 @@
     .cs-bottom-link {
       display: flex;
       align-items: center;
+      color: var(--primary);
 
       &:hover {
         color: var(--primary);
@@ -4506,6 +4508,7 @@
     .coupon-body {
       padding: 15px;
       flex-grow: 1;
+      text-align: center;
 
       p {
         margin: 10px 0;
@@ -4541,33 +4544,6 @@
         cursor: pointer;
         transition: background-color 0.1s;
         position: relative;
-
-        &:before {
-          content: "";
-          position: absolute;
-          border-radius: 70px;
-          height: 100%;
-          width: 0%;
-          background: var(--secondary);
-          opacity: 1;
-          top: 0;
-          left: 0;
-          z-index: -1;
-          transition: width 0.3s;
-        }
-
-        &:hover {
-          // border: 1px solid var(--secondary);
-          background-color: transparent;
-          // transition-delay: 250ms;
-          &:before {
-            width: 100%;
-          }
-        }
-
-        // &:hover {
-        //   background-color: #0056b3;
-        // }
       }
     }
   }
@@ -4599,5 +4575,203 @@
     p {
       font-size: 0.85rem;
     }
+  }
+}
+
+// Add new intro section styles
+#coupons-intro {
+  // Add padding-top to account for header height
+  padding: calc(var(--canadaBannerHeight) + 1rem) 1rem 2rem;
+
+  .cs-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+  }
+
+  .cs-content {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+
+  .cs-title {
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 4vw, 2.5rem);
+  }
+
+  .cs-text {
+    margin: 0 auto;
+    max-width: 600px;
+    font-size: clamp(1rem, 1.5vw, 1.125rem);
+  }
+}
+
+// Update existing coupons section
+#coupons {
+  padding: var(--sectionPadding);
+  padding-top: 2rem;
+  width: 100%;
+  max-width: 80rem;
+  margin: auto;
+}
+
+.coupons-grid {
+  --max-col-width: 300px;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(var(--max-col-width), 100%), 1fr)
+  );
+  gap: 20px;
+
+  @media (min-width: 972px) and (max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr); // Force 4 columns on desktop
+    gap: 30px;
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr); // Force 4 columns on desktop
+    gap: 30px;
+  }
+
+  .coupon {
+    .buttons {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-direction: row;
+      width: 100%;
+
+      .btn {
+        width: clamp((130/16rem), 3vw, (185/16rem));
+
+        &.save-btn {
+          background-color: var(--secondary);
+
+          &:before {
+            background: var(--primary);
+          }
+        }
+
+        &.print-btn {
+          background-color: var(--primary);
+        }
+      }
+    }
+
+    // Add QR code styles
+    .qr-code {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+// Update button styles for desktop
+@media only screen and (min-width: 64rem) {
+  .coupon {
+    .buttons {
+      .btn {
+        // Adjust button size for desktop
+        font-size: 0.9rem;
+        padding: 0.75rem 1.25rem;
+        min-height: 2.5rem;
+        line-height: 1;
+        white-space: nowrap;
+
+        &.save-btn,
+        &.print-btn {
+          min-width: auto; // Remove minimum width constraint
+          width: auto; // Let content determine width
+        }
+      }
+    }
+  }
+}
+
+// Add print styles
+@media print {
+  @page {
+    size: auto;
+    margin: 8mm; /* Add a small margin around the page */
+  }
+
+  body * {
+    visibility: hidden !important;
+  }
+
+  .coupon.printing-coupon,
+  .coupon.printing-coupon * {
+    visibility: visible !important;
+  }
+
+  .coupon.printing-coupon {
+    position: fixed !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) scale(2) !important; /* Reduced scale further to 1.5 */
+    width: auto !important;
+    max-width: 100% !important; /* Slightly increased max-width again */
+    box-shadow: none !important;
+    border: 2px solid #000 !important;
+    border-radius: 10px !important;
+    padding: 20px !important; /* Reduced padding to 20px */
+    background-color: #fff !important;
+    page-break-inside: avoid !important;
+    page-break-after: always !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important; /* Add overflow: hidden to clip content if still overflowing */
+  }
+
+  .coupon.printing-coupon:last-child {
+    page-break-after: avoid !important;
+  }
+
+  .coupon.printing-coupon .coupon-header {
+    font-size: 1.4rem !important; /* Slightly reduced header font size */
+    color: #000 !important;
+    background-color: #f0f0f0 !important;
+    padding: 12px !important; /* Reduced header padding */
+    margin-bottom: 8px !important; /* Reduced header margin */
+    text-align: center !important;
+  }
+
+  .coupon.printing-coupon .coupon-body {
+    color: #000 !important;
+    font-size: 1rem !important; /* Slightly reduced body font size */
+    padding: 12px !important; /* Reduced body padding */
+  }
+
+  .coupon.printing-coupon .coupon-footer {
+    border-top: 2px solid #000 !important;
+    padding-top: 12px !important; /* Reduced footer padding */
+    display: grid !important;
+    place-content: center !important;
+    // display: flex !important;
+    // flex-direction: column !important;
+    // align-items: center !important;
+  }
+
+  .coupon.printing-coupon .qr-code img {
+    grid-area: 1/1 !important;
+    width: 140px !important; /* Reduced QR code size further */
+    height: 140px !important; /* Reduced QR code size further */
+    margin-bottom: 8px !important; /* Reduced QR code margin */
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+
+  .coupon .buttons {
+    display: none !important;
   }
 }

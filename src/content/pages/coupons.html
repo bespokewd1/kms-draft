@@ -14,6 +14,7 @@ eleventyNavigation:
 <!--          Blaze Assets        -->
 <link rel="stylesheet" href="/assets/css/blaze.css">
 <script src="/assets/js/blaze-slider.dev.js"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 {% endblock %}
 {% from "components/coupons.html" import renderCoupons %}
 
@@ -22,7 +23,19 @@ eleventyNavigation:
 <!--                   Banner                     -->
 <!-- ============================================ -->
 
-<section id="coupons" >
+<section id="coupons-intro">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Our Special Offers</h2>
+            <p class="cs-text">
+                Thank you for checking our coupons. Check each coupon and you can save or print. 
+                You can scan in QR using your phone to save as well. We look forward to serving you soon.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="coupons">
     {{ renderCoupons(coupons) }}
 </section>
 

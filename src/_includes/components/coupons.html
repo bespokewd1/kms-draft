@@ -9,17 +9,19 @@
       <p>{{ coupon.description }}</p>
     </div>
     <div class="coupon-footer">
-      <img
-        loading="lazy"
-        decoding="async"
-        src="{{ coupon.qrCodeSrc }}"
-        alt="QR Code"
-        width="120"
-        height="120"
-      />
+      <div class="qr-code">
+        <img
+          loading="lazy"
+          decoding="async"
+          data-src="{{ coupon.qrCodeSrc }}"
+          alt="QR Code for {{ coupon.title }}"
+          width="120"
+          height="120"
+        />
+      </div>
       <div class="buttons">
-        <button class="btn" onclick="saveToPhone()">Save to Phone</button>
-        <button class="btn" onclick="window.print()">Print Coupon</button>
+        <button class="btn save-btn">Save to Device</button>
+        <button class="btn print-btn">Print Coupon</button>
       </div>
     </div>
   </div>
