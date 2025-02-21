@@ -485,3 +485,168 @@
     }
   }
 }
+
+/*-- -------------------------- -->
+<---          Coupon Modal         -->
+<--- -------------------------- -*/
+.coupon-modal {
+  /* display: none;  No longer needed, dialog is hidden by default */
+  position: fixed; /* Stay in place -  While `<dialog>` is technically top layer, fixed positioning can be useful for consistent layout */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: transparent; /* Remove background from .coupon-modal, backdrop handles it now */
+  border: none; /* Remove default dialog border */
+  padding: 0; /* Remove default dialog padding */
+  margin: 0; /* Ensure no margin */
+  display: grid;
+  place-content: center;
+
+  &:before {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(1px);
+  }
+}
+
+/* Style the backdrop - the overlay behind the dialog */
+.coupon-modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  /* backdrop-filter: blur(5px);  You can add blur or other effects if desired */
+}
+
+.coupon-modal-content {
+  background-color: #fefefe;
+  /* margin: 15% auto;  We are centering using flexbox on .coupon-modal now */
+  padding: (32/16rem);
+  border: 1px solid #888;
+  width: 90%; /* Could be more or less, depending on screen size */
+  max-width: (500/16rem);
+  margin: (32/16rem) auto 0;
+  border-radius: 5px;
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Optional: Add shadow for depth */
+}
+
+.coupon-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+
+  .cs-title {
+    margin: 0;
+    margin-top: (24/16rem);
+    text-align: center;
+    padding: 0;
+    color: var(--primary);
+  }
+}
+
+.coupon-modal-close-button {
+  color: #aaa;
+  /* float: right; Not needed with flexbox in header */
+  font-size: 28px;
+  font-weight: bold;
+  background: none; /* Remove default button background */
+  border: none; /* Remove default button border */
+  cursor: pointer; /* Indicate it's clickable */
+  padding: 0; /* Reset padding */
+  appearance: none; /* For better cross-browser button styling */
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.coupon-modal-close-button:hover,
+.coupon-modal-close-button:focus {
+  color: black;
+  text-decoration: none;
+}
+
+.coupon-modal-body {
+  padding: 20px 0;
+}
+
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 0rem) {
+  #couponModal {
+    .coupon-modal-body {
+      > div {
+        padding: 0;
+
+        .coupon-header {
+          /* 20px - 25px */
+          font-size: clamp(1.5rem, 1.5vw, 2rem);
+          font-weight: 600;
+          text-align: center;
+        }
+
+        .coupon-body {
+          font-size: clamp(1rem, 1.5vw, 2rem);
+          text-align: center;
+
+          > :nth-child(3) {
+            color: var(--bodyTextColor);
+          }
+        }
+
+        .coupon-footer {
+          display: grid;
+          grid-template-rows: 1fr auto;
+
+          .qr-code {
+            place-self: center;
+
+            img {
+              width: clamp((150/16rem), 5vw, (200/16rem));
+              height: auto;
+            }
+          }
+
+          .buttons {
+            display: grid;
+            grid-template-rows: auto auto;
+            gap: (12/16rem);
+
+            .save-btn {
+              background-color: var(--secondary);
+            }
+
+            .print-btn {
+              background-color: var(--primary);
+            }
+
+            .save-btn,
+            .print-btn {
+              color: var(--bodyTextColorWhite);
+              border: none;
+              padding: (8/16rem) (12/16rem);
+              border-radius: 70px;
+              cursor: pointer;
+              margin-right: (5/16rem);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1130px) {
+  .coupon-modal-content {
+    max-width: (650/16rem);
+    margin: (40/16rem) auto 0;
+  }
+}

@@ -10,6 +10,7 @@ eleventyNavigation:
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/services.css">
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 
 {% endblock %}
 
@@ -241,9 +242,23 @@ eleventyNavigation:
 </section>
 
 
+
 <!-- ============================================ -->
-<!--             Side By Side Reverse             -->
+<!--                  Modal Coupon                  -->
 <!-- ============================================ -->
+<div id="couponModal" class="coupon-modal" style="display: none;">
+    <div class="coupon-modal-content">
+        <div class="coupon-modal-header">
+            <span class="coupon-modal-close-button">×</span>
+            <h2 class="cs-title">Thank you for using our coupons</h2>
+        </div>
+        <div class="coupon-modal-body">
+            <div id="coupons"></div>
+        </div>
+    </div>
+</div>
+
+
 
 
 {% include "components/cta.html" %}

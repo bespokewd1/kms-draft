@@ -5,7 +5,7 @@ const pluginEleventyNavigation = require("@11ty/eleventy-navigation");
 // Filter Imports
 const filterFormatDate = require("./src/config/filters/formatDate");
 
-module.exports = function (eleventyConfig) {
+module.exports = function(eleventyConfig) {
     /**
      *  PLUGINS
      *      Adds additional eleventy functionality through official or community-created add-ons
@@ -32,6 +32,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/assets/js");
     eleventyConfig.addPassthroughCopy("./src/assets/svgs");
     eleventyConfig.addPassthroughCopy("./src/admin");
+    eleventyConfig.addPassthroughCopy("src/_data/coupons.json");
 
     /**
      *  FILTERS

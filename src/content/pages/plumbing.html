@@ -10,6 +10,7 @@ eleventyNavigation:
 
 {% block head %}
 <link rel="stylesheet" href="/assets/css/services.css">
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 
 {% endblock %}
 
@@ -255,10 +256,10 @@ eleventyNavigation:
     <div class="coupon-modal-content">
         <div class="coupon-modal-header">
             <span class="coupon-modal-close-button">×</span>
-            <h2>Coupon Alert!</h2>
+            <h2 class="cs-title">Thank you for using our coupons</h2>
         </div>
         <div class="coupon-modal-body">
-            <p id="couponModalContent"></p>
+            <div id="coupons"></div>
         </div>
     </div>
 </div>

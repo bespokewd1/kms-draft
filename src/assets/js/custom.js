@@ -183,7 +183,6 @@ document.addEventListener('DOMContentLoaded', lazyLoadQRCodes);
 
 
 // ------------- Dialog Modal by Query STring -------------//
-
 /**
  * @file custom.js
  * Handles custom JavaScript functionalities for the website, including coupon modal display.
@@ -213,21 +212,45 @@ function removeQueryParam(paramName) {
 /**
  * Function to initialize and control the coupon modal.
  */
-function initCouponModal() {
+async function initCouponModal() {
     const couponModal = document.getElementById('couponModal');
     const closeModalButton = document.querySelector('.coupon-modal-close-button');
-    const modalContentElement = document.getElementById('couponModalContent');
+    const modalContentElement = document.getElementById('coupons');
 
     if (!couponModal || !closeModalButton || !modalContentElement) {
         console.error("Coupon modal elements not found.");
         return; // Exit if modal elements are not found
     }
 
-    const couponValue = getQueryParam('coupon');
+    const couponQuery = getQueryParam('coupon');
 
-    if (couponValue) {
-        modalContentElement.textContent = couponValue;
-        couponModal.style.display = 'block';
+    if (couponQuery) {
+        try {
+            const response = await fetch('../../_data/coupons.json'); // Adjust path to coupons.json if necessary
+            console.log(response)
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const couponsData = await response.json();
+            const decodedCouponQuery = decodeURIComponent(couponQuery).toLowerCase();
+
+            const matchedCoupon = couponsData.find(coupon => coupon.title.toLowerCase() === decodedCouponQuery);
+
+            if (matchedCoupon) {
+                renderCouponInModal(matchedCoupon, modalContentElement);
+                couponModal.style.display = 'grid';
+            } else {
+                console.warn(`No coupon found matching query: ${couponQuery}`);
+                // Optionally display a "coupon not found" message in the modal.
+                modalContentElement.textContent = "Coupon not found.";
+                couponModal.style.display = 'grid'; // Still show modal to display message
+            }
+
+        } catch (error) {
+            console.error("Could not fetch coupons:", error);
+            modalContentElement.textContent = "Failed to load coupon."; // Display error message in modal
+            couponModal.style.display = 'grid'; // Still show modal to display error
+        }
     }
 
     closeModalButton.onclick = function() {
@@ -242,6 +265,44 @@ function initCouponModal() {
         }
     }
 }
+
+
+/**
+ * Function to render a single coupon's HTML inside a given element.
+ * This mimics the structure of the Nunjucks macro `renderCoupons` for a single coupon.
+ * @param {object} coupon - The coupon data object.
+ * @param {HTMLElement} containerElement - The HTML element where the coupon should be rendered.
+ */
+function renderCouponInModal(coupon, containerElement) {
+    const couponHTML = `
+        <div class="coupon" >
+            <div class="coupon-header">${coupon.title}</div>
+            <div class="coupon-body">
+                <p><strong>${coupon.discount}</strong></p>
+                <p>Expires on ${coupon.expiryDate}</p>
+                <p>${coupon.description}</p>
+            </div>
+            <div class="coupon-footer">
+                <div class="qr-code">
+                    <img
+                        loading="lazy"
+                        decoding="async"
+                        src="${coupon.qrCodeSrc}"
+                        alt="QR Code for ${coupon.title}"
+                        width="120"
+                        height="120"
+                    />
+                </div>
+                <div class="buttons">
+                    <button class="btn save-btn">Save to Device</button>
+                    <button class="btn print-btn">Print Coupon</button>
+                </div>
+            </div>
+        </div>
+    `;
+    containerElement.innerHTML = couponHTML;
+}
+
 
 // Initialize coupon modal functionality on page load
 document.addEventListener('DOMContentLoaded', initCouponModal);
