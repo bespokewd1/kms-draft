@@ -1691,6 +1691,41 @@
     line-height: 1.5rem;
   }
 }
+@media only screen and (max-width: 28rem) {
+  #hero-227 .cs-flex-group {
+    column-gap: 0.75rem;
+  }
+  #hero-227 .cs-flex-group .cs-button-solid,
+  #hero-227 .cs-flex-group .cs-button-transparent {
+    width: clamp(7.5rem, 3vw, 10.625rem);
+    margin-right: 0;
+    font-size: 0.8125rem;
+    min-width: 7rem;
+    padding: 0 0.375rem;
+  }
+  #hero-227 .cs-flex-group .cs-button-solid .cs-image,
+  #hero-227 .cs-flex-group .cs-button-transparent .cs-image {
+    width: 0.875rem;
+    height: 0.875rem;
+  }
+}
+@media only screen and (min-width: 448px) and (max-width: 47.9rem) {
+  #hero-227 .cs-flex-group {
+    column-gap: clamp(0.5rem, 2.5vw, 1rem);
+  }
+  #hero-227 .cs-flex-group .cs-button-solid,
+  #hero-227 .cs-flex-group .cs-button-transparent {
+    width: clamp(9.375rem, 2.5vw, 11.25rem);
+    margin-right: 0;
+    font-size: 1rem;
+    padding: 0 0.375rem;
+  }
+  #hero-227 .cs-flex-group .cs-button-solid .cs-image,
+  #hero-227 .cs-flex-group .cs-button-transparent .cs-image {
+    width: 1.0625rem;
+    height: 1.0625rem;
+  }
+}
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #hero-227 {
