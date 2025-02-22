@@ -1,6 +1,8 @@
 ---
 title: 5 Most Common Plumbing Issues & How to Fix Them
-description: 5 Most Common Plumbing Issues & How to Fix Them
+description: Plumbing problems can disrupt your daily routine and cause
+  unnecessary stress. In this blog, we’ll explore the 5 most common plumbing
+  issues homeowners face, how to identify them early, and tips to prevent costly
 author: Team KMS
 date: 2025-02-18T16:16:00.000Z
 tags:
