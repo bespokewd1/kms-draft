@@ -1,6 +1,9 @@
 ---
 title: 5 Things to Know Before Hiring a Plumber
-description: 5 Things to Know Before Hiring a Plumber
+description: Hiring a plumber can feel overwhelming if you don’t know what to
+  look for. In this blog, we’ll share 5 essential things to consider before
+  choosing a plumber, including certifications, experience, pricing
+  transparency, and
 author: Team KMS
 date: 2025-02-18T16:15:00.000Z
 tags:
