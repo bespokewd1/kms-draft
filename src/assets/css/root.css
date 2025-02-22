@@ -1148,23 +1148,23 @@
   #cs-footer-840 .cs-logo {
     width: 6rem;
     height: auto;
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 .75rem 0;
     display: block;
   }
   #cs-footer-840 .cs-text {
     color: var(--headerColor);
     opacity: 0.8;
-    margin: 0 0 2rem;
+    margin: 0 0 .75rem;
   }
   #cs-footer-840 .cs-logo-img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 60px;
   }
   #cs-footer-840 .cs-social {
     display: inline-flex;
     justify-content: flex-start;
     gap: 0.75em;
-    margin: 0 0 2rem;
+    margin: 0 0 .75rem;
   }
   #cs-footer-840 .cs-links-wrapper {
     display: flex;
