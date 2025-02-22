@@ -894,6 +894,7 @@
     z-index: -1;
     transform: translate(-50%, -50%) scale(1.2);
     transition: opacity 0.3s, transform 0.3s;
+    border-radius: 1.25rem;
   }
   #cs-navigation .cs-li-link:hover {
     color: var(--bodyTextColorWhite);
