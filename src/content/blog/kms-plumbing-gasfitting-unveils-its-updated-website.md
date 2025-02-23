@@ -13,10 +13,8 @@ tags:
   - featured
   - post
 image: /assets/images/cms/blog1.png
-imageAlt: van
+imageAlt: New Website Launch!
 ---
-# KMS Plumbing & Gasfitting’s New Website – A Custom Upgrade for a Better Experience!
-
 We’re excited to unveil our newly upgraded website! We partnered with **Bespoke Web Design Edmonton** to create a fully custom experience that reflects our business and services.
 
 ## Why We Chose Bespoke Web Design Edmonton
@@ -92,7 +90,7 @@ Key Improvements in Our Website Upgrade
    – A clickable phone number that follows you as you scroll for easy contact access.
 * **SEO Optimization**
 
-   – Enhanced site structure and code to improve visibility on search engines.
+  \- We improved the website’s structure and code to help it rank better on search engines. A custom-built website is a strong foundation for SEO since Bespoke has full control to apply advanced strategies.
 * **Mobile Responsiveness**
 
    – Ensured seamless functionality across all devices, providing a consistent experience.
@@ -100,10 +98,8 @@ Key Improvements in Our Website Upgrade
 
    – Tailored forms for lead generation and effective calls-to-action.
 
-
-
 ## Thinking About Upgrading Your Website?
 
 If your business is still using a template-based site, it might be time for an upgrade. **Bespoke Web Design Edmonton** makes the process simple, affordable, and stress-free—just like they did for us!
 
-**Get a FREE website audit today!** Visit **Bespoke Web Design Edmonton** to get started, or call **780-263-8028**.
+**Get a FREE website audit today!** Visit **[Bespoke Web Design Edmonton](www.bespokewebdesign.ca)** to get started send email at info@bespokewebdesign or call **780-263-8028**.
