@@ -121,8 +121,9 @@ eleventyNavigation:
 
 <section id="map-1403">
     <!--Replace this embed code with the google maps embed code of your clients location. To do so, google your clients business, click on the map picture that in the profile card to go to the map location. That will take you to Google maps, then find the share button in the left panel and click on it. You will be given a link to share and a button to copy link, ignore that! AAbove that is a tab that says "Embed a map", click that instead and it will bring up the embed code for you clients location in maps.  Click the button to copy the html and paste it in place of this entire iframe tag. Do not keep the original iframe. Replace it with the new one you got from google maps, unless you want to display a map of Wyoming, then you can keep this iframe. -->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63628.37989053028!2d-113.54025119579566!3d53.54701236605739!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a0224580deff23%3A0x411fa00c4af6155d!2sEdmonton%2C%20AB%2C%20Canada!5e1!3m2!1sen!2sph!4v1740321565484!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="{{ client.address.mapEmbed }}" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
+
 <!-- ============================================ -->
 <!--                   Reviews                    -->
 <!-- ============================================ -->

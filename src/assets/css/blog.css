@@ -286,7 +286,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 1rem;
   }
   .blog-sidebar .blog-header {
     font-size: 1.25em;
@@ -373,7 +372,6 @@
     width: 100%;
     max-width: 49.6875em;
     display: block;
-    margin-top: 1rem;
   }
   .blog-article .blog-mainImage {
     width: 100%;
