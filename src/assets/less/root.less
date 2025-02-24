@@ -94,6 +94,7 @@
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
     --bodyFontFamily: Helvetica, Aria, sans-serif;
     --headerFontFamily: "Saira", Helvetica, sans-serif;
+    --desktopHeaderNavHeight: 6.25rem;
     --canadaBannerHeight: 6.5rem;
     --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
@@ -908,7 +909,7 @@
     .cs-container {
       width: 100%;
       /* same height as the cs-ul-wrapper */
-      height: (100/16rem);
+      height: var(--desktopHeaderNavHeight);
       max-width: (1280/16rem);
       margin: auto;
       display: flex;

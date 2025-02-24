@@ -59,6 +59,9 @@
   }
 }
 
+@media only screen and (min-width: 64em) {
+}
+
 /*-- -------------------------- -->
 <---           Header           -->
 <--- -------------------------- -*/
@@ -414,8 +417,18 @@
 
 /* Tablet - 1024px */
 @media only screen and (min-width: 64em) {
+  body.scroll {
+    .blog-sidebar {
+      // padding-top: calc(var(--desktopHeaderNavHeight) + 1rem);
+      transform: translateY(1rem);
+    }
+  }
+
   .blog-sidebar {
     max-width: (360/16em);
+    position: sticky;
+    top: calc(var(--desktopHeaderNavHeight));
+    transition: transform 200ms ease-in-out;
   }
 }
 
