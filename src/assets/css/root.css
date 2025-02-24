@@ -895,6 +895,7 @@
     z-index: -1;
     transform: translate(-50%, -50%) scale(1.2);
     transition: opacity 0.3s, transform 0.3s;
+    border-radius: 70px;
   }
   #cs-navigation .cs-li-link:hover {
     color: var(--bodyTextColorWhite);
@@ -902,6 +903,7 @@
   #cs-navigation .cs-li-link:hover:before {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
+    border-radius: 70px;
   }
   #cs-navigation .cs-li-link.cs-active {
     color: var(--bodyTextColorWhite);
@@ -909,6 +911,7 @@
   #cs-navigation .cs-li-link.cs-active:before {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
+    border-radius: 70px;
   }
   #cs-navigation .cs-button-solid {
     display: flex;
