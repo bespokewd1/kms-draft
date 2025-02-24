@@ -662,6 +662,9 @@
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
+  body.scroll #cs-navigation .cs-drop-ul {
+    background-color: #1a1a1a;
+  }
   #cs-navigation .cs-dropdown {
     position: relative;
   }
@@ -686,7 +689,7 @@
     min-width: 12.5rem;
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a;
+    background-color: var(--bodyTextColorWhite);
     overflow: hidden;
     opacity: 0;
     visibility: hidden;
@@ -697,7 +700,7 @@
     z-index: -100;
     transform: scaleY(0);
     transform-origin: top;
-    transition: transform 0.3s, visibility 0.3s, opacity 0.3s;
+    transition: background-color 0.3s, transform 0.3s, visibility 0.3s, opacity 0.3s;
   }
   #cs-navigation .cs-drop-li {
     list-style: none;
@@ -758,7 +761,7 @@
     padding: 0.75rem;
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
-    color: var(--bodyTextColorWhite);
+    color: var(--primary);
     display: block;
     transition: color 0.3s, background-color 0.3s;
   }
