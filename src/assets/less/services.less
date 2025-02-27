@@ -670,6 +670,10 @@
   flex-direction: column;
   align-items: center;
 
+  /* Using clamp to create fluid values based on viewport width */
+  --scroller-gap: clamp(1.5rem, calc(1rem + 2vw), 4rem);
+  --scroller-max-width: clamp(300px, calc(300px + 30vw), 1200px);
+
   .cs-content {
     text-align: center;
     width: 100%;
@@ -693,11 +697,15 @@
 
       img {
         object-fit: contain;
+        width: clamp(150px, calc(150px + 5vw), 250px); /* Fluid image width */
+        height: auto;
       }
     }
   }
 
   .scroller {
+    max-width: var(--scroller-max-width);
+
     .scroller-inner {
       display: flex;
       padding-block: 1rem;
@@ -740,53 +748,5 @@
 
   .scroller[data-direction="left"] {
     --animation-direction: reverse;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  #autoscroll-gallery {
-    .scroller {
-      --scroller-gap: 1.5rem;
-      max-width: 300px;
-    }
-  }
-}
-
-@media only screen and (min-width: 426px) and (max-width: 768px) {
-  #autoscroll-gallery {
-    .scroller {
-      --scroller-gap: 2rem;
-      max-width: 450px;
-    }
-  }
-}
-
-@media only screen and (min-width: 769px) {
-  .gallery-wrapper {
-    li {
-      img {
-        object-fit: contain;
-        width: 250px;
-        height: auto;
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  #autoscroll-gallery {
-    .scroller {
-      --scroller-gap: 3rem;
-      max-width: 650px;
-    }
-  }
-}
-
-@media only screen and (min-width: 1025px) {
-  #autoscroll-gallery {
-    .scroller {
-      --scroller-gap: 4rem;
-      max-width: (900/16rem);
-    }
   }
 }
