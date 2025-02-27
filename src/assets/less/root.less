@@ -299,6 +299,7 @@
     position: fixed;
     z-index: 10000;
     transition: background-color 0.3s;
+    box-shadow: var(--shadow-md);
 
     &:before {
       /* black overlay on scroll */
@@ -4297,7 +4298,7 @@
 <--- -------------------------- -*/
 .review-badge {
   // padding: var(--sectionPadding);
-  padding: clamp(3.2rem, 7vw, 5rem) 1rem;
+  padding: clamp(2.5rem, 5vw, 4rem) 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -4315,7 +4316,7 @@
 .review-logo-images {
   display: grid;
   place-items: center;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: (24/16rem);
 
   > :nth-child(1) {
@@ -4330,7 +4331,7 @@
 /*mobile - small tablet*/
 @media only screen and (max-width: 600px) {
   .review-logo-images {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     .cs-picture:last-child {
       padding-top: (16/16rem);
     }
