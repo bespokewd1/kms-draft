@@ -77,7 +77,10 @@
 @media only screen and (min-width: 0rem) {
   :root {
     /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
-    --primary: #3d92cf;
+    --navBar-color: #2a1768;
+    --canada-banner-bg: #d76d2a;
+    // --primary: #3d92cf;
+    --primary: #1a3a7c;
     --primaryLight: #f4a44a;
     --primaryBreaker: #f0f0f020;
     --secondary: #d06928;
@@ -276,7 +279,8 @@
       #cs-navigation {
         box-shadow: var(--shadow-md);
         &:before {
-          background-color: var(--bodyTextColorWhite);
+          // background-color: var(--bodyTextColorWhite);
+          background-color: var(--navBar-color);
           height: 100%;
         }
       }
@@ -288,7 +292,8 @@
     padding: (12/16rem) (16/16rem);
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
-    background: var(--bodyTextColorWhite);
+    background: var(--navBar-color);
+    // background: var(--bodyTextColorWhite);
     -webkit-backdrop-filter: blur(27px);
     backdrop-filter: blur(27px);
     position: fixed;
@@ -300,7 +305,8 @@
       content: "";
       width: 100%;
       height: 0%;
-      background: var(--bodyTextColorWhite);
+      // background: var(--bodyTextColorWhite);
+      background: var(--navBar-color);
       opacity: 1;
       position: absolute;
       display: block;
@@ -379,6 +385,7 @@
         object-fit: contain;
         /* places the image to the left edge of the parent */
         object-position: left;
+        filter: drop-shadow(2px 4px 6px black);
       }
     }
 
@@ -390,7 +397,7 @@
       width: (56/16rem);
       height: (56/16rem);
       margin: 0 0 0 auto;
-      background-color: var(--bodyTextColorWhite);
+      background-color: transparent;
       border: none;
       display: flex;
       justify-content: center;
@@ -432,7 +439,7 @@
       width: 100%;
       height: 2px;
       border-radius: 2px;
-      background-color: var(--primary);
+      background-color: var(--bodyTextColorWhite);
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
@@ -475,7 +482,8 @@
       min-width: 60vw;
       height: 100vh;
       opacity: 0;
-      background-color: #fff;
+      // background-color: #fff;
+      background-color: var(--navBar-color);
       box-shadow: inset rgba(0, 0, 0, 0.2) 0px 8px 24px;
       overflow: hidden;
       position: absolute;
@@ -554,7 +562,8 @@
       text-transform: uppercase;
       font-weight: bold;
       margin: 0;
-      color: var(--headerColor);
+      // color: var(--headerColor);
+      color: var(--bodyTextColorWhite);
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
@@ -593,7 +602,8 @@
       }
 
       &.cs-active {
-        color: var(--primary);
+        color: var(--secondary);
+        filter: drop-shadow(2px 4px 6px black);
         &:before {
           display: block;
         }
@@ -656,12 +666,13 @@
 /* Mobile - 1023px */
 @media only screen and (max-width: 63.9375rem) {
   #cs-navigation {
-    background-color: var(--bodyTextColorWhite);
+    background-color: var(--navBar-color);
     .cs-dropdown {
       position: relative;
       color: var(--bodyTextColorWhite);
       &.cs-active {
         .cs-drop-ul {
+          background-color: var(--headerColor);
           height: auto;
           opacity: 1;
           visibility: visible;
@@ -780,11 +791,11 @@
       min-width: (200/16rem);
       margin: 0;
       padding: 0;
-      background-color: var(--bodyTextColorWhite);
+      background-color: var(--navBar-color);
       overflow: hidden;
       opacity: 0;
       visibility: hidden;
-      border-bottom: 5px solid var(--primary);
+      border-bottom: 5px solid var(--bodyTextColorWhite);
       /* if you have 8 or more links in your dropdown nav, uncomment the columns property to make the list into 2 even columns. Change it to 3 or 4 if you need extra columns. Then remove the transition delays on the cs-drop-li so they don't have weird scattered animations */
       // columns: 2;
       position: absolute;
@@ -865,7 +876,7 @@
         /* prevents padding and border from affecting height and width */
         box-sizing: border-box;
         // color: var(--headerColor);
-        color: var(--primary);
+        color: var(--bodyTextColorWhite);
         display: block;
         transition:
           color 0.3s,
@@ -904,7 +915,8 @@
     padding: 0 (16/16rem);
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
-    background: #ffffff;
+    // background: #ffffff;
+    background: var(--navBar-color);
     position: fixed;
     z-index: 10000;
 
@@ -955,6 +967,7 @@
         height: 100%;
         /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
         object-fit: contain;
+        filter: drop-shadow(2px 4px 6px black);
       }
     }
 
@@ -993,7 +1006,7 @@
       text-transform: uppercase;
       margin: 0;
       padding: 0 clamp(0.5rem, 1vw, 1rem);
-      color: var(--primary);
+      color: var(--bodyTextColorWhite);
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
@@ -1127,7 +1140,7 @@
     width: 100%;
     display: grid;
     place-items: center;
-    background: var(--primary);
+    background: var(--canada-banner-bg);
     padding: (12/16rem);
 
     .cs-container {
