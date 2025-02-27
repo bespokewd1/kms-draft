@@ -101,7 +101,7 @@
     --primaryBreaker: #f0f0f020;
     --secondary: #d06928;
     --secondaryLight: #f4a44a;
-    --headerColor: #1a1a1a;
+    --headerColor: #2a1768;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
     /* 13px - 16px */
@@ -941,7 +941,6 @@
     padding: 0 1rem;
     background-color: var(--secondary) !important;
     /*to bypass acuity styling*/
-    border: 1px solid var(--secondary);
     position: relative;
     z-index: 1;
     /* prevents padding from adding to the width */
@@ -955,7 +954,7 @@
     position: absolute;
     height: 100%;
     width: 0%;
-    background: var(--headerColor);
+    background: #000;
     opacity: 1;
     top: 0;
     left: 0;
@@ -963,7 +962,6 @@
     transition: width 0.3s;
   }
   #cs-navigation .cs-button-solid:hover {
-    border: 1px solid var(--headerColor);
     transition-delay: 250ms;
   }
   #cs-navigation .cs-button-solid:hover:before {
@@ -3557,6 +3555,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#gallery-45 .cs-content .cs-h3 {
+  color: var(--headerColor);
 }
 #gallery-45 .cs-image-group {
   width: 100%;

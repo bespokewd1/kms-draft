@@ -85,7 +85,8 @@
     --primaryBreaker: #f0f0f020;
     --secondary: #d06928;
     --secondaryLight: #f4a44a;
-    --headerColor: #1a1a1a;
+    // --headerColor: #1a1a1a;
+    --headerColor: #2a1768;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
     /* 13px - 16px */
@@ -1090,7 +1091,7 @@
       background-color: var(
         --secondary
       ) !important; /*to bypass acuity styling*/
-      border: 1px solid var(--secondary);
+      // border: 1px solid var(--secondary);
       position: relative;
       z-index: 1;
       /* prevents padding from adding to the width */
@@ -1106,7 +1107,7 @@
         height: 100%;
         width: 0%;
         // background: var(--secondary);
-        background: var(--headerColor);
+        background: #000;
         opacity: 1;
         top: 0;
         left: 0;
@@ -1115,7 +1116,7 @@
       }
 
       &:hover {
-        border: 1px solid var(--headerColor);
+        // border: 1px solid var(--headerColor);
         transition-delay: 250ms;
         &:before {
           width: 100%;
@@ -4070,6 +4071,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .cs-h3 {
+      color: var(--headerColor);
+    }
   }
 
   .cs-image-group {
