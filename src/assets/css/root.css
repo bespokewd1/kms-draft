@@ -131,6 +131,12 @@
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
   }
+  strong {
+    color: var(--headerColor);
+  }
+  .d-contents {
+    display: contents;
+  }
   .cs-topper {
     font-size: var(--topperFontSize);
     font-weight: 700;

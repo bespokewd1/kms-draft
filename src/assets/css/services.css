@@ -568,3 +568,98 @@
     margin: 2.5rem auto 0;
   }
 }
+/*-- -------------------------- -->
+<---  Auto Scroll Brands Images -->
+<--- -------------------------- -*/
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - (var(--scroller-gap) / 2)));
+  }
+}
+/* mobile*/
+#autoscroll-gallery {
+  width: 100%;
+  max-width: 80rem;
+  margin: auto;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*animation starts here */
+}
+#autoscroll-gallery .cs-content {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#autoscroll-gallery .gallery-wrapper li {
+  list-style: none;
+  transition: transform 200ms ease-in-out, filter 200ms linear;
+  touch-action: pan-y;
+}
+#autoscroll-gallery .gallery-wrapper li:hover {
+  transform: translateY(-10%);
+  filter: grayscale(0);
+}
+#autoscroll-gallery .gallery-wrapper li img {
+  object-fit: contain;
+}
+#autoscroll-gallery .scroller .scroller-inner {
+  display: flex;
+  padding-block: 1rem;
+  gap: var(--scroller-gap);
+  align-items: center;
+  flex-wrap: wrap;
+}
+#autoscroll-gallery [data-animated="true"] {
+  overflow: hidden;
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+#autoscroll-gallery [data-animated="true"] .scroller-inner {
+  flex-wrap: nowrap;
+  animation: scroll var(--animation-duration, 20s) var(--animation-direction, forwards) linear infinite;
+  width: fit-content;
+}
+#autoscroll-gallery [data-animated="true"] .scroller-inner:hover {
+  animation-play-state: paused;
+  filter: grayscale(0.4);
+}
+#autoscroll-gallery .scroller[data-direction="right"] {
+  --animation-direction: reverse;
+}
+#autoscroll-gallery .scroller[data-direction="left"] {
+  --animation-direction: reverse;
+}
+@media only screen and (max-width: 425px) {
+  #autoscroll-gallery .scroller {
+    --scroller-gap: 1.5rem;
+    max-width: 300px;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #autoscroll-gallery .scroller {
+    --scroller-gap: 1.5rem;
+    max-width: 450px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .gallery-wrapper li img {
+    object-fit: contain;
+    width: 250px;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #autoscroll-gallery .scroller {
+    --scroller-gap: 3rem;
+    max-width: 650px;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  #autoscroll-gallery .scroller {
+    --scroller-gap: 4rem;
+    max-width: 56.25rem;
+  }
+}
