@@ -609,8 +609,10 @@
 #autoscroll-gallery .scroller .scroller-inner {
   display: flex;
   padding-block: 1rem;
+  padding-inline: 0;
   gap: var(--scroller-gap);
   align-items: center;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 #autoscroll-gallery [data-animated="true"] {
@@ -640,7 +642,7 @@
 }
 @media only screen and (min-width: 426px) and (max-width: 768px) {
   #autoscroll-gallery .scroller {
-    --scroller-gap: 1.5rem;
+    --scroller-gap: 2rem;
     max-width: 450px;
   }
 }
