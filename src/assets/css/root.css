@@ -94,12 +94,14 @@
 @media only screen and (min-width: 0rem) {
   :root {
     /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
-    --primary: #3d92cf;
+    --navBar-color: #2a1768;
+    --canada-banner-bg: #d76d2a;
+    --primary: #1a3a7c;
     --primaryLight: #f4a44a;
     --primaryBreaker: #f0f0f020;
     --secondary: #d06928;
     --secondaryLight: #f4a44a;
-    --headerColor: #1a1a1a;
+    --headerColor: #2a1768;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
     /* 13px - 16px */
@@ -128,6 +130,12 @@
   *:after {
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
+  }
+  strong {
+    color: var(--headerColor);
+  }
+  .d-contents {
+    display: contents;
   }
   .cs-topper {
     font-size: var(--topperFontSize);
@@ -276,7 +284,7 @@
     box-shadow: var(--shadow-md);
   }
   body.scroll #cs-navigation:before {
-    background-color: var(--bodyTextColorWhite);
+    background-color: var(--navBar-color);
     height: 100%;
   }
   #cs-navigation {
@@ -284,19 +292,20 @@
     padding: 0.75rem 1rem;
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
-    background: var(--bodyTextColorWhite);
+    background: var(--navBar-color);
     -webkit-backdrop-filter: blur(27px);
     backdrop-filter: blur(27px);
     position: fixed;
     z-index: 10000;
     transition: background-color 0.3s;
+    box-shadow: var(--shadow-md);
   }
   #cs-navigation:before {
     /* black overlay on scroll */
     content: "";
     width: 100%;
     height: 0%;
-    background: var(--bodyTextColorWhite);
+    background: var(--navBar-color);
     opacity: 1;
     position: absolute;
     display: block;
@@ -366,6 +375,7 @@
     object-fit: contain;
     /* places the image to the left edge of the parent */
     object-position: left;
+    filter: drop-shadow(2px 4px 6px black);
   }
   #cs-navigation .cs-nav {
     order: 3;
@@ -374,7 +384,7 @@
     width: 3.5rem;
     height: 3.5rem;
     margin: 0 0 0 auto;
-    background-color: var(--bodyTextColorWhite);
+    background-color: transparent;
     border: none;
     display: flex;
     justify-content: center;
@@ -409,7 +419,7 @@
     width: 100%;
     height: 2px;
     border-radius: 2px;
-    background-color: var(--primary);
+    background-color: var(--bodyTextColorWhite);
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -440,7 +450,7 @@
     min-width: 60vw;
     height: 100vh;
     opacity: 0;
-    background-color: #fff;
+    background-color: var(--navBar-color);
     box-shadow: inset rgba(0, 0, 0, 0.2) 0px 8px 24px;
     overflow: hidden;
     position: absolute;
@@ -511,7 +521,7 @@
     text-transform: uppercase;
     font-weight: bold;
     margin: 0;
-    color: var(--headerColor);
+    color: var(--bodyTextColorWhite);
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -545,7 +555,8 @@
     left: 0;
   }
   #cs-navigation .cs-li-link.cs-active {
-    color: var(--primary);
+    color: var(--secondary);
+    filter: drop-shadow(2px 4px 6px black);
   }
   #cs-navigation .cs-li-link.cs-active:before {
     display: block;
@@ -598,13 +609,14 @@
 /* Mobile - 1023px */
 @media only screen and (max-width: 63.9375rem) {
   #cs-navigation {
-    background-color: var(--bodyTextColorWhite);
+    background-color: var(--navBar-color);
   }
   #cs-navigation .cs-dropdown {
     position: relative;
     color: var(--bodyTextColorWhite);
   }
   #cs-navigation .cs-dropdown.cs-active .cs-drop-ul {
+    background-color: var(--headerColor);
     height: auto;
     opacity: 1;
     visibility: visible;
@@ -663,7 +675,7 @@
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
   body.scroll #cs-navigation .cs-drop-ul {
-    background-color: #1a1a1a;
+    background-color: var(--navBar-color);
   }
   #cs-navigation .cs-dropdown {
     position: relative;
@@ -689,11 +701,11 @@
     min-width: 12.5rem;
     margin: 0;
     padding: 0;
-    background-color: var(--bodyTextColorWhite);
+    background-color: var(--navBar-color);
     overflow: hidden;
     opacity: 0;
     visibility: hidden;
-    border-bottom: 5px solid var(--primary);
+    border-bottom: 5px solid var(--bodyTextColorWhite);
     /* if you have 8 or more links in your dropdown nav, uncomment the columns property to make the list into 2 even columns. Change it to 3 or 4 if you need extra columns. Then remove the transition delays on the cs-drop-li so they don't have weird scattered animations */
     position: absolute;
     top: 99.5%;
@@ -761,12 +773,12 @@
     padding: 0.75rem;
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
-    color: var(--primary);
+    color: var(--bodyTextColorWhite);
     display: block;
     transition: color 0.3s, background-color 0.3s;
   }
   #cs-navigation .cs-li-link.cs-drop-link:hover {
-    background-color: var(--primary);
+    background-color: var(--secondary);
     color: var(--bodyTextColorWhite);
   }
   #cs-navigation .cs-li-link.cs-drop-link:before {
@@ -789,7 +801,7 @@
     padding: 0 1rem;
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
-    background: #ffffff;
+    background: var(--navBar-color);
     position: fixed;
     z-index: 10000;
   }
@@ -798,7 +810,7 @@
     content: "";
     width: 100%;
     height: 0%;
-    background: #1a1a1a;
+    background: var(--navBar-color);
     opacity: 1;
     position: absolute;
     display: block;
@@ -837,6 +849,7 @@
     height: 100%;
     /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
     object-fit: contain;
+    filter: drop-shadow(2px 4px 6px black);
   }
   #cs-navigation .cs-ul-wrapper {
     /* absolutely positioned to be dead center */
@@ -869,7 +882,7 @@
     text-transform: uppercase;
     margin: 0;
     padding: 0 clamp(0.5rem, 1vw, 1rem);
-    color: var(--primary);
+    color: var(--bodyTextColorWhite);
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -890,7 +903,7 @@
     width: 100%;
     height: 2.5rem;
     border-radius: 1.25rem;
-    background: var(--primary);
+    background: var(--secondary);
     opacity: 0;
     position: absolute;
     display: block;
@@ -932,9 +945,8 @@
     color: #fff;
     min-width: 9.375rem;
     padding: 0 1rem;
-    background-color: var(--primary) !important;
+    background-color: var(--secondary) !important;
     /*to bypass acuity styling*/
-    border: 1px solid var(--primary);
     position: relative;
     z-index: 1;
     /* prevents padding from adding to the width */
@@ -948,7 +960,7 @@
     position: absolute;
     height: 100%;
     width: 0%;
-    background: var(--secondary);
+    background: #000;
     opacity: 1;
     top: 0;
     left: 0;
@@ -956,7 +968,6 @@
     transition: width 0.3s;
   }
   #cs-navigation .cs-button-solid:hover {
-    border: 1px solid var(--secondary);
     transition-delay: 250ms;
   }
   #cs-navigation .cs-button-solid:hover:before {
@@ -982,7 +993,7 @@
     width: 100%;
     display: grid;
     place-items: center;
-    background: var(--primary);
+    background: var(--canada-banner-bg);
     padding: 0.75rem;
   }
   .canada-banner .cs-container {
@@ -1817,7 +1828,7 @@
 /* Desktop Parallax Effect - 1300px */
 @media only screen and (min-width: 81.25rem) {
   #hero-227 {
-    background: url("https://kms-draft.netlify.app/assets/images/plumber-header.webp");
+    background: url("/assets/images/plumber-header.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -3551,6 +3562,9 @@
   flex-direction: column;
   align-items: center;
 }
+#gallery-45 .cs-content .cs-h3 {
+  color: var(--headerColor);
+}
 #gallery-45 .cs-image-group {
   width: 100%;
   margin: 0;
@@ -3737,7 +3751,7 @@
 <---        Custom Styles        -->
 <--- -------------------------- -*/
 .review-badge {
-  padding: clamp(3.2rem, 7vw, 5rem) 1rem;
+  padding: clamp(2.5rem, 5vw, 4rem) 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3748,13 +3762,16 @@
   text-align: center;
   margin-bottom: 0;
 }
+.review-badge > .cs-button-solid {
+  background-color: var(--secondary);
+}
 .review-badge .cs-button-solid:before {
   background-color: var(--secondary);
 }
 .review-logo-images {
   display: grid;
   place-items: center;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 1.5rem;
 }
 .review-logo-images > :nth-child(1) {
@@ -3766,7 +3783,7 @@
 /*mobile - small tablet*/
 @media only screen and (max-width: 600px) {
   .review-logo-images {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
   .review-logo-images .cs-picture:last-child {
     padding-top: 1rem;

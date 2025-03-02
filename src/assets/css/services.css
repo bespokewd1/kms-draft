@@ -568,3 +568,78 @@
     margin: 2.5rem auto 0;
   }
 }
+/*-- -------------------------- -->
+<---  Auto Scroll Brands Images -->
+<--- -------------------------- -*/
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - (var(--scroller-gap) / 2)));
+  }
+}
+/* mobile*/
+#autoscroll-gallery {
+  width: 100%;
+  max-width: 80rem;
+  margin: auto;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Using clamp to create fluid values based on viewport width */
+  --scroller-gap: clamp(1.5rem, calc(1rem + 2vw), 4rem);
+  --scroller-max-width: clamp(300px, calc(300px + 30vw), 1200px);
+  /*animation starts here */
+}
+#autoscroll-gallery .cs-content {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#autoscroll-gallery .gallery-wrapper li {
+  list-style: none;
+  transition: transform 200ms ease-in-out, filter 200ms linear;
+  touch-action: pan-y;
+}
+#autoscroll-gallery .gallery-wrapper li:hover {
+  transform: translateY(-10%);
+  filter: grayscale(0);
+}
+#autoscroll-gallery .gallery-wrapper li img {
+  object-fit: contain;
+  width: clamp(150px, calc(150px + 5vw), 250px);
+  /* Fluid image width */
+  height: auto;
+}
+#autoscroll-gallery .scroller {
+  max-width: var(--scroller-max-width);
+}
+#autoscroll-gallery .scroller .scroller-inner {
+  display: flex;
+  padding-block: 1rem;
+  padding-inline: 0;
+  gap: var(--scroller-gap);
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#autoscroll-gallery [data-animated="true"] {
+  overflow: hidden;
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+#autoscroll-gallery [data-animated="true"] .scroller-inner {
+  flex-wrap: nowrap;
+  animation: scroll var(--animation-duration, 20s) var(--animation-direction, forwards) linear infinite;
+  width: fit-content;
+}
+#autoscroll-gallery [data-animated="true"] .scroller-inner:hover {
+  animation-play-state: paused;
+  filter: grayscale(0.4);
+}
+#autoscroll-gallery .scroller[data-direction="right"] {
+  --animation-direction: reverse;
+}
+#autoscroll-gallery .scroller[data-direction="left"] {
+  --animation-direction: reverse;
+}
