@@ -3528,6 +3528,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    /* 16px - 24px left & right */
+    padding: 0 clamp(1rem, 2vw, 1.5rem) clamp(1.25rem, 1.3vw, 1.5rem);
   }
   #sbs-1067 .cs-image-group {
     font-size: min(1.2vw, 1em);

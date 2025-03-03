@@ -246,6 +246,10 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
+  #steps-1172 .cs-container {
+    /* 16px - 24px left & right */
+    padding: 0 clamp(1rem, 2vw, 1.5rem) clamp(1.25rem, 1.3vw, 1.5rem);
+  }
   #steps-1172 .cs-item {
     grid-column: span 4;
   }
