@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (img && decapLogo) {
         // Check if both elements are now found
-        img.setAttribute("src", "/assets/images/bespokelogo.png");
+        img.setAttribute("src", "/assets/images/bespokeog.png");
         decapLogo.setAttribute("style", "display:none");
         observer.disconnect(); // Stop observing once changes are made
         console.log("Logo changes applied using MutationObserver"); // Optional log

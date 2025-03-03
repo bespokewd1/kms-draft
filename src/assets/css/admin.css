@@ -4,6 +4,7 @@
   }
   section.css-no93ty-StyledAuthenticationPage.exus10f5 .css-u6jh90-CustomIconWrapper.exus10f4 img {
     filter: drop-shadow(2px 4px 6px black);
-    width: clamp(300px, 10vw, 400px);
+    width: clamp(300px, 15vw, 450px);
+    border-radius: 12px;
   }
 }
