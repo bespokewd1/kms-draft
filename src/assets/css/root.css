@@ -4193,3 +4193,38 @@
     display: none !important;
   }
 }
+/*-- ------------------------------------ -->
+<---        Ronald Sponsorship Styles      -->
+<--- -------------------------------------- -*/
+@media only screen and (min-width: 0rem) {
+  .sponsorship {
+    max-width: 80rem;
+    padding: 1rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sponsorship .logo-images {
+    display: grid;
+  }
+  .sponsorship .logo-images .cs-picture {
+    grid-area: 1/1;
+  }
+  .sponsorship .logo-images img {
+    width: clamp(200px, 30vw, 300px);
+    height: auto;
+    object-fit: contain;
+  }
+  .sponsorship .cs-title {
+    font-size: clamp(1rem, 2.9vw, 1.5625rem);
+    font-weight: 500;
+    padding: 0 clamp(0.75rem, 3vw, 1.5rem);
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 40rem) {
+  .sponsorship {
+    flex-direction: column;
+  }
+}
