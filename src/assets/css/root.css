@@ -3544,7 +3544,7 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 #gallery-45 {
-  padding: var(--sectionPadding);
+  padding: 1rem;
   position: relative;
   overflow: hidden;
 }
@@ -3667,6 +3667,9 @@
   text-align: center;
 }
 @media only screen and (min-width: 40rem) {
+  #gallery-45 {
+    padding: var(--sectionPadding);
+  }
   #gallery-45 .trust-signals {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
