@@ -4854,40 +4854,60 @@
 <--- -------------------------------------- -*/
 
 @media only screen and (min-width: 0rem) {
-  .sponsorship {
-    max-width: (1280/16rem);
+  #sponsor-card {
     padding: 1rem;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    .logo-images {
-      display: grid;
-
-      .cs-picture {
-        grid-area: 1/1;
-      }
-
-      img {
-        // max-width: 300px;
-        width: clamp(200px, 30vw, 300px);
-        height: auto;
-        object-fit: contain;
-      }
+    .cs-h3 {
+      color: var(--headerColor);
+      text-align: center;
+      margin: 0;
+      font-size: 1.6rem;
     }
 
-    .cs-title {
-      font-size: clamp(1rem, 2.9vw, 1.5625rem);
-      font-weight: 500;
-      padding: 0 clamp(0.75rem, 3vw, 1.5rem);
-      text-align: center;
+    .sponsorship {
+      max-width: (1280/16rem);
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .logo-images {
+        display: grid;
+
+        .cs-picture {
+          grid-area: 1/1;
+        }
+
+        img {
+          // max-width: 300px;
+          width: clamp(200px, 30vw, 300px);
+          height: auto;
+          object-fit: contain;
+        }
+      }
+
+      .cs-title {
+        font-size: clamp(1rem, 2.9vw, 1.5625rem);
+        font-weight: 500;
+        padding: 0 clamp(0.75rem, 3vw, 1.5rem);
+        text-align: center;
+      }
     }
   }
 }
 
 @media only screen and (max-width: 40rem) {
-  .sponsorship {
-    flex-direction: column;
+  #sponsor-card {
+    .sponsorship {
+      flex-direction: column;
+    }
+  }
+}
+
+@media only screen and (min-width: 40rem) {
+  #sponsor-card {
+    .sponsorship {
+      margin-top: -1.5rem;
+    }
   }
 }
