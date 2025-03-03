@@ -12,7 +12,7 @@ tags:
 image: /assets/images/cms/blog2.jpg
 imageAlt: Plumber doing work
 ---
-**5 Essential Things to Know Before Hiring a Plumber in Edmonton**
+### **5 Essential Things to Know Before Hiring a Plumber in Edmonton**
 
 When plumbing issues pop up, the last thing you want is to make the wrong choice when hiring a plumber. To save you time, money, and avoid unnecessary stress, here are five important things you need to know before hiring a plumber in Edmonton, AB:
 
