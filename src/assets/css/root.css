@@ -4201,7 +4201,7 @@
     color: var(--headerColor);
     text-align: center;
     margin: 0;
-    font-size: var(--headerFontSize);
+    font-size: 1.6rem;
     margin-bottom: 1rem;
   }
   #sponsor-card .sponsorship {
