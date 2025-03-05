@@ -2585,7 +2585,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* 48px - 64px */
     gap: clamp(2.5rem, 4vw, 4rem);
   }
   #services-1644 .cs-card-group {
@@ -2600,21 +2599,25 @@
     list-style: none;
     width: 100%;
     box-sizing: border-box;
-    /* resets at tablet */
     padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* 24px - 40px */
     gap: clamp(1.5rem, 3vw, 2.5rem);
     position: relative;
     z-index: 1;
+  }
+  #services-1644 .cs-item:first-of-type {
+    padding-top: 0;
+  }
+  #services-1644 .cs-item:last-of-type {
+    padding-bottom: 0;
+    border: none;
   }
   #services-1644 .cs-item:last-of-type:before {
     display: none;
   }
   #services-1644 .cs-item:before {
-    /* gradient line divider */
     content: "";
     width: 100%;
     height: 1px;
@@ -2625,13 +2628,6 @@
     bottom: 0;
     left: 0;
   }
-  #services-1644 .cs-item:first-of-type {
-    padding-top: 0;
-  }
-  #services-1644 .cs-item:last-of-type {
-    padding-bottom: 0;
-    border: none;
-  }
   #services-1644 .cs-image-group {
     position: relative;
   }
@@ -2640,7 +2636,6 @@
     height: auto;
   }
   #services-1644 .cs-h2 {
-    /* 20px - 25px */
     font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
     text-align: inherit;
     line-height: 1.2em;
@@ -2649,12 +2644,10 @@
     color: var(--headerColor);
   }
   #services-1644 .cs-item-text {
-    /* 14px - 16px */
     font-size: clamp(0.875rem, 1.6vw, 1rem);
     text-align: inherit;
     line-height: 1.5em;
     margin: 0;
-    color: var(--bodyTextColor);
   }
 }
 /*-- ------------ Accordion Mobile ------------------ -*/
@@ -3904,6 +3897,7 @@
   display: flex;
   gap: 10px;
   align-content: center;
+  margin: 1rem 0;
 }
 /*-- -------------------------- -->
 <---        Coupons Styles        -->
