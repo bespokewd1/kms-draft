@@ -612,9 +612,6 @@
   /* Fluid image width */
   height: auto;
 }
-#autoscroll-gallery .scroller {
-  max-width: var(--scroller-max-width);
-}
 #autoscroll-gallery .scroller .scroller-inner {
   display: flex;
   padding-block: 1rem;
@@ -642,4 +639,14 @@
 }
 #autoscroll-gallery .scroller[data-direction="left"] {
   --animation-direction: reverse;
+}
+@media screen and (max-width: 425px) {
+  #autoscroll-gallery .scroller {
+    max-width: 20rem;
+  }
+}
+@media screen and (min-width: 426px) {
+  #autoscroll-gallery .scroller {
+    max-width: var(--scroller-max-width);
+  }
 }

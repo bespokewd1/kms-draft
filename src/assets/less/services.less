@@ -704,8 +704,6 @@
   }
 
   .scroller {
-    max-width: var(--scroller-max-width);
-
     .scroller-inner {
       display: flex;
       padding-block: 1rem;
@@ -748,5 +746,21 @@
 
   .scroller[data-direction="left"] {
     --animation-direction: reverse;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #autoscroll-gallery {
+    .scroller {
+      max-width: (320/16rem);
+    }
+  }
+}
+
+@media screen and (min-width: 426px) {
+  #autoscroll-gallery {
+    .scroller {
+      max-width: var(--scroller-max-width);
+    }
   }
 }
