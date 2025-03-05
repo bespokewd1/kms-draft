@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
         img.setAttribute("src", "/assets/images/bespokeog.png");
         decapLogo.setAttribute("style", "display:none");
         observer.disconnect(); // Stop observing once changes are made
-        console.log("Logo changes applied using MutationObserver"); // Optional log
       }
     }
   });
@@ -19,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const ncRootElement = document.getElementById("nc-root");
   if (ncRootElement) {
     observer.observe(ncRootElement, { childList: true, subtree: true }); // Observe child elements and their descendants
-    console.log("MutationObserver started"); // Optional log
   } else {
     console.log("nc-root element not found initially!"); // Optional log
   }
