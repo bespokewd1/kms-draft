@@ -2648,6 +2648,7 @@
     text-align: inherit;
     line-height: 1.5em;
     margin: 0;
+    color: var(--bodyTextColor);
   }
 }
 /*-- ------------ Accordion Mobile ------------------ -*/
@@ -4234,6 +4235,7 @@
     font-weight: 500;
     padding: 0 clamp(0.75rem, 3vw, 1.5rem);
     text-align: center;
+    color: var(--bodyTextColor);
   }
 }
 @media only screen and (max-width: 40rem) {
