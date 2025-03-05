@@ -4855,13 +4855,15 @@
 
 @media only screen and (min-width: 0rem) {
   #sponsor-card {
-    padding: 1rem;
+    padding: var(--sectionPadding);
 
     .cs-h3 {
       color: var(--headerColor);
       text-align: center;
       margin: 0;
-      font-size: 1.6rem;
+      // font-size: 1.6rem;
+      font-size: var(--headerFontSize);
+      margin-bottom: 1rem;
     }
 
     .sponsorship {
@@ -4886,11 +4888,23 @@
         }
       }
 
-      .cs-title {
-        font-size: clamp(1rem, 2.9vw, 1.5625rem);
-        font-weight: 500;
-        padding: 0 clamp(0.75rem, 3vw, 1.5rem);
-        text-align: center;
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
+
+        .cs-title {
+          font-size: clamp(1rem, 2.9vw, 1.5625rem);
+          font-weight: 500;
+          padding: 0 clamp(0.75rem, 3vw, 1.5rem);
+          text-align: center;
+        }
+
+        .cs-button-solid {
+          // font-size: clamp(1rem, 2.9vw, 1.5625rem);
+        }
       }
     }
   }
@@ -4907,7 +4921,7 @@
 @media only screen and (min-width: 40rem) {
   #sponsor-card {
     .sponsorship {
-      margin-top: -1.5rem;
+      // margin-top: -1.5rem;
     }
   }
 }

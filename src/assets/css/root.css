@@ -4201,13 +4201,14 @@
 <--- -------------------------------------- -*/
 @media only screen and (min-width: 0rem) {
   #sponsor-card {
-    padding: 1rem;
+    padding: var(--sectionPadding);
   }
   #sponsor-card .cs-h3 {
     color: var(--headerColor);
     text-align: center;
     margin: 0;
-    font-size: 1.6rem;
+    font-size: var(--headerFontSize);
+    margin-bottom: 1rem;
   }
   #sponsor-card .sponsorship {
     max-width: 80rem;
@@ -4227,7 +4228,14 @@
     height: auto;
     object-fit: contain;
   }
-  #sponsor-card .sponsorship .cs-title {
+  #sponsor-card .sponsorship .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+  }
+  #sponsor-card .sponsorship .content .cs-title {
     font-size: clamp(1rem, 2.9vw, 1.5625rem);
     font-weight: 500;
     padding: 0 clamp(0.75rem, 3vw, 1.5rem);
@@ -4237,10 +4245,5 @@
 @media only screen and (max-width: 40rem) {
   #sponsor-card .sponsorship {
     flex-direction: column;
-  }
-}
-@media only screen and (min-width: 40rem) {
-  #sponsor-card .sponsorship {
-    margin-top: -1.5rem;
   }
 }
