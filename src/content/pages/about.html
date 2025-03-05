@@ -419,24 +419,7 @@ eleventyNavigation:
 <!-- ============================================ -->
 <!--                 Ronald Sponsorship            -->
 <!-- ============================================ -->
-
-    <section class="sponsorship">
-       <!--logo for ronald mcdonald-->
-        <div class="logo-images">
-                <picture class="cs-picture">
-
-                    <source media="(max-width: 600px)" srcset="/assets/images/BenefitingLogo_FullColour.png" height=80>
-                    <source media="(min-width: 601px)" srcset="/assets/images/BenefitingLogo_FullColour.png">
-                    <img decoding="async" src="/assets/images/BenefitingLogo_FullColour.png" alt="Ronald Mcdonald logo"
-                        height=80 aria-hidden="true">
-                </picture>
-        </div>
-        
-        <!-- Review Rating Section -->
-        <h4 class="cs-title">3% of all profits are donated to the Ronald McDonald House Northern Alberta. We have just started an ongoing partnership with the Ronald McDonald House.</h4>
-
-    </section>
-
+{% include "components/ronald-sponsorship.html" %}
 
 <!-- ============================================ -->
 <!--                    Team                      -->
