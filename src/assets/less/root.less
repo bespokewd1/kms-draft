@@ -110,12 +110,12 @@
     --desktopHeaderNavHeight: 6.25rem;
     --canadaBannerHeight: 6.5rem;
     --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
-      0 1px 2px -1px rgba(0, 0, 0, 0.1);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-      0 2px 4px -2px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-      0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    --shadow-sm:
+      0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    --shadow-md:
+      0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    --shadow-lg:
+      0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
   }
 
   body {
@@ -187,6 +187,7 @@
     display: inline-block;
     position: relative;
     z-index: 1;
+    -webkit-transition: color 0.3s;
     transition: color 0.3s;
   }
   .cs-button-solid:before {
@@ -200,6 +201,7 @@
     top: 0;
     left: 0;
     z-index: -1;
+    -webkit-transition: width 0.3s;
     transition: width 0.3s;
   }
   .cs-button-solid:hover {
@@ -245,6 +247,7 @@
       transform-origin: left;
       /* this is what creates the grow affect on hover */
       transform: scaleX(0);
+      -webkit-transition: transform 0.3s;
       transition: transform 0.3s;
     }
 
@@ -297,6 +300,7 @@
     &.scroll {
       #cs-navigation {
         box-shadow: var(--shadow-md);
+        -webkit-box-shadow: var(--shadow-md);
         &:before {
           // background-color: var(--bodyTextColorWhite);
           background-color: var(--navBar-color);
@@ -317,8 +321,10 @@
     backdrop-filter: blur(27px);
     position: fixed;
     z-index: 10000;
+    -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s;
     box-shadow: var(--shadow-md);
+    -webkit-box-shadow: var(--shadow-md);
 
     &:before {
       /* black overlay on scroll */
@@ -332,6 +338,7 @@
       display: block;
       top: 0;
       left: 0;
+      -webkit-transition: height 0.3s;
       transition: height 0.3s;
     }
 
@@ -349,6 +356,10 @@
       right: 0;
       z-index: -1100;
       opacity: 0;
+      -webkit-transition:
+        width 0.5s,
+        opacity 0.5s;
+
       transition:
         width 0.5s,
         opacity 0.5s;
@@ -369,6 +380,7 @@
       .cs-ul-wrapper {
         opacity: 1;
         transform: scaleX(1);
+        -wekit-transition-delay: 0.2s;
         transition-delay: 0.2s;
       }
 
@@ -380,6 +392,7 @@
 
     .cs-container {
       width: 100%;
+      display: -webkit-flex;
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -393,6 +406,7 @@
       padding: 0;
       /* prevents padding and border from affecting height and width */
       box-sizing: border-box;
+      display: -webkit-flex;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -419,11 +433,13 @@
       margin: 0 0 0 auto;
       background-color: transparent;
       border: none;
+      display: -webkit-flex;
       display: flex;
       justify-content: center;
       align-items: center;
       position: relative;
       z-index: 10;
+      -webkit-transition: transform 0.6s;
       transition: transform 0.6s;
       &.cs-active {
         transform: rotate(180deg);
@@ -468,6 +484,10 @@
     .cs-line1 {
       top: 0;
       transform-origin: center;
+      -webkit-transition:
+        transform 0.5s,
+        top 0.3s,
+        left 0.3s;
       transition:
         transform 0.5s,
         top 0.3s,
@@ -481,6 +501,10 @@
     .cs-line2 {
       top: 50%;
       transform: translateX(-50%) translateY(-50%);
+      -webkit-transition:
+        top 0.3s,
+        left 0.3s,
+        transform 0.5s;
       transition:
         top 0.3s,
         left 0.3s,
@@ -493,6 +517,9 @@
 
     .cs-line3 {
       bottom: 0;
+      -webkit-transition:
+        bottom 0.3s,
+        opacity 0.3s;
       transition:
         bottom 0.3s,
         opacity 0.3s;
@@ -505,6 +532,7 @@
       // background-color: #fff;
       background-color: var(--navBar-color);
       box-shadow: inset rgba(0, 0, 0, 0.2) 0px 8px 24px;
+      -webkit-box-shadow: inset rgba(0, 0, 0, 0.2) 0px 8px 24px;
       overflow: hidden;
       position: absolute;
       top: 100%;
@@ -513,6 +541,9 @@
       z-index: -1;
       transform: scaleX(0);
       transform-origin: top right;
+      -webkit-transition:
+        transform 0.4s,
+        opacity 0.3s;
       transition:
         transform 0.4s,
         opacity 0.3s;
@@ -526,6 +557,7 @@
       min-width: 40%;
       height: 65vh;
       overflow: scroll;
+      display: -webkit-flex;
       display: flex;
       justify-content: flex-start;
       flex-direction: column;
@@ -541,6 +573,9 @@
       /* transition from these values */
       transform: translateX(-2.5rem);
       opacity: 0;
+      -webkit-transition:
+        transform 0.6s,
+        opacity 0.9s;
       transition:
         transform 0.6s,
         opacity 0.9s;
@@ -577,6 +612,7 @@
     .cs-li-link {
       /* 16px - 24px */
       font-size: clamp(1rem, 2.5vw, 1.5rem);
+      -webkit-font-smoothing: antialiased;
       line-height: 1.2em;
       text-decoration: none;
       text-transform: uppercase;
@@ -638,6 +674,7 @@
       // justify-content: center;
       gap: 0.5rem;
       font-size: (16/16rem);
+      -webkit-font-smoothing: antialiased;
       /* 46px - 56px */
       line-height: clamp(2.875em, 5.5vw, 3.5em);
       text-decoration: none;
@@ -665,6 +702,7 @@
         top: 0;
         left: 0;
         z-index: -1;
+        -webkit-transition: width 0.3s;
         transition: width 0.3s;
       }
 
@@ -712,6 +750,7 @@
 
       .cs-li-link {
         position: relative;
+        -webkit-transition: opacity 0.3s;
         transition: opacity 0.3s;
       }
     }
@@ -723,6 +762,7 @@
       top: 50%;
       right: (-20/16rem);
       transform: translateY(-50%);
+      -webkit-transition: transform 0.3s;
       transition: transform 0.3s;
     }
 
@@ -736,6 +776,7 @@
       overflow: hidden;
       opacity: 0;
       visibility: hidden;
+      display: -webkit-flex;
       display: flex;
       justify-content: flex-start;
       flex-direction: column;
@@ -743,6 +784,13 @@
       gap: (12/16rem);
       transform: scale(0);
       transform-origin: top right;
+      -webkit-transition:
+        padding 0.3s,
+        margin 0.3s,
+        height 0.3s,
+        opacity 0.3s,
+        transform 0.3s,
+        visibility 0.3s;
       transition:
         padding 0.3s,
         margin 0.3s,
@@ -761,6 +809,7 @@
       &.cs-drop-link {
         /* 14px - 16px */
         font-size: clamp(0.875rem, 2vw, 1.25rem);
+        -webkit-font-smoothing: antialiased;
         color: #fff;
       }
     }
@@ -824,6 +873,11 @@
       z-index: -100;
       transform: scaleY(0);
       transform-origin: top;
+      -webkit-transition:
+        background-color 0.3s,
+        transform 0.3s,
+        visibility 0.3s,
+        opacity 0.3s;
       transition:
         background-color 0.3s,
         transform 0.3s,
@@ -834,12 +888,16 @@
     .cs-drop-li {
       list-style: none;
       font-size: (16/16rem);
+      -webkit-font-smoothing: antialiased;
       text-decoration: none;
       opacity: 0;
       width: 100%;
       height: auto;
       display: block;
       transform: translateY(-0.625rem);
+      -webkit-transition:
+        opacity 0.6s,
+        transform 0.6s;
       transition:
         opacity 0.6s,
         transform 0.6s;
@@ -891,6 +949,7 @@
         white-space: nowrap;
         width: 100%;
         font-size: (16/16rem);
+        -webkit-font-smoothing: antialiased;
         line-height: 1.5em;
         text-decoration: none;
         padding: (12/16rem);
@@ -899,6 +958,9 @@
         // color: var(--headerColor);
         color: var(--bodyTextColorWhite);
         display: block;
+        -webkit-transition:
+          color 0.3s,
+          background-color 0.3s;
         transition:
           color 0.3s,
           background-color 0.3s;
@@ -963,8 +1025,9 @@
       height: var(--desktopHeaderNavHeight);
       max-width: (1280/16rem);
       margin: auto;
-      display: flex;
-      justify-content: flex-end;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      // justify-content: flex-end;
       align-items: center;
       gap: (24/16rem);
       position: relative;
@@ -978,8 +1041,10 @@
       width: auto;
       height: (92/16rem);
       /* margin-right auto pushes everything away from it to the right */
-      margin: 0 auto 0 0;
+      // margin: 0 auto 0 0;
+      margin: 0;
       padding: 0;
+      display: -webkit-flex;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -994,19 +1059,22 @@
       }
     }
 
+    .cs-nav {
+      place-self: center;
+    }
     .cs-ul-wrapper {
-      /* absolutely positioned to be dead center */
-      position: absolute;
-      // left: 50%;
-      left: 45%;
-      top: 50%;
-      transform: translate(-50%, -50%);
+      // unset absolute position use grid instead
+      // position: absolute;
+      // left: 45%;
+      // top: 50%;
+      // transform: translate(-50%, -50%);
     }
 
     .cs-ul {
       width: 100%;
       margin: 0;
       padding: 0;
+      display: -webkit-flex;
       display: flex;
       justify-content: flex-start;
       align-items: center;
@@ -1023,6 +1091,7 @@
     .cs-li-link {
       /* 14px - 16px */
       font-size: clamp(0.875rem, 0.6vw, 1rem);
+      -webkit-font-smoothing: antialiased;
       line-height: 1.5em;
       font-weight: 700;
       text-decoration: none;
@@ -1090,11 +1159,13 @@
     }
 
     .cs-button-solid {
+      display: -webkit-flex;
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 0.5rem;
       font-size: (16/16rem);
+      -webkit-font-smoothing: antialiased;
       /* 46px - 56px */
       line-height: clamp(2.875em, 5.5vw, 3.5em);
       text-decoration: none;
@@ -1173,6 +1244,7 @@
 
     .cs-container {
       grid-area: 1/1;
+      display: -webkit-flex;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -1262,6 +1334,7 @@
 
     .cs-button-solid {
       font-size: (16/16rem);
+      -webkit-font-smoothing: antialiased;
       /* 46px - 56px */
       line-height: clamp(2.875rem, 5.5vw, 3.5rem);
       text-decoration: none;
@@ -1433,6 +1506,7 @@
 
     .cs-header {
       font-size: (20/16rem);
+      -webkit-font-smoothing: antialiased;
       line-height: 1.5em;
       font-weight: 700;
       margin: 0 0 (20/16rem) 0;
@@ -1469,6 +1543,7 @@
 
     .cs-link {
       font-size: (16/16rem);
+      -webkit-font-smoothing: antialiased;
       text-decoration: none;
       line-height: 1.5em;
       text-align: left;
@@ -1509,6 +1584,7 @@
     .cs-credit-link {
       /* 14px - 16px */
       font-size: clamp(0.875rem, 1.5vw, 1rem);
+      -webkit-font-smoothing: antialiased;
       line-height: 1.5em;
       text-decoration: none;
       width: auto;
@@ -1525,6 +1601,7 @@
     .cs-credit-link {
       /* 14px - 16px */
       font-size: clamp(0.875rem, 1.5vw, 1rem);
+      -webkit-font-smoothing: antialiased;
       line-height: 1.5em;
       text-decoration: none;
       color: var(--primary);
@@ -1745,6 +1822,7 @@
     .cs-topper {
       /* 13px - 16px */
       font-size: clamp(0.8125rem, 1.6vw, 1rem);
+      -webkit-font-smoothing: antialiased;
       line-height: 1.2em;
       text-transform: uppercase;
       text-align: left;
@@ -1758,6 +1836,7 @@
     .cs-title {
       /* 39px - 61px */
       font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+      -webkit-font-smoothing: antialiased;
       font-weight: 900;
       line-height: 1.2em;
       text-align: left;
@@ -1771,6 +1850,7 @@
     .cs-text {
       /* 16px - 20px */
       font-size: clamp(1rem, 1.95vw, 1.25rem);
+      -webkit-font-smoothing: antialiased;
       line-height: 1.5em;
       text-align: left;
       width: 100%;
@@ -1787,6 +1867,7 @@
       justify-content: center;
       gap: 0.5rem;
       font-size: (16/16rem);
+      -webkit-font-smoothing: antialiased;
       /* 46px - 56px */
       line-height: clamp(2.875rem, 5.5vw, 3.5rem);
       width: (180/16rem);
@@ -1826,6 +1907,7 @@
 
     .cs-button-transparent {
       font-size: (16/16rem);
+      -webkit-font-smoothing: antialiased;
       /* 46px - 56px */
       line-height: clamp(2.875rem, 5.5vw, 3.5rem);
       width: (180/16rem);
@@ -1984,6 +2066,7 @@
     .cs-number {
       /* 20px - 25px */
       font-size: clamp(1.25rem, 2vw, 1.5625rem);
+      -webkit-font-smoothing: antialiased;
       line-height: 1.2em;
       font-weight: 900;
       /* 24px - 32px */
@@ -1995,6 +2078,7 @@
     .cs-h2 {
       /* 16px - 20px */
       font-size: clamp(1rem, 2vw, 1.25rem);
+      -webkit-font-smoothing: antialiased;
       font-weight: 900;
       line-height: 1.2em;
       padding: 0;
@@ -2008,6 +2092,7 @@
     .cs-item-text {
       /* 14px - 16px */
       font-size: clamp(0.875rem, 3vw, 1rem);
+      -webkit-font-smoothing: antialiased;
       margin: 0;
       padding: 0;
       max-width: (500/16rem);
@@ -2031,6 +2116,7 @@
         width: clamp((120/16rem), 3vw, (170/16rem));
         margin-right: 0;
         font-size: (13/16rem);
+        -webkit-font-smoothing: antialiased;
         min-width: 7rem;
         padding: 0 (6/16rem);
         gap: clamp(0rem, 0.5vw, 0.5rem);
@@ -2054,6 +2140,7 @@
         width: clamp((150/16rem), 2.5vw, (180/16rem));
         margin-right: 0;
         font-size: (16/16rem);
+        -webkit-font-smoothing: antialiased;
         padding: 0 (6/16rem);
 
         .cs-image {
@@ -2256,6 +2343,7 @@
 
     .cs-number {
       font-size: (20/16rem);
+      -webkit-font-smoothing: antialiased;
       font-weight: 700;
       line-height: 1.2em;
       margin: 0;
@@ -2267,6 +2355,7 @@
     .cs-li-text {
       /* 14px - 16px */
       font-size: clamp(0.875rem, 1.5vw, 1rem);
+      -webkit-font-smoothing: antialiased;
       line-height: 1.5em;
       margin: 0;
       color: var(--bodyTextColor);
@@ -2330,6 +2419,7 @@
       --quoteColor: var(--primary);
 
       font-size: clamp(1.2rem, 3vw, 1rem);
+      -webkit-font-smoothing: antialiased;
       line-height: 1.3em;
       width: 100%;
       max-width: (522/16rem);
@@ -4569,6 +4659,7 @@
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -4592,6 +4683,7 @@
     &:hover {
       transform: translateY(-5px);
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
 
     .coupon-header {
