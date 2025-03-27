@@ -109,6 +109,7 @@
 @media only screen and (min-width: 0em) {
   .blog-container {
     padding: clamp(60px, 7vw, 100px) 0;
+    padding-top: 6.5rem;
   }
   .main-content-wrapper {
     display: flex;
@@ -128,6 +129,9 @@
 }
 /* Tablet - 1024px */
 @media only screen and (min-width: 64em) {
+  .blog-container {
+    padding-top: clamp(60px, 7vw, 100px);
+  }
   .main-content-wrapper {
     flex-direction: row;
     align-items: flex-start;
@@ -382,7 +386,7 @@
   .blog-article .blog-mainImage {
     width: 100%;
     height: clamp(200px, 30vw, 400px);
-    margin-bottom: 3.125em;
+    margin-bottom: 1.5625em;
     border-radius: 0.5em;
     display: block;
     position: relative;
