@@ -8,6 +8,11 @@ eleventyNavigation:
 ---
 
 {% block head %}
+
+        <meta property="og:title" content="{{ title }}">
+        <meta property="og:description" content="{{ description }}">
+        <meta property="og:image" content="{{ client.domain }}/assets/images/og_image.jpg">
+
 <link rel="stylesheet" href="/assets/css/home.css">
 
 <!--          Blaze Assets        -->

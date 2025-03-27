@@ -9,6 +9,9 @@ eleventyNavigation:
 ---
 
 {% block head %}
+        <meta property="og:title" content="{{ title }}">
+        <meta property="og:description" content="{{ description }}">
+        <meta property="og:image" content="{{ client.domain }}/assets/images/og_image.jpg">
 <link rel="stylesheet" href="/assets/css/services.css" />
 <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 
