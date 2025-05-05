@@ -7,7 +7,7 @@ date: 2025-05-04T23:45:00.000Z
 tags:
   - post
   - featured
-image: /assets/images/cms/top7reason.png
+image: /assets/images/cms/kms-2-.png
 imageAlt: A Certified and Licensed Plumber
 ---
 Have you ever thought what the difference is between a Licensed & Certified Plumber and Gasfitter verus someone that is unlicensed? Maybe you didn't even realize that plumbers and gasfitters needed licensing? As a consumer it is important to understand the differences between hiring a licensed professional and an unlicensed individual and the implications and potential downfalls of the latter. 
