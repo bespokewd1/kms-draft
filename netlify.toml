@@ -15,6 +15,6 @@ package = "netlify-plugin-cache"
   ]
 
 [[redirects]]
-  from = "/financing"
+  from = "https://kmsplumbingyeg.com/financing/"
   to = "https://www.financeit.ca/en/direct/payment-plan/YT0yNjE5MzgmbD0mcD1JMlZlYnJjaDRaRUFvbUd6bkgtUDJnJnM9MCZ2PTE=/apply?slug=WjM1yQ"
   status = 301
