@@ -303,6 +303,7 @@
     height: 100%;
   }
   #cs-navigation {
+    top: 0rem;
     width: 100%;
     padding: 0.75rem 1rem;
     /* prevents padding and border from affecting height and width */
