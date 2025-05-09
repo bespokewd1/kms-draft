@@ -13,3 +13,8 @@ package = "netlify-plugin-cache"
     "public/assets/images",
     ".cache"
   ]
+
+[[redirects]]
+  from = "/old-path"
+  to = "/new-path"
+  status = 301
