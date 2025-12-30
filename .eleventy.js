@@ -1,7 +1,10 @@
 // Plugin Imports
 const pluginDirectoryOutput = require("@11ty/eleventy-plugin-directory-output");
 const pluginEleventyNavigation = require("@11ty/eleventy-navigation");
+const pluginSitemap = require("@quasibit/eleventy-plugin-sitemap");
 
+// sitemap config
+const configSitemap = require("./src/config/plugins/sitemap");
 // Filter Imports
 const filterFormatDate = require("./src/config/filters/formatDate");
 
@@ -19,6 +22,9 @@ module.exports = function (eleventyConfig) {
   // Allows navigation items to be defined in a scalable way via the front matter
   // https://www.11ty.dev/docs/plugins/navigation/
   eleventyConfig.addPlugin(pluginEleventyNavigation);
+
+  //sitemap
+  eleventyConfig.addPlugin(pluginSitemap, configSitemap);
 
   /**
    *  PASSTHROUGH'S
