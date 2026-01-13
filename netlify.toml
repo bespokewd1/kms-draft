@@ -14,8 +14,27 @@ package = "netlify-plugin-cache"
     ".cache"
   ]
 
+# Force redirect from the Netlify subdomain to the custom domain
+[[redirects]]
+  from = "https://kms-draft.netlify.app/*"
+  to = "https://kmsplumbingyeg.com/:splat"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "https://kmsplumbingyeg.com/financing/"
   to = "https://www.financeit.ca/en/direct/payment-plan/YT0yNjE5MzgmbD0mcD1JMlZlYnJjaDRaRUFvbUd6bkgtUDJnJnM9MCZ2PTE=/apply?slug=WjM1yQ"
   status = 301
   force = true
+
+# Add X-Robots-Tag to prevent indexing of non-production contexts
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
+# Override the header specifically for the main custom domain to ALLOW indexing
+[[headers]]
+  for = "https://kmsplumbingyeg.com/*"
+  [headers.values]
+    X-Robots-Tag = "all"
