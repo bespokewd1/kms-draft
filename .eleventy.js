@@ -39,6 +39,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/assets/svgs");
   eleventyConfig.addPassthroughCopy("./src/admin");
   eleventyConfig.addPassthroughCopy("src/_data/coupons.json");
+  eleventyConfig.addPassthroughCopy("src/googlee739d330b62ea1c2.html");
 
   /**
    *  FILTERS
