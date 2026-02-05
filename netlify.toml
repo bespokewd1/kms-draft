@@ -27,14 +27,3 @@ package = "netlify-plugin-cache"
   status = 301
   force = true
 
-# Add X-Robots-Tag to prevent indexing of non-production contexts
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Robots-Tag = "noindex"
-
-# Override the header specifically for the main custom domain to ALLOW indexing
-[[headers]]
-  for = "https://kmsplumbingyeg.com/*"
-  [headers.values]
-    X-Robots-Tag = "all"
